@@ -1,0 +1,2159 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.lodislamica.me/ontology/hadithVoc#"
+     xml:base="http://www.lodislamica.me/ontology/hadithVoc"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.lodislamica.me/ontology/hadithVoc#">
+        <owl:versionIRI rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#/1.0.1"/>
+        <terms:contributor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Amna binte Kamran</terms:contributor>
+        <terms:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bushra Abro</terms:creator>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities</terms:description>
+        <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Hadith Ontology</terms:title>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hadith:</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentClass -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#equivalentProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/author -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/author">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/hasPart">
+        <owl:inverseOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithText"/>
+                            <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/mentions -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/mentions">
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/mentions"/>
+        <owl:inverseOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#mentionedIn"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Verse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasBook">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasChapter">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasHadith -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadith">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasHadithText -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadithText">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithText"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasHadithType -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadithType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarrator -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator">
+        <owl:inverseOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#narrated"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator">
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence"/>
+            <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#heardFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#heardFrom">
+        <owl:inverseOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#transferredTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithText"/>
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#mentionedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#mentionedIn">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Verse"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narrated -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narrated">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#transferredTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#transferredTo">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <rdfs:range rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#seeAlso -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#seeAlso"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#age">
+        <rdfs:domain rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#attribute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#attribute"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#birthPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthPlace"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#birthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthYear"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#chapterNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterNo"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#chapterPreface -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterPreface"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#collectionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#collectionName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#concealment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#concealment"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#deathPlace -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathPlace"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#deathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathYear"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engBookNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engBookNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#englishReference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engHadithNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engHadithNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#englishReference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engVolNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engVolNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#englishReference"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#englishReference -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#englishReference"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#firstChar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#firstChar"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#fullHadithText -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#fullHadithText"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#generation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#generation"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithGrade -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithGrade">
+        <terms:description>Ibn al-Salah said, &quot;Hadith, in the view of scholars of this discipline, fall into the divisions of &apos;sound&apos; (ṣaḥīḥ), &apos;fair&apos; (ḥasan), and &apos;weak&apos; (ḍaʻīf).&quot; While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.
+
+Ṣaḥīḥ
+Sahih (Arabic: صحيح, Ṣaḥīḥ) may be translated as &quot;authentic&quot; or &quot;sound.&quot;[6] Ibn Hajar defines a hadith that is ṣaḥīḥ lidhātihi (&quot;ṣaḥīḥ in and of itself&quot;) as a singular narration (ahaad; see below) conveyed by a trustworthy, completely competent person, either in his ability to memorize or to preserve what he wrote, with a muttaṣil (&quot;connected&quot;) isnād (&quot;chain of narration&quot;) that contains neither a serious concealed flaw (ʻillah)علة nor irregularity (shādhdh). He then defines a hadith that is ṣaḥīḥ lighairihi (&quot;ṣaḥīḥ due to external factors&quot;) as a hadith &quot;with something, such as numerous chains of narration, strengthening it.&quot;
+
+Ibn Hajar&apos;s definitions indicate that there are five conditions to be met for a particular hadith to be considered ṣaḥīḥ:
+
+1. Each narrator in the chain of narration must be trustworthy;
+2. Each narrator must be reliable in his ability to preserve that narration, be it in his ability to memorize to the extent that he can recall it as he heard it, or, that he has written it as he heard it and has preserved that written document unchanged;
+3. The isnād must be connected (muttasil) insofar as it is at least possible for each narrator in the chain to have received the hadith from a predecessor;
+4. The hadith, including its isnād, is free of ʻillah (hidden detrimental flaw or flaws, e.g. the establishment that two narrators, although contemporaries, could not have shared the hadith, thereby breaking the isnād.)
+5. The hadith is free of irregularity, meaning that it does not contradict another hadith already established (accepted).
+
+A number of books were authored in which the author stipulated the inclusion of ṣaḥīḥ hadith alone. 
+
+Ṣaḥīḥ al-Bukhārī. Considered the most authentic book after the Quran.
+Ṣaḥīḥ Muslim. Considered the next most authentic book after Ṣaḥīḥ al-Bukhārī.</terms:description>
+        <rdfs:seeAlso>https://en.wikipedia.org/wiki/Hadith_terminology</rdfs:seeAlso>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithURL"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasMaster -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasMaster"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#lineage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#lineage"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#name"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorChain -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorChain"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorID"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorURL -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorURL"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#office -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#office"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#popularName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#popularName"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#rank -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#rank"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#residence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#residence"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#sequenceNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#sequenceNo"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#teknonym -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#teknonym">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#title"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#verseNo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.lodislamica.me/ontology/hadithVoc#verseNo"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Believer -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Believer">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Companion -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Companion">
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Believer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#elevated"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Hadith -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Verse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadithText"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithText"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#engHadithNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#fullHadithText"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithType"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithURL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithBook -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithBook">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasChapter"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#engBookNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#sequenceNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithChapter -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadith"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#sequenceNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithCollection -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/author"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithBook"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#collectionName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#engVolNo"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Believer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator">
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Believer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#age"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#attribute"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#birthYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#concealment"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#deathPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#deathYear"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#firstChar"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#generation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasMaster"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#lineage"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#name"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#narratorID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#narratorURL"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#office"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#popularName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#rank"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#residence"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#teknonym"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#title"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithText -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithText"/>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithType -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#elevated"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#sacred"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#severed"/>
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#stopped"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <terms:description>Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure.</terms:description>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NarratorChain -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#narratorChain"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"/>
+                <owl:allValuesFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#RootNarrator -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#RootNarrator">
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence">
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#heardFrom"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Root Narrator (First Narrator Occurrence) has no heardFrom since they are the eyewitness to the Hadith contents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#sacred"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#severed"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#stopped"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Verse -->
+
+    <owl:Class rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Verse"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Believer -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Believer">
+        <rdfs:label xml:lang="en">Believer</rdfs:label>
+        <rdfs:label xml:lang="ar">مومن</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Companion -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Companion">
+        <rdfs:label xml:lang="en">Companion</rdfs:label>
+        <rdfs:label xml:lang="en">Companion of a prophet</rdfs:label>
+        <rdfs:label xml:lang="ar">صحابي</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HD_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HD_001">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#Hadith"/>
+        <hasHadithType rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#sacred"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HN_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HN_01">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HN_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HN_02">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HN_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HN_03">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Hadith -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith">
+        <rdfs:label xml:lang="en">Hadith</rdfs:label>
+        <rdfs:label xml:lang="ar">حديث</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithBook -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithBook">
+        <rdfs:label xml:lang="en">Hadith Book</rdfs:label>
+        <rdfs:label xml:lang="ar">كتاب الحديث</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithChapter -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter">
+        <rdfs:label xml:lang="en">Hadith Chapter</rdfs:label>
+        <rdfs:label xml:lang="ar">باب</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithCollection -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection">
+        <rdfs:label xml:lang="en">Hadith Collection</rdfs:label>
+        <rdfs:label xml:lang="ar">مجموعة الحديث</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor">
+        <rdfs:label xml:lang="en">Hadith Collection Author</rdfs:label>
+        <rdfs:label xml:lang="ar">محدث</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator">
+        <rdfs:label xml:lang="en">Hadith Narrator</rdfs:label>
+        <rdfs:label xml:lang="ar">راوى</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#HadithText -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithText">
+        <rdfs:label xml:lang="en">Hadith Text</rdfs:label>
+        <rdfs:label xml:lang="ar">متن</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NC_0101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NC_0101">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"/>
+        <hasNarratorOccurence rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_01"/>
+        <hasNarratorOccurence rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_02"/>
+        <hasRootNarratorOccurrence rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NO_0101_01 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_01">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <hasNarrator rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HN_02"/>
+        <heardFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NO_0101_02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_02">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"/>
+        <hasNarrator rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HN_01"/>
+        <heardFrom rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NO_0101_03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NO_0101_03">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence"/>
+        <hasNarrator rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HN_03"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NarratorChain -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain">
+        <rdfs:label xml:lang="en">Chain of Narrators</rdfs:label>
+        <rdfs:label xml:lang="en">Hadith Chain of Narrtors</rdfs:label>
+        <rdfs:label xml:lang="en">Narrator Chain</rdfs:label>
+        <rdfs:label xml:lang="ar">سند</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence">
+        <rdfs:label xml:lang="en">Narrator Occurance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#RootNarrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#RootNarrator">
+        <rdfs:label xml:lang="en">Root Narrator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#Verse -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Verse">
+        <rdfs:label xml:lang="en">Qur&apos;anic Verse</rdfs:label>
+        <rdfs:label xml:lang="en">Verse</rdfs:label>
+        <rdfs:label xml:lang="en">Verse of the Quran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#age -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#age">
+        <rdfs:label xml:lang="en">Age</rdfs:label>
+        <rdfs:label xml:lang="en">Age of narrator</rdfs:label>
+        <rdfs:label xml:lang="ar">عمر الراوي</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#attribute -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#attribute">
+        <rdfs:label xml:lang="en">Attribute</rdfs:label>
+        <rdfs:label xml:lang="en">Quality</rdfs:label>
+        <rdfs:label xml:lang="ar">الوصف</rdfs:label>
+        <rdfs:label xml:lang="ar">وصف</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#birthPlace -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthPlace">
+        <rdfs:label xml:lang="en">Birth Place</rdfs:label>
+        <rdfs:label xml:lang="en">Country of Birth</rdfs:label>
+        <rdfs:label xml:lang="en">Place of Birth</rdfs:label>
+        <rdfs:label xml:lang="ar">بلدالميلاد</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#birthYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthYear">
+        <rdfs:label xml:lang="en">Birth Year</rdfs:label>
+        <rdfs:label xml:lang="en">Year of Birth</rdfs:label>
+        <rdfs:label xml:lang="ar">سنة الميلاد</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#chapterNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterNo">
+        <rdfs:label xml:lang="en">Chapter Index</rdfs:label>
+        <rdfs:label xml:lang="en">Chapter Index (Quran)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#chapterPreface -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterPreface">
+        <rdfs:label xml:lang="en">Chapter Preface</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#collectionName -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#collectionName">
+        <rdfs:label xml:lang="en">Collection Name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#concealment -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#concealment">
+        <rdfs:label xml:lang="en">Concealment</rdfs:label>
+        <rdfs:label xml:lang="ar">اختلاط تدليس الأقرباء</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf">
+        <rdfs:label xml:lang="en">contains mention of</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#deathPlace -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathPlace">
+        <rdfs:label xml:lang="en">Country of Death</rdfs:label>
+        <rdfs:label xml:lang="en">Death Place</rdfs:label>
+        <rdfs:label xml:lang="en">Place of Death</rdfs:label>
+        <rdfs:label xml:lang="ar">بلد الوفاة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#deathYear -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathYear">
+        <rdfs:label xml:lang="en">Death Year</rdfs:label>
+        <rdfs:label xml:lang="en">Year of Death</rdfs:label>
+        <rdfs:label xml:lang="ar">سنة الوفاة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#elevated -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#elevated">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engBookNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engBookNo">
+        <rdfs:label xml:lang="en">Book Number (English)</rdfs:label>
+        <rdfs:label xml:lang="en">Hadith Book Number (English)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engHadithNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engHadithNo">
+        <rdfs:label xml:lang="en">Hadith Number (English)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#engVolNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engVolNo">
+        <rdfs:label xml:lang="en">Hadith Collection Volume Number (English)</rdfs:label>
+        <rdfs:label xml:lang="en">Volume Number (English)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#englishReference -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#englishReference">
+        <rdfs:label xml:lang="en">English Reference</rdfs:label>
+        <rdfs:label xml:lang="en">Reference of Hadith (English)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#firstChar -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#firstChar">
+        <rdfs:label xml:lang="en">First Character</rdfs:label>
+        <rdfs:label xml:lang="en">First Character of Narrator&apos;s name</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#fullHadithText -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#fullHadithText">
+        <rdfs:label xml:lang="en">Full Hadith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#generation -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#generation">
+        <rdfs:label xml:lang="en">Generation</rdfs:label>
+        <rdfs:label xml:lang="en">Generation of Narrator</rdfs:label>
+        <rdfs:label xml:lang="ar">الطبقة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro">
+        <rdfs:label xml:lang="en">Hadith Book Introduction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo">
+        <rdfs:label xml:lang="en">Hadith Book Number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo">
+        <rdfs:label xml:lang="en">Hadith Chapter Number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo">
+        <rdfs:label xml:lang="en">Hadith Reference Number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithType -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithType">
+        <rdfs:label xml:lang="en">Hadith Type</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hadithURL -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithURL">
+        <rdfs:label xml:lang="en">Hadith URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasBook -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasBook">
+        <rdfs:label xml:lang="en">has book</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasChapter -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasChapter">
+        <rdfs:label xml:lang="en">has chapter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasHadith -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadith">
+        <rdfs:label xml:lang="en">has Hadith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasHadithText -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadithText">
+        <rdfs:label xml:lang="en">Has Hadith Text</rdfs:label>
+        <rdfs:label xml:lang="en">has Hadith text</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasMaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasMaster">
+        <rdfs:label xml:lang="en">has Master</rdfs:label>
+        <rdfs:label xml:lang="en">hasMawla</rdfs:label>
+        <rdfs:label xml:lang="ar">الموالي</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarrator -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator">
+        <rdfs:label xml:lang="en">has Narrator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain">
+        <rdfs:label xml:lang="en">has Narrator Chain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence">
+        <rdfs:label xml:lang="en">Chain of Narrators</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#heardFrom -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#heardFrom">
+        <rdfs:label xml:lang="en">Heard from</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook">
+        <rdfs:label xml:lang="en">is part of book</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter">
+        <rdfs:label xml:lang="en">is part of chapter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection">
+        <rdfs:label xml:lang="en">is part of collection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith">
+        <rdfs:label xml:lang="en">is Part of Hadith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#lineage -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#lineage">
+        <rdfs:label xml:lang="en">Descent</rdfs:label>
+        <rdfs:label xml:lang="en">Lineage</rdfs:label>
+        <rdfs:label>Nasab</rdfs:label>
+        <rdfs:label xml:lang="ar">النسب</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#mentionedIn -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#mentionedIn">
+        <rdfs:label xml:lang="en">Mentioned in</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#name -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#name">
+        <rdfs:label xml:lang="en">Name of Narrator</rdfs:label>
+        <rdfs:label xml:lang="ar">اسم الراوي</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narrated -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narrated">
+        <rdfs:label xml:lang="en">Narrated</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorChain -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorChain">
+        <rdfs:label xml:lang="en">Narrator Chain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorID -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorID">
+        <rdfs:label xml:lang="en">Narrator ID</rdfs:label>
+        <rdfs:label xml:lang="en">Ravi Id</rdfs:label>
+        <rdfs:label xml:lang="ar">رقم الراوي</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#narratorURL -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorURL">
+        <rdfs:label xml:lang="en">Narrator URL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#office -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#office">
+        <rdfs:label xml:lang="en">Office</rdfs:label>
+        <rdfs:label xml:lang="ar">النشاط</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#popularName -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#popularName">
+        <rdfs:label xml:lang="en">Popular Name</rdfs:label>
+        <rdfs:label xml:lang="ar">اسم الشهرة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#rank -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#rank">
+        <rdfs:label xml:lang="en">Rank of Narrator</rdfs:label>
+        <rdfs:label xml:lang="en">grade</rdfs:label>
+        <rdfs:label xml:lang="ar">الرتبة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#residence -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#residence">
+        <rdfs:label xml:lang="en">Residence</rdfs:label>
+        <rdfs:label>alAqama</rdfs:label>
+        <rdfs:label xml:lang="ar">الإقامة</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#sacred -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#sacred">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought">
+        <rdfs:label xml:lang="en">School of Thought</rdfs:label>
+        <rdfs:label xml:lang="en">mazhab</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#sequenceNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#sequenceNo">
+        <rdfs:label xml:lang="en">Sequence Number</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#severed -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#severed">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#stopped -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#stopped">
+        <rdf:type rdf:resource="http://www.lodislamica.me/ontology/hadithVoc#HadithType"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#teknonym -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#teknonym">
+        <rdfs:label xml:lang="ar">Teknonym</rdfs:label>
+        <rdfs:label xml:lang="ar">النوع رجل الكنية</rdfs:label>
+        <rdfs:label xml:lang="ar">كنية</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#title -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="ar">اللقب</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#transferredTo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#transferredTo">
+        <rdfs:label xml:lang="en">Transfer To</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.lodislamica.me/ontology/hadithVoc#verseNo -->
+
+    <owl:NamedIndividual rdf:about="http://www.lodislamica.me/ontology/hadithVoc#verseNo">
+        <rdfs:label xml:lang="en">Verse Index</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Believer">
+        <rdfs:seeAlso xml:lang="en">https://dbpedia.org/page/Muslims</rdfs:seeAlso>
+        <terms:description xml:lang="en">A Believer (Muslim) who may or may not be a companion (مومن).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Companion">
+        <terms:description xml:lang="en">Companion to Prophet Muhammad (peace be upon him)</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Hadith">
+        <owl:equivalentClass xml:lang="en">https://dbpedia.org/page/Hadith</owl:equivalentClass>
+        <rdfs:seeAlso>https://islamicurdubooks.com/info/info-detail.php?bookid=1</rdfs:seeAlso>
+        <terms:description xml:lang="en">Hadith is the Arabic word for speech, account, report and narrative. In the Islamic context, they are the collection of sayings, actions and silent approval of the Prophet Muhammad (peace be upon him). The Hadith can include the illustration of historical events during his lifetime, the interpretation of Qur’anic verses, the reasons for revelations and contextual background, and the elaboration of essential Islamic concepts.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithBook">
+        <terms:description xml:lang="en">A book of Hadith. Each Hadith Book consists of several Hadith chapters.</terms:description>
+        <owl:equivalentClass xml:lang="en">http://purl.org/ontology/bibo/Book</owl:equivalentClass>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithChapter">
+        <terms:description xml:lang="en">Chapters in the Hadith Book</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollection">
+        <terms:description xml:lang="en">Collection of Hadith (مجموعة الحديث) e.g. Sahih Bukhari.</terms:description>
+        <owl:equivalentClass xml:lang="en">http://purl.org/ontology/bibo/Collection</owl:equivalentClass>
+        <owl:equivalentClass xml:lang="en">https://dbpedia.org/page/Category:Hadith_collections</owl:equivalentClass>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor">
+        <terms:description xml:lang="en">Author of a Hadith Collection</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator">
+        <terms:description xml:lang="en">Represents a person who is a narrator of a Hadith (راوى).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#HadithText">
+        <skos:altLabel xml:lang="en">Matan (Matn)</skos:altLabel>
+        <terms:description xml:lang="en">This is primarily a textual entity, which contains the main narration or content of the Hadith, without the chain of narrators or the Sanad.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorChain">
+        <terms:description xml:lang="en">Chain of Narrators who narrated the Hadith</terms:description>
+        <skos:altLabel xml:lang="en">Sanad</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence">
+        <terms:description xml:lang="en">A container for maintaining the order of narrators in the Narrator Chain.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#RootNarrator">
+        <rdfs:comment xml:lang="en">Root narrator must be a Companion. 
+(He is always a Sahabi)</rdfs:comment>
+        <terms:description xml:lang="en">The first person to directly hear or witness the contents of a Hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#Verse">
+        <owl:equivalentProperty xml:lang="en">http://quranontology.com/Resource/Verse</owl:equivalentProperty>
+        <owl:equivalentProperty xml:lang="en">http://mlode.nlp2rdf.org/quranvocab#Verse</owl:equivalentProperty>
+        <terms:description xml:lang="en">Verse from the Holy Qur&apos;an.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#age">
+        <skos:altLabel xml:lang="en">ummarArRavi</skos:altLabel>
+        <terms:description xml:lang="en">Age of the Narrator</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#attribute">
+        <skos:altLabel xml:lang="en">wasaf</skos:altLabel>
+        <terms:description xml:lang="en">a quality or feature regarded as a characteristic of a narrator</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthPlace">
+        <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/birthPlace</owl:equivalentProperty>
+        <owl:equivalentProperty xml:lang="en">http://dbpedia.org/property/birthPlace</owl:equivalentProperty>
+        <terms:description xml:lang="en">Country or place of narrator’s birth</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#birthYear">
+        <skos:altLabel xml:lang="en">sunalMilad</skos:altLabel>
+        <terms:description xml:lang="en">Year of birth of narrator</terms:description>
+        <owl:equivalentProperty xml:lang="en">https://schema.org/birthDate</owl:equivalentProperty>
+        <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/birthYear</owl:equivalentProperty>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterNo">
+        <terms:description xml:lang="en">Chapter Number from Qu&apos;ran</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#chapterPreface">
+        <terms:description xml:lang="en">Preface of a Hadith Chapter</terms:description>
+        <skos:altLabel xml:lang="en">chapterTarjama</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#concealment">
+        <skos:altLabel>Akhtalat Tadlees</skos:altLabel>
+        <terms:description xml:lang="en">Concealment of relatives</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf">
+        <terms:description xml:lang="en">A hadith mentions a verse of Quran.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathPlace">
+        <owl:equivalentProperty xml:lang="en">https://schema.org/deathPlace</owl:equivalentProperty>
+        <skos:altLabel xml:lang="en">baladAlWafat</skos:altLabel>
+        <terms:description xml:lang="en">Country or place of narrator’s death</terms:description>
+        <owl:equivalentProperty xml:lang="en">http://dbpedia.org/property/deathPlace</owl:equivalentProperty>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#deathYear">
+        <owl:equivalentProperty xml:lang="en">https://schema.org/deathDate</owl:equivalentProperty>
+        <terms:description xml:lang="en">Year of death of narrator</terms:description>
+        <skos:altLabel xml:lang="en">sunAlWafat</skos:altLabel>
+        <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/deathYear</owl:equivalentProperty>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engBookNo">
+        <terms:description xml:lang="en">english Refence Number for Book</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engHadithNo">
+        <terms:description xml:lang="en">english Refence Number for Hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#engVolNo">
+        <terms:description xml:lang="en">english Refence Number for Volume</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#firstChar">
+        <terms:description xml:lang="en">First character of the narrator&apos;s name (arabic).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#fullHadithText">
+        <terms:description xml:lang="en">Complete Hadith Contents (Chain of Narrators (Sanad) + Hadith Text (Matan) )</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#generation">
+        <rdfs:seeAlso xml:lang="en">https://muslimscholars.info</rdfs:seeAlso>
+        <terms:description xml:lang="en">The generations (Tabqat) is defined by the hadith scholars as a group of people who were similar in age and generally met the same narrators of hadith before them. In Taqrib al-Tahzeeb and his other works on hadith narrators, Ibn Hajar has altogether identified twelve classes of narrators from the time of the Companions down to the time when the six major collections were written. These may be summarized as follows. It should be noted that first 9 categories actually fall under the basic three, namely, the Companions, the Followers (tabi&apos;un) and the Successors (tabi&apos; tabi&apos;un).
+
+
+1.          1st Generation: The Companions.
+2.          2nd Generation: The older/leading Followers of the Companions (Ibn Musaib, &apos;Alqama) including Makhdaram.
+3.          3rd Generation: The 1st middle level of the Followers (al-Hasan al-Basri, Ibn Sirin).
+4.          4th generation: The 2nd middle level of the Followers, who narrated mostly from the Followers (not Companions), (al-Zuhri, Qatada).
+5.          5th generation: The younger Followers who may not have received any hadith from the Companions (al-A&apos;mash).
+6.          6th generation: The youngest Followers that were acquainted with the previous generation but it has not been established that they met any of the Companions (ibn Jurayj, Abu Hanifa).
+ 
+7.          7th generation: The leading Successors (kubbar atba&apos; al-tabi&apos;un) or older followers of the Tabi&apos;een such as Malik ibn Anas and Sufyan at-Thawri.
+8.          8th generation: The middle order of the Successors such as Sufyan ibn Uyainah and Ibn &apos;Aliya.
+9.          9th generation: The youngest of the Successors such as Abu Daud at-Tayalisi, Imam as-Shaafi&apos;ii, and Yazid bin Harun.
+ 
+10.     10th generation: The eldest of those who received from the Successors but did not meet any of the Followers (Tabi&apos;een) such as Imam Ahmad bin Hanbal.
+11.     11th generation: The middle order of those who received from the Successors such as Bukhari
+12.     12th generation: The youngest of those who received from the Successors such as Tirmidhi</terms:description>
+        <skos:altLabel xml:lang="en">Tabqa (Tabaqa)</skos:altLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro">
+        <terms:description xml:lang="en">Introduction of the Hadith Book</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo">
+        <terms:description xml:lang="en">Hadith Book number</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo">
+        <terms:description xml:lang="en">Hadith Chapter number</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo">
+        <terms:description xml:lang="en">Reference Number for Hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithType">
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Hadith_terminology</rdfs:seeAlso>
+        <terms:description xml:lang="en">Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure.
+(Qudsi (Sacred), Marfūʿ(elevated), Mawquf (stopped) and maqtu&apos; (severed))
+
+Marfūʿ
+Ibn al-Salah said: &quot;Marfūʿ (Arabic: مرفوع, Marfūʿ) refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories.&quot;
+
+Mawquf
+According to Ibn al-Salah, &quot;Mawquf (Arabic: موقوف, Mawqūf) refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise.&quot;
+
+Maqtu‘
+Ibn al-Salah defined maqtu‘ (مقطوع, Maqṭūʿ) as a narration attributed to a Tabi‘i (a successor of one of Muhammad&apos;s companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hadithURL">
+        <terms:description xml:lang="en">link to the hadith on the Islamic Urdu Website</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasBook">
+        <terms:description xml:lang="en">A collection of hadith has book of hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasChapter">
+        <terms:description xml:lang="en">A hadith book has a chapter.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadith">
+        <terms:description xml:lang="en">A hadith chapter has a hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasHadithText">
+        <terms:description xml:lang="en">Hadith has a textual entity of the content of the hadith</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasMaster">
+        <skos:altLabel>alMawali</skos:altLabel>
+        <terms:description xml:lang="en">The master or Mawla of the narrator (الموالي).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarrator">
+        <terms:description xml:lang="en">a hadith has been narrated by a narrator.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain">
+        <terms:description xml:lang="en">Chain of Narrators of Hadith.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence">
+        <terms:description xml:lang="en">An ordered list of narrators.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#heardFrom">
+        <terms:description xml:lang="en">Hadith is heard from another narrator, (inverse of transferTo).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook">
+        <terms:description xml:lang="en">Hadith chapter is a part of a hadith book</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter">
+        <terms:description xml:lang="en">a hadith is a part of hadith chapter</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection">
+        <terms:description xml:lang="en">A hadith book is part of a hadith collection.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith">
+        <terms:description xml:lang="en">HadithText and NarratorChain are parts of Hadith.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#lineage">
+        <skos:altLabel>Nasab</skos:altLabel>
+        <terms:description xml:lang="en">Lineage or descent of the narrator (النسب).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#mentionedIn">
+        <terms:description xml:lang="en">A qur’anic verse or any other entity is mentioned in the text of the hadith.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narrated">
+        <terms:description xml:lang="en">A narrator narrates a Hadith.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorChain">
+        <terms:description xml:lang="en">content of the Hadith Narrator Chain</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorID">
+        <skos:altLabel xml:lang="en">raqamArRavi</skos:altLabel>
+        <terms:description xml:lang="en">Unique ID for narrator (رقم الراوي).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#narratorURL">
+        <terms:description xml:lang="en">link to the narrator details on the Islamic Urdu Website</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#office">
+        <skos:altLabel xml:lang="en">anNishat</skos:altLabel>
+        <terms:description xml:lang="en">a position of authority or service, typically one of a public nature.</terms:description>
+        <rdfs:comment xml:lang="en">post
+position
+appointment
+job
+occupation
+role
+office</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#popularName">
+        <terms:description xml:lang="en">Name with which the narrator was known by.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#rank">
+        <rdfs:seeAlso xml:lang="en">https://muslimscholars.info</rdfs:seeAlso>
+        <skos:altLabel xml:lang="en">Rutba (Rotba)</skos:altLabel>
+        <terms:description xml:lang="en">The narrators of ahadith were broken up into different grades, ranks or levels based on whether or not ahadith could be accepted from them. Ibn Hajar al-&apos;Asqalani placed the narrators into twelve ranks. The ranks as named and categorized by Ibn Hajar are widely accepted but not universal.
+
+1.          Companions: The first generation of Muslims did not need testimony to their knowledge or character as Allah the Most High has already done so in the Qur&apos;an.
+2.          Awthaqun Nas (Thiqa Thiqa): These are the trustworthiest of people outside of the first generation of Muslims and this is the highest rank. They were learned scholars who were also of the most upright moral characters.
+3.          Thiqat: These narrators are trustworthy in all areas including good retentive memory, but not to a superlative degree like those in the second rank.
+4.          Saduq: truthful but less than rank three.
+5.          Saduq Yahim: Those who are trustworthy but who sometimes made mistakes in narrating ahadith, or have some delusion.
+6.          Maqbool/Layyin: Those who are accepted or acceptable. They transmitted a smaller number of ahadith, and we do not have proof against their reliability (or for them to be extraordinarily sound).
+7.          Majhool al-haal/Mastur (not Thiqa): Those whose situation is not precisely known. He had students who transmitted ahadith from him, but he does not have tawtheeq, or a testimony of trustworthiness, from the scholars of ahadith. There is nothing wrong with him from that which is apparent, but we don&apos;t really know anything about him.
+8.          Da&apos;eef or weak: This means that there is nobody speaking positively on his behalf, and some of the scholars have spoken against him.
+9.          Majhool or unknown: This is not the same as majhool al-haal. The majhool al-haal had more than one student narrate from him; the majhool is narrated from by only one individual, and we know nothing of him or his honesty.
+10.     Matruk or abandoned: This rank covers a few categories of narrators. This includes the one who committed many mistakes, the one who has detailed criticisms against him from the scholars, or one who did not meet the requirement for moral character. Also included here are the ones upon major sins (the fasiq) and the one who is unintelligent.
+11.     Muttaham bi&apos;l kadhib: The one who was accused of lying and/or making up fake ahadith. The ahadith he narrates are considered batil.
+12.     Kadhdhaab, waddaa&apos;: This is the one who is actually called a liar or fabricator. Being labeled with such a title is not the same as merely being accused of committing those acts in some instances. The ahadith he narrates are considered</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#residence">
+        <owl:equivalentProperty>http://schema.org/homeLocation</owl:equivalentProperty>
+        <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A place for a person&apos;s residence</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought">
+        <terms:description xml:lang="en">A madhhab is a school of thought within fiqh (Islamic jurisprudence)</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#sequenceNo">
+        <terms:description xml:lang="en">Sequence number of Hadith book, hadith chapter, hadith.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#teknonym">
+        <skos:altLabel xml:lang="en">Kunyah</skos:altLabel>
+        <terms:description xml:lang="en">the name of an adult derived from their oldest child.</terms:description>
+        <rdfs:seeAlso xml:lang="ar">https://en.wikipedia.org/wiki/Kunya_(Arabic)</rdfs:seeAlso>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#title">
+        <terms:description xml:lang="en">honorific title</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#transferredTo">
+        <terms:description xml:lang="en">A narrator tells the hadith to another narrator</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.lodislamica.me/ontology/hadithVoc#verseNo">
+        <terms:description xml:lang="en">Verse Number from the Qur&apos;an</terms:description>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
