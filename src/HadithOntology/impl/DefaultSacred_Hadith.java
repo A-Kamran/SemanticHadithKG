@@ -221,29 +221,29 @@ public class DefaultSacred_Hadith extends WrappedIndividualImpl implements Sacre
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
      */
      
-    public Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence() {
+    public Collection<? extends WrappedIndividual> getHasRootNarratorSegment() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                                WrappedIndividualImpl.class);
     }
 
-    public boolean hasHasRootNarratorOccurrence() {
-	   return !getHasRootNarratorOccurrence().isEmpty();
+    public boolean hasHasRootNarratorSegment() {
+	   return !getHasRootNarratorSegment().isEmpty();
     }
 
-    public void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence) {
+    public void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                       newHasRootNarratorOccurrence);
+                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                       newHasRootNarratorSegment);
     }
 
-    public void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence) {
+    public void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                          oldHasRootNarratorOccurrence);
+                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                          oldHasRootNarratorSegment);
     }
 
 
@@ -1247,6 +1247,10 @@ public class DefaultSacred_Hadith extends WrappedIndividualImpl implements Sacre
     public void removeOwl_sameAs(Object oldOwl_sameAs) {
 		getDelegate().removePropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_OWL_SAMEAS, oldOwl_sameAs);
     }
+
+
+
+
 
 
 }

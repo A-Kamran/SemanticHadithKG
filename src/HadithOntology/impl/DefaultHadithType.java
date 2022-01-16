@@ -145,7 +145,7 @@ public class DefaultHadithType extends WrappedIndividualImpl implements HadithTy
      
     public Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                                WrappedIndividualImpl.class);
     }
 
@@ -155,13 +155,13 @@ public class DefaultHadithType extends WrappedIndividualImpl implements HadithTy
 
     public void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                        newHasRootNarratorOccurrence);
     }
 
     public void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                           oldHasRootNarratorOccurrence);
     }
 

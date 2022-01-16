@@ -56,7 +56,58 @@ public class DefaultHadithNarrator extends WrappedIndividualImpl implements Hadi
                                           Vocabulary.OBJECT_PROPERTY_HASHADITHTYPE,
                                           oldHasHadithType);
     }
+    /* ***************************************************
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#transferredTo
+     */
+     
+    public Collection<? extends HadithNarrator> getTransferredTo() {
+        return getDelegate().getPropertyValues(getOwlIndividual(),
+                                               Vocabulary.OBJECT_PROPERTY_TRANSFERREDTO,
+                                               DefaultHadithNarrator.class);
+    }
 
+    public boolean hasTransferredTo() {
+	   return !getTransferredTo().isEmpty();
+    }
+
+    public void addTransferredTo(HadithNarrator newTransferredTo) {
+        getDelegate().addPropertyValue(getOwlIndividual(),
+                                       Vocabulary.OBJECT_PROPERTY_TRANSFERREDTO,
+                                       newTransferredTo);
+    }
+
+    public void removeTransferredTo(HadithNarrator oldTransferredTo) {
+        getDelegate().removePropertyValue(getOwlIndividual(),
+                                          Vocabulary.OBJECT_PROPERTY_TRANSFERREDTO,
+                                          oldTransferredTo);
+    }
+
+
+    /* ***************************************************
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#heardFrom
+     */
+     
+    public Collection<? extends HadithNarrator> getHeardFrom() {
+        return getDelegate().getPropertyValues(getOwlIndividual(),
+                                               Vocabulary.OBJECT_PROPERTY_HEARDFROM,
+                                               DefaultHadithNarrator.class);
+    }
+
+    public boolean hasHeardFrom() {
+	   return !getHeardFrom().isEmpty();
+    }
+
+    public void addHeardFrom(HadithNarrator newHeardFrom) {
+        getDelegate().addPropertyValue(getOwlIndividual(),
+                                       Vocabulary.OBJECT_PROPERTY_HEARDFROM,
+                                       newHeardFrom);
+    }
+
+    public void removeHeardFrom(HadithNarrator oldHeardFrom) {
+        getDelegate().removePropertyValue(getOwlIndividual(),
+                                          Vocabulary.OBJECT_PROPERTY_HEARDFROM,
+                                          oldHeardFrom);
+    }
 
     /* ***************************************************
      * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarrator
@@ -140,29 +191,29 @@ public class DefaultHadithNarrator extends WrappedIndividualImpl implements Hadi
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorChainSegment
      */
      
-    public Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence() {
+    public Collection<? extends WrappedIndividual> getHasRootNarratorSegment() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                                WrappedIndividualImpl.class);
     }
 
-    public boolean hasHasRootNarratorOccurrence() {
-	   return !getHasRootNarratorOccurrence().isEmpty();
+    public boolean hasHasRootNarratorSegment() {
+	   return !getHasRootNarratorSegment().isEmpty();
     }
 
-    public void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence) {
+    public void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                       newHasRootNarratorOccurrence);
+                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                       newHasRootNarratorSegment);
     }
 
-    public void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence) {
+    public void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                          oldHasRootNarratorOccurrence);
+                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                          oldHasRootNarratorSegment);
     }
 
 
@@ -224,23 +275,23 @@ public class DefaultHadithNarrator extends WrappedIndividualImpl implements Hadi
      * Object Property http://www.lodislamica.me/ontology/hadithVoc#narrated
      */
      
-    public Collection<? extends NarratorOccurrence> getNarrated() {
+    public Collection<? extends NarratorChainSegment> getNarrated() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
                                                Vocabulary.OBJECT_PROPERTY_NARRATED,
-                                               DefaultNarratorOccurrence.class);
+                                               NarratorChainSegment.class);
     }
 
     public boolean hasNarrated() {
 	   return !getNarrated().isEmpty();
     }
 
-    public void addNarrated(NarratorOccurrence newNarrated) {
+    public void addNarrated(NarratorChainSegment newNarrated) {
         getDelegate().addPropertyValue(getOwlIndividual(),
                                        Vocabulary.OBJECT_PROPERTY_NARRATED,
                                        newNarrated);
     }
 
-    public void removeNarrated(NarratorOccurrence oldNarrated) {
+    public void removeNarrated(NarratorChainSegment oldNarrated) {
         getDelegate().removePropertyValue(getOwlIndividual(),
                                           Vocabulary.OBJECT_PROPERTY_NARRATED,
                                           oldNarrated);
@@ -1160,6 +1211,9 @@ public class DefaultHadithNarrator extends WrappedIndividualImpl implements Hadi
     public void removeOwl_sameAs(Object oldOwl_sameAs) {
 		getDelegate().removePropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_OWL_SAMEAS, oldOwl_sameAs);
     }
+
+
+
 
 
 }

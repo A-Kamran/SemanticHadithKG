@@ -140,29 +140,29 @@ public class DefaultHadithText extends WrappedIndividualImpl implements HadithTe
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
      */
      
-    public Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence() {
+    public Collection<? extends WrappedIndividual> getHasRootNarratorSegment() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                                WrappedIndividualImpl.class);
     }
 
-    public boolean hasHasRootNarratorOccurrence() {
-	   return !getHasRootNarratorOccurrence().isEmpty();
+    public boolean hasHasRootNarratorSegment() {
+	   return !getHasRootNarratorSegment().isEmpty();
     }
 
-    public void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence) {
+    public void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                       newHasRootNarratorOccurrence);
+                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                       newHasRootNarratorSegment);
     }
 
-    public void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence) {
+    public void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                          oldHasRootNarratorOccurrence);
+                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                          oldHasRootNarratorSegment);
     }
 
 
@@ -760,6 +760,25 @@ public class DefaultHadithText extends WrappedIndividualImpl implements HadithTe
 
     public void removeHadithType(Object oldHadithType) {
 		getDelegate().removePropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_HADITHTYPE, oldHadithType);
+    }
+    /* ***************************************************
+     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithText
+     */
+     
+    public Collection<? extends Object> getHadithText() {
+		return getDelegate().getPropertyValues(getOwlIndividual(), Vocabulary.DATA_PROPERTY_HADITHTEXT, Object.class);
+    }
+
+    public boolean hasHadithText() {
+		return !getHadithText().isEmpty();
+    }
+
+    public void addHadithText(Object newHadithText) {
+	    getDelegate().addPropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_HADITHTEXT, newHadithText);
+    }
+
+    public void removeHadithText(Object oldHadithText) {
+		getDelegate().removePropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_HADITHTEXT, oldHadithText);
     }
 
 

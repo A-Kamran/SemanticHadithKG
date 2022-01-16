@@ -86,29 +86,29 @@ public class DefaultNarratorChain extends WrappedIndividualImpl implements Narra
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChainSegment
      */
      
-    public Collection<? extends NarratorOccurrence> getHasNarratorOccurence() {
+    public Collection<? extends NarratorChainSegment> getHasNarratorChainSegment() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASNARRATOROCCURENCE,
-                                               DefaultNarratorOccurrence.class);
+                                               Vocabulary.OBJECT_PROPERTY_HASNARRATORSEGMENT,
+                                               NarratorChainSegment.class);
     }
 
-    public boolean hasHasNarratorOccurence() {
-	   return !getHasNarratorOccurence().isEmpty();
+    public boolean hasHasNarratorChainSegment() {
+	   return !getHasNarratorChainSegment().isEmpty();
     }
 
-    public void addHasNarratorOccurence(NarratorOccurrence newHasNarratorOccurence) {
+    public void addHasNarratorChainSegment(NarratorChainSegment newHasNarratorChainSegment) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASNARRATOROCCURENCE,
-                                       newHasNarratorOccurence);
+                                       Vocabulary.OBJECT_PROPERTY_HASNARRATORSEGMENT,
+                                       newHasNarratorChainSegment);
     }
 
-    public void removeHasNarratorOccurence(NarratorOccurrence oldHasNarratorOccurence) {
+    public void removeHasNarratorChainSegment(NarratorChainSegment oldHasNarratorChainSegment) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASNARRATOROCCURENCE,
-                                          oldHasNarratorOccurence);
+                                          Vocabulary.OBJECT_PROPERTY_HASNARRATORSEGMENT,
+                                          oldHasNarratorChainSegment);
     }
 
 
@@ -167,29 +167,29 @@ public class DefaultNarratorChain extends WrappedIndividualImpl implements Narra
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
      */
      
-    public Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence() {
+    public Collection<? extends WrappedIndividual> getHasRootNarratorSegment() {
         return getDelegate().getPropertyValues(getOwlIndividual(),
-                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
+                                               Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
                                                WrappedIndividualImpl.class);
     }
 
-    public boolean hasHasRootNarratorOccurrence() {
-	   return !getHasRootNarratorOccurrence().isEmpty();
+    public boolean hasHasRootNarratorSegment() {
+	   return !getHasRootNarratorSegment().isEmpty();
     }
 
-    public void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence) {
+    public void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment) {
         getDelegate().addPropertyValue(getOwlIndividual(),
-                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                       newHasRootNarratorOccurrence);
+                                       Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                       newHasRootNarratorSegment);
     }
 
-    public void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence) {
+    public void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment) {
         getDelegate().removePropertyValue(getOwlIndividual(),
-                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE,
-                                          oldHasRootNarratorOccurrence);
+                                          Vocabulary.OBJECT_PROPERTY_HASROOTNARRATORSEGMENT,
+                                          oldHasRootNarratorSegment);
     }
 
 
@@ -1166,6 +1166,9 @@ public class DefaultNarratorChain extends WrappedIndividualImpl implements Narra
     public void removeOwl_sameAs(Object oldOwl_sameAs) {
 		getDelegate().removePropertyValue(getOwlIndividual(), Vocabulary.DATA_PROPERTY_OWL_SAMEAS, oldOwl_sameAs);
     }
+
+
+
 
 
 }
