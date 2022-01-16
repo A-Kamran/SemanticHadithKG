@@ -42,7 +42,17 @@ public class Vocabulary {
      * 
      */
     public static final OWLClass CLASS_COMPANION = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Companion"));
+    /* ***************************************************
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#precedes
+     */
+     
+    /**
+     * A constant to give access to the Manchester OWL API representation of the object property PRECEDES.<p>
+     * 
+     */
+    public static final OWLObjectProperty OBJECT_PROPERTY_PRECEDES = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#precedes"));
 
+   
     /* ***************************************************
      * Class http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith
      */
@@ -162,6 +172,15 @@ public class Vocabulary {
      * 
      */
     public static final OWLClass CLASS_PERSON = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Person"));
+    /* ***************************************************
+     * Class http://schema.org/Person
+     */
+
+    /**
+     * A constant to give access to the Manchester OWL api representation of the class SCHEMA:PERSON.<p>
+     * 
+     */
+    public static final OWLClass CLASS_SCHEMA_PERSON = factory.getOWLClass(IRI.create("http://schema.org/Person"));
 
     /* ***************************************************
      * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarrator
@@ -304,7 +323,7 @@ public class Vocabulary {
     public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain
+      * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain
      */
      
     /**
@@ -318,12 +337,24 @@ public class Vocabulary {
      */
      
     /**
-     * A constant to give access to the Manchester OWL API representation of the object property HASNARRATOROCCURENCE.<p>
+     * A constant to give access to the Manchester OWL API representation of the object property HASNARRATORSEGMENT.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATOROCCURENCE = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarratorSegment"));
+
 
     /* ***************************************************
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
+     */
+     
+    /**
+     * A constant to give access to the Manchester OWL API representation of the object property HASROOTNARRATORSEGMENT.<p>
+     * 
+     */
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment"));
+
+ 
+   /* ***************************************************
      * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasPart
      */
      
@@ -343,17 +374,9 @@ public class Vocabulary {
      */
     public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator"));
 
-    /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
-     */
-     
-    /**
-     * A constant to give access to the Manchester OWL API representation of the object property HASROOTNARRATOROCCURRENCE.<p>
-     * 
-     */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATOROCCURRENCE = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence"));
 
-    /* ***************************************************
+     
+   /* ***************************************************
      * Object Property http://www.lodislamica.me/ontology/hadithVoc#heardFrom
      */
      
@@ -473,6 +496,15 @@ public class Vocabulary {
      */
     public static final OWLObjectProperty OBJECT_PROPERTY_TRANSFERREDTO = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#transferredTo"));
 
+    /* ***************************************************
+     * Object Property http://www.lodislamica.me/ontology/hadithVoc#follows
+     */
+     
+    /**
+     * A constant to give access to the Manchester OWL API representation of the object property FOLLOWS.<p>
+     * 
+     */
+    public static final OWLObjectProperty OBJECT_PROPERTY_FOLLOWS = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#follows"));
 
     /* ***************************************************
      * Data Property http://www.lodislamica.me/ontology/hadithVoc#age
@@ -894,5 +926,32 @@ public class Vocabulary {
        public static final OWLObjectProperty OBJECT_PROPERTY_RDF_SEEALSO = factory.getOWLObjectProperty(IRI.create("http://www.w3.org/1999/02/22-rdf-syntax-ns#seeAlso"));
 
 
+       /* ***************************************************
+        * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment
+        */
+
+       /**
+        * A constant to give access to the Manchester OWL api representation of the class NARRATORCHAINSEGMENT.<p>
+        * 
+        */
+       public static final OWLClass CLASS_NARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment"));
+       /* ***************************************************
+        * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment
+        */
+
+       /**
+        * A constant to give access to the Manchester OWL api representation of the class ROOTNARRATORCHAINSEGMENT.<p>
+        * 
+        */
+       public static final OWLClass CLASS_ROOTNARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment"));
+       /* ***************************************************
+        * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithText
+        */
+        
+       /**
+        * A constant to give access to the Manchester OWL API representation of the data property HADITHTEXT.<p>
+        * 
+        */
+       public static final OWLDataProperty DATA_PROPERTY_HADITHTEXT = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithText"));
 
 }

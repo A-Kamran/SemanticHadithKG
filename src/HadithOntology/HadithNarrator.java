@@ -50,6 +50,37 @@ public interface HadithNarrator extends Believer {
      */
     void removeHasHadithType(HadithType oldHasHadithType);
 
+    /* ***************************************************
+     * Property http://www.lodislamica.me/ontology/hadithVoc#transferredTo
+     */
+     
+    /**
+     * Gets all property values for the transferredTo property.<p>
+     * 
+     * @returns a collection of values for the transferredTo property.
+     */
+    Collection<? extends HadithNarrator> getTransferredTo();
+
+    /**
+     * Checks if the class has a transferredTo property value.<p>
+     * 
+     * @return true if there is a transferredTo property value.
+     */
+    boolean hasTransferredTo();
+
+    /**
+     * Adds a transferredTo property value.<p>
+     * 
+     * @param newTransferredTo the transferredTo property value to be added
+     */
+    void addTransferredTo(HadithNarrator newTransferredTo);
+
+    /**
+     * Removes a transferredTo property value.<p>
+     * 
+     * @param oldTransferredTo the transferredTo property value to be removed.
+     */
+    void removeTransferredTo(HadithNarrator oldTransferredTo);
 
     /* ***************************************************
      * Property http://www.lodislamica.me/ontology/hadithVoc#hasNarrator
@@ -149,38 +180,69 @@ public interface HadithNarrator extends Believer {
      */
     void removeHasRootNarrator(WrappedIndividual oldHasRootNarrator);
 
-
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Property http://www.lodislamica.me/ontology/hadithVoc#heardFrom
      */
      
     /**
-     * Gets all property values for the hasRootNarratorOccurrence property.<p>
+     * Gets all property values for the heardFrom property.<p>
      * 
-     * @returns a collection of values for the hasRootNarratorOccurrence property.
+     * @returns a collection of values for the heardFrom property.
      */
-    Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence();
+    Collection<? extends HadithNarrator> getHeardFrom();
 
     /**
-     * Checks if the class has a hasRootNarratorOccurrence property value.<p>
+     * Checks if the class has a heardFrom property value.<p>
      * 
-     * @return true if there is a hasRootNarratorOccurrence property value.
+     * @return true if there is a heardFrom property value.
      */
-    boolean hasHasRootNarratorOccurrence();
+    boolean hasHeardFrom();
 
     /**
-     * Adds a hasRootNarratorOccurrence property value.<p>
+     * Adds a heardFrom property value.<p>
      * 
-     * @param newHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be added
+     * @param newHeardFrom the heardFrom property value to be added
      */
-    void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence);
+    void addHeardFrom(HadithNarrator newHeardFrom);
 
     /**
-     * Removes a hasRootNarratorOccurrence property value.<p>
+     * Removes a heardFrom property value.<p>
      * 
-     * @param oldHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be removed.
+     * @param oldHeardFrom the heardFrom property value to be removed.
      */
-    void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence);
+    void removeHeardFrom(HadithNarrator oldHeardFrom);
+
+    /* ***************************************************
+     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
+     */
+     
+    /**
+     * Gets all property values for the hasRootNarratorSegment property.<p>
+     * 
+     * @returns a collection of values for the hasRootNarratorSegment property.
+     */
+    Collection<? extends WrappedIndividual> getHasRootNarratorSegment();
+
+    /**
+     * Checks if the class has a hasRootNarratorSegment property value.<p>
+     * 
+     * @return true if there is a hasRootNarratorSegment property value.
+     */
+    boolean hasHasRootNarratorSegment();
+
+    /**
+     * Adds a hasRootNarratorSegment property value.<p>
+     * 
+     * @param newHasRootNarratorSegment the hasRootNarratorSegment property value to be added
+     */
+    void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment);
+
+    /**
+     * Removes a hasRootNarratorSegment property value.<p>
+     * 
+     * @param oldHasRootNarratorSegment the hasRootNarratorSegment property value to be removed.
+     */
+    void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment);
 
 
     /* ***************************************************
@@ -258,7 +320,7 @@ public interface HadithNarrator extends Believer {
      * 
      * @returns a collection of values for the narrated property.
      */
-    Collection<? extends NarratorOccurrence> getNarrated();
+    Collection<? extends NarratorChainSegment> getNarrated();
 
     /**
      * Checks if the class has a narrated property value.<p>
@@ -272,14 +334,14 @@ public interface HadithNarrator extends Believer {
      * 
      * @param newNarrated the narrated property value to be added
      */
-    void addNarrated(NarratorOccurrence newNarrated);
+    void addNarrated(NarratorChainSegment newNarrated);
 
     /**
      * Removes a narrated property value.<p>
      * 
      * @param oldNarrated the narrated property value to be removed.
      */
-    void removeNarrated(NarratorOccurrence oldNarrated);
+    void removeNarrated(NarratorChainSegment oldNarrated);
 
 
     /* ***************************************************

@@ -251,36 +251,36 @@ public interface Hadith extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
      */
      
     /**
-     * Gets all property values for the hasRootNarratorOccurrence property.<p>
+     * Gets all property values for the hasRootNarratorSegment property.<p>
      * 
-     * @returns a collection of values for the hasRootNarratorOccurrence property.
+     * @returns a collection of values for the hasRootNarratorSegment property.
      */
-    Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence();
+    Collection<? extends WrappedIndividual> getHasRootNarratorSegment();
 
     /**
-     * Checks if the class has a hasRootNarratorOccurrence property value.<p>
-     * 
-     * @return true if there is a hasRootNarratorOccurrence property value.
+     * Checks if the class has a hasRootNarratorSegment property value.<p>
+     *
+     * @return true if there is a hasRootNarratorSegment property value.
      */
-    boolean hasHasRootNarratorOccurrence();
+    boolean hasHasRootNarratorSegment();
 
     /**
-     * Adds a hasRootNarratorOccurrence property value.<p>
+     * Adds a hasRootNarratorSegment property value.<p>
      * 
-     * @param newHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be added
+     * @param newHasRootNarratorSegment the hasRootNarratorSegment property value to be added
      */
-    void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence);
+    void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment);
 
     /**
-     * Removes a hasRootNarratorOccurrence property value.<p>
+     * Removes a hasRootNarratorSegment property value.<p>
      * 
-     * @param oldHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be removed.
+     * @param oldHasRootNarratorSegment the hasRootNarratorSegment property value to be removed.
      */
-    void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence);
+    void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment);
 
 
     /* ***************************************************

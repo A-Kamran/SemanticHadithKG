@@ -74,6 +74,35 @@ public class HadithFactory implements CodeGenerationFactory {
     }
 
     /* ***************************************************
+     * Class http://www.lodislamica.me/ontology/hadithVoc#Person
+     */
+
+    {
+        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Person", Person.class, DefaultPerson.class);
+    }
+
+    /**
+     * Creates an instance of type Person.  Modifies the underlying ontology.
+     */
+    public Person createPerson(String name) {
+		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_PERSON, DefaultPerson.class);
+    }
+
+    /**
+     * Gets an instance of type Person with the given name.  Does not modify the underlying ontology.
+     * @param name the name of the OWL named individual to be retrieved.
+     */
+    public Person getPerson(String name) {
+		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_PERSON, DefaultPerson.class);
+    }
+
+    /**
+     * Gets all instances of Person from the ontology.
+     */
+    public Collection<? extends Person> getAllPersonInstances() {
+		return delegate.getWrappedIndividuals(Vocabulary.CLASS_PERSON, DefaultPerson.class);
+    }
+    /* ***************************************************
      * Class http://www.lodislamica.me/ontology/hadithVoc#Believer
      */
 
@@ -446,64 +475,33 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence
+     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence", NarratorOccurrence.class, DefaultNarratorOccurrence.class);
+        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment", NarratorChainSegment.class, DefaultNarratorChainSegment.class);
     }
 
     /**
-     * Creates an instance of type NarratorOccurrence.  Modifies the underlying ontology.
+     * Creates an instance of type NarratorChainSegment.  Modifies the underlying ontology.
      */
-    public NarratorOccurrence createNarratorOccurrence(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_NARRATOROCCURRENCE, DefaultNarratorOccurrence.class);
+    public NarratorChainSegment createNarratorChainSegment(String name) {
+		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_NARRATORCHAINSEGMENT, DefaultNarratorChainSegment.class);
     }
 
     /**
-     * Gets an instance of type NarratorOccurrence with the given name.  Does not modify the underlying ontology.
+     * Gets an instance of type NarratorChainSegment with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.
      */
-    public NarratorOccurrence getNarratorOccurrence(String name) {
-		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_NARRATOROCCURRENCE, DefaultNarratorOccurrence.class);
+    public NarratorChainSegment getNarratorChainSegment(String name) {
+		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_NARRATORCHAINSEGMENT, DefaultNarratorChainSegment.class);
     }
 
     /**
-     * Gets all instances of NarratorOccurrence from the ontology.
+     * Gets all instances of NarratorChainSegment from the ontology.
      */
-    public Collection<? extends NarratorOccurrence> getAllNarratorOccurrenceInstances() {
-		return delegate.getWrappedIndividuals(Vocabulary.CLASS_NARRATOROCCURRENCE, DefaultNarratorOccurrence.class);
-    }
-
-
-    /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Person
-     */
-
-    {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Person", Person.class, DefaultPerson.class);
-    }
-
-    /**
-     * Creates an instance of type Person.  Modifies the underlying ontology.
-     */
-    public Person createPerson(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_PERSON, DefaultPerson.class);
-    }
-
-    /**
-     * Gets an instance of type Person with the given name.  Does not modify the underlying ontology.
-     * @param name the name of the OWL named individual to be retrieved.
-     */
-    public Person getPerson(String name) {
-		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_PERSON, DefaultPerson.class);
-    }
-
-    /**
-     * Gets all instances of Person from the ontology.
-     */
-    public Collection<? extends Person> getAllPersonInstances() {
-		return delegate.getWrappedIndividuals(Vocabulary.CLASS_PERSON, DefaultPerson.class);
+    public Collection<? extends NarratorChainSegment> getAllNarratorChainSegmentInstances() {
+		return delegate.getWrappedIndividuals(Vocabulary.CLASS_NARRATORCHAINSEGMENT, DefaultNarratorChainSegment.class);
     }
 
 
@@ -539,34 +537,36 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence
+     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence", RootNarratorOccurrence.class, DefaultRootNarratorOccurrence.class);
+        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment", RootNarratorChainSegment.class, DefaultRootNarratorChainSegment.class);
     }
 
     /**
-     * Creates an instance of type RootNarratorOccurrence.  Modifies the underlying ontology.
+     * Creates an instance of type RootNarratorChainSegment.  Modifies the underlying ontology.
      */
-    public RootNarratorOccurrence createRootNarratorOccurrence(String name) {
-		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_ROOTNARRATOROCCURRENCE, DefaultRootNarratorOccurrence.class);
+    public RootNarratorChainSegment createRootNarratorChainSegment(String name) {
+		return delegate.createWrappedIndividual(name, Vocabulary.CLASS_ROOTNARRATORCHAINSEGMENT, DefaultRootNarratorChainSegment.class);
     }
 
     /**
-     * Gets an instance of type RootNarratorOccurrence with the given name.  Does not modify the underlying ontology.
+     * Gets an instance of type RootNarratorChainSegment with the given name.  Does not modify the underlying ontology.
      * @param name the name of the OWL named individual to be retrieved.
      */
-    public RootNarratorOccurrence getRootNarratorOccurrence(String name) {
-		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_ROOTNARRATOROCCURRENCE, DefaultRootNarratorOccurrence.class);
+    public RootNarratorChainSegment getRootNarratorChainSegment(String name) {
+		return delegate.getWrappedIndividual(name, Vocabulary.CLASS_ROOTNARRATORCHAINSEGMENT, DefaultRootNarratorChainSegment.class);
     }
 
     /**
-     * Gets all instances of RootNarratorOccurrence from the ontology.
+     * Gets all instances of RootNarratorChainSegment from the ontology.
      */
-    public Collection<? extends RootNarratorOccurrence> getAllRootNarratorOccurrenceInstances() {
-		return delegate.getWrappedIndividuals(Vocabulary.CLASS_ROOTNARRATOROCCURRENCE, DefaultRootNarratorOccurrence.class);
+    public Collection<? extends RootNarratorChainSegment> getAllRootNarratorChainSegmentInstances() {
+		return delegate.getWrappedIndividuals(Vocabulary.CLASS_ROOTNARRATORCHAINSEGMENT, DefaultRootNarratorChainSegment.class);
     }
+
+
 
 
     /* ***************************************************

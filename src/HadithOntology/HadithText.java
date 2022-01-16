@@ -151,36 +151,36 @@ public interface HadithText extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
      */
      
     /**
-     * Gets all property values for the hasRootNarratorOccurrence property.<p>
+     * Gets all property values for the hasRootNarratorSegment property.<p>
      * 
-     * @returns a collection of values for the hasRootNarratorOccurrence property.
+     * @returns a collection of values for the hasRootNarratorSegment property.
      */
-    Collection<? extends WrappedIndividual> getHasRootNarratorOccurrence();
+    Collection<? extends WrappedIndividual> getHasRootNarratorSegment();
 
     /**
-     * Checks if the class has a hasRootNarratorOccurrence property value.<p>
+     * Checks if the class has a hasRootNarratorSegment property value.<p>
      * 
-     * @return true if there is a hasRootNarratorOccurrence property value.
+     * @return true if there is a hasRootNarratorSegment property value.
      */
-    boolean hasHasRootNarratorOccurrence();
+    boolean hasHasRootNarratorSegment();
 
     /**
-     * Adds a hasRootNarratorOccurrence property value.<p>
+     * Adds a hasRootNarratorSegment property value.<p>
      * 
-     * @param newHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be added
+     * @param newHasRootNarratorSegment the hasRootNarratorSegment property value to be added
      */
-    void addHasRootNarratorOccurrence(WrappedIndividual newHasRootNarratorOccurrence);
+    void addHasRootNarratorSegment(WrappedIndividual newHasRootNarratorSegment);
 
     /**
-     * Removes a hasRootNarratorOccurrence property value.<p>
+     * Removes a hasRootNarratorSegment property value.<p>
      * 
-     * @param oldHasRootNarratorOccurrence the hasRootNarratorOccurrence property value to be removed.
+     * @param oldHasRootNarratorSegment the hasRootNarratorSegment property value to be removed.
      */
-    void removeHasRootNarratorOccurrence(WrappedIndividual oldHasRootNarratorOccurrence);
+    void removeHasRootNarratorSegment(WrappedIndividual oldHasRootNarratorSegment);
 
 
     /* ***************************************************
@@ -855,6 +855,39 @@ public interface HadithText extends WrappedIndividual {
      * @param oldFullHadithText the fullHadithText property value to be removed.
      */
     void removeFullHadithText(Object oldFullHadithText);
+
+    /* ***************************************************
+     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithText
+     */
+     
+    /**
+     * Gets all property values for the hadithText property.<p>
+     * 
+     * @returns a collection of values for the hadithText property.
+     */
+    Collection<? extends Object> getHadithText();
+
+    /**
+     * Checks if the class has a hadithText property value.<p>
+     * 
+     * @return true if there is a hadithText property value.
+     */
+    boolean hasHadithText();
+
+    /**
+     * Adds a hadithText property value.<p>
+     * 
+     * @param newHadithText the hadithText property value to be added
+     */
+    void addHadithText(Object newHadithText);
+
+    /**
+     * Removes a hadithText property value.<p>
+     * 
+     * @param oldHadithText the hadithText property value to be removed.
+     */
+    void removeHadithText(Object oldHadithText);
+
 
 
 
