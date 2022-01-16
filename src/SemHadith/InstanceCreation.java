@@ -22,11 +22,12 @@ import java.util.regex.Pattern;
 import org.apache.commons.codec.binary.StringUtils;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.OWLXMLOntologyFormat;
+//import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
+
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.SimpleIRIMapper;
 
 import dataAccess.*;
-//import HadithRDFconvertor.*;
 import HadithOntology.*;
 
 /**
@@ -115,14 +116,18 @@ public class InstanceCreation
 	{
 		factoryOnt=hadithFactory.getOwlOntology();
 		File fileformated = new File(OutputFile);
+		
 		//Get the Ontology format
 		OWLOntologyFormat format = manager.getOntologyFormat(factoryOnt);
-		OWLXMLOntologyFormat owlxmlFormat = new OWLXMLOntologyFormat();
+		
+//		RDFXMLOntologyFormat rdfxmlFormat = new RDFXMLOntologyFormat();
+		OWLXMLOntologyFormat rdfxmlFormat = new OWLXMLOntologyFormat();
+
 		if (format.isPrefixOWLOntologyFormat()) { 
-			owlxmlFormat.copyPrefixesFrom(format.asPrefixOWLOntologyFormat()); 
+			rdfxmlFormat.copyPrefixesFrom(format.asPrefixOWLOntologyFormat()); 
 		}
 		try {
-			manager.saveOntology(factoryOnt, owlxmlFormat, IRI.create(fileformated.toURI()));
+			manager.saveOntology(factoryOnt, rdfxmlFormat, IRI.create(fileformated.toURI()));
 		} catch (OWLOntologyStorageException e) {
 			e.getMessage();
 			e.printStackTrace();
@@ -306,6 +311,8 @@ public class InstanceCreation
 				
 				int chapKey = cd.getChapKey();
 				String chapKeyPadded = padding(chapKey, 4);
+				String bookPadded = padding(cd.getBookId(),2);
+
 				String instanceName = collectionPrefix+"-"+"CH"+chapKeyPadded;
 				// Create Chapter Instance and add its data properties
 				chapterInstance = hadithFactory.createHadithChapter(instanceName);
@@ -316,7 +323,7 @@ public class InstanceCreation
 				chapterInstance.addName(cd.getChapLabelEng()+"@en");
 				
 				// Object Type Properties
-				String bookName =collectionPrefix +"-BK"+padding(cd.getBookId(),2);
+				String bookName =collectionPrefix +"-BK"+bookPadded;
 				bookInstance = hadithFactory.getHadithBook(bookName);
 				chapterInstance.addIsPartOfBook(bookInstance);
 				System.out.println(chapterInstance);
@@ -353,6 +360,7 @@ public class InstanceCreation
 		// ******************* Create Hadith Instances *****************
 		//private static Hadith hadithInstance;
 		static int nullInMapping = 0;
+
 		public static void HadithInstance(String hadithTable){
 			createConnection("hadithFH");
 			int row = rowCount(hadithTable);
@@ -377,10 +385,10 @@ public class InstanceCreation
 			
 			String collectionPrefix = CollectionName(collection_id);
 			HadithDataAccess hda = new HadithDataAccess();
-			//closeConnection();
+			closeConnection();
 
 			for(int i=1; i<=row; i++){
-			//	createConnection("hadithFH");
+				createConnection("hadithFH");
 				HadithData hd = hda.setHadithAtt(i, conn, st);
 				if(hd.getBookId()!=null)
 				{
@@ -418,26 +426,27 @@ public class InstanceCreation
 					String ChapterName = collectionPrefix+"-CH"+padding(hd.getChapterId(),4);
 					chapterInstance = hadithFactory.getHadithChapter(ChapterName);
 					hadithInstance.addIsPartOfChapter(chapterInstance);
-				//	closeConnection();
+					closeConnection();
 					System.out.println("refNo:"+hd.getHadithRefNo()+" vol: "+hd.getEngVol()+" book: "+hd.getEngBook()+" hadith: "+hd.getEngNumber());
-//					if(hd.getEngBook()!=null)
-//					{
-//						String narratorEng = getSunnahLinks(hd.getEngVol(),hd.getEngBook(), hd.getEngNumber(), hadithInstance);
-//
-//						if(narratorEng!=null)
-//						{
-//							/*hadithInstance.addNarratedBy(hadithFactory.createRootNarrrator("RN"+hadithKeyPadded));
-//							hadithFactory.getRootNarrrator("RN"+hadithKeyPadded).addName(narratorEng);
-//							hadithFactory.getRootNarrrator("RN"+hadithKeyPadded).addNarrated(hadithInstance);*/
-//						} else nullInMapping++;
-//					}
-					//System.out.println(instanceName);
+					if(hd.getEngBook()!=null)
+					{
+						String narratorEng = getSunnahLinks(hd.getEngVol(),hd.getEngBook(), hd.getEngNumber(),instanceName, hadithInstance);
+
+						if(narratorEng!=null)
+						{
+							hadithInstance.addHasRootNarrator(hadithFactory.createRootNarrator("RN"+hadithKeyPadded));
+							hadithFactory.getRootNarrator("RN"+hadithKeyPadded).addName(narratorEng);
+						//	hadithFactory.getRootNarrator("RN"+hadithKeyPadded).addNarrated(hadithInstance);
+						} else nullInMapping++;
+					}
+					System.out.println(instanceName);
 				}
 			}
 			//System.out.println("missing narrators Record = "+ numberOfMissingRaqm);
 			//System.out.println("shown null in mapping = "+ nullInMapping);
 			closeConnection();
 		}
+	
 		
 		//********  Helping Function
 		
@@ -560,18 +569,28 @@ public class InstanceCreation
 		}
 
 		
-		public static String getSunnahLinks(int volID, int bookId, int number, Hadith hadithInstance) {
+		public static String getSunnahLinks(int volID, int bookId, int number, String instanceName, Hadith hadithInstance) {
 			createConnection("sunnah");
 			SunnahdotcomAccess sda = new SunnahdotcomAccess();
 			Sunnahdotcom sd = sda.setAtt(volID, bookId, number, conn, st);
-			if(sd.getLink()!=null){
-			hadithInstance.addOwl_sameAs(sd.getLink());
+			if(sd.getLink()!=null)
+			{
+				hadithInstance.addOwl_sameAs(sd.getLink());
 			}
 			// else System.out.println("no data returned");
 			if(sd.getstartVerse()!=null)
 			{
-			verseInstance(sd.getstartVerse(), sd.getEndVerse(), sd.getChapterIndex(), hadithInstance);	
+				verseInstance(sd.getstartVerse(), sd.getEndVerse(), sd.getChapterIndex(), hadithInstance);	
 			}
+			if(sd.gettextEng()!=null)
+			{
+				String matanInstanceName = instanceName +"-Text";
+				HadithText matanInstance = hadithFactory.createHadithText(matanInstanceName);
+				matanInstance.addIsPartOfHadith(hadithInstance);
+				matanInstance.addHadithText(sd.gettextEng()+"@en");
+				hadithInstance.addHasHadithText(matanInstance);
+			}
+			
 			closeConnection();
 			return sd.getNarratorEnglish();
 		}
@@ -633,7 +652,7 @@ public class InstanceCreation
 				if(hd.getBookId()!=null && hd.getMukarrarat()!="0"){
 
 					//Instance Name functionality
-					int hadithKey = hd.getHadithKey();
+					int hadithKey = Integer.parseInt(hd.getHadithRefNo());
 					String hadithKeyPadded = padding(hadithKey, 4);
 					String instanceName = collectionPrefix+"-"+"HD"+hadithKeyPadded;
 					hadithInstance = hadithFactory.getHadith(instanceName);
@@ -657,21 +676,22 @@ public class InstanceCreation
 
 		
 	  // ******************* Create Matan Instances *****************
-		public static void MatanInstance(){
+		public static void MatanInstance(Hadith hadithInstance, String instanceName){
 			int row = rowCount("hadith2");
 			for(int i = 1; i<=row; i++){
 				MatanDataAccess mda = new MatanDataAccess();
-				MatanData md = mda.setMatanAtt(i, conn, st);;
-				String instanceName = "matan"+i;
+				MatanData md = mda.setMatanAtt(i, conn, st);
+				String matanInstanceName = instanceName +"-Text";
 				HadithText matanInstance = hadithFactory.createHadithText(instanceName);
 		//		matanInstance.addHadithText("See Hadith URL");
 
-				/* not adding actual text due to copyright issue 
-				 * matanInstance.addHadithText(md.getHadithTextArab()+"@ar");
+				//not adding actual text due to copyright issue 
+				matanInstance.addHadithText(md.getHadithTextArab()+"@ar");
 				matanInstance.addHadithText(md.getHadithTextEng()+"@en");
-				 */
-				hadithFactory.getHadith("hadith"+i).addHasPart(matanInstance);
-				matanInstance.addIsPartOf(hadithFactory.getHadith("hadith"+i));
+				hadithInstance.addHasHadithText(matanInstance);	
+				matanInstance.addIsPartOfHadith(hadithInstance);
+//				hadithFactory.getHadith("hadith"+i).addHasPart(matanInstance);
+				//matanInstance.addIsPartOf(hadithFactory.getHadith("hadith"+i));
 			}
 		}
 
@@ -692,6 +712,303 @@ public class InstanceCreation
 				sanadInstance.addIsPartOf(hadithFactory.getHadith("hadith"+i));
 			}
 		}	
+
+		// ******************* Create Hadith Instances *****************
+		//private static Hadith hadithInstance;
+		//static int nullInMapping1 = 0;
 	
+		public static void HadithInstance1(String hadithTable){
+			createConnection("hadithFH");
+			int row = rowCount(hadithTable);
+			Hadith hadithInstance;
+//			HadithType elevatedHadithInstance  = hadithFactory.getHadithType("elevated");
+//			HadithType severedHadithInstance  = hadithFactory.getHadithType("severed");
+//			HadithType stoppedHadithInstance  = hadithFactory.getHadithType("stopped");
+//			HadithType sacredHadithInstance  = hadithFactory.getHadithType("sacred");
+			
+			HadithType elevatedHadithInstance = hadithFactory.createHadithType("elevated");
+			HadithType severedHadithInstance  = hadithFactory.createHadithType("severed");
+			HadithType stoppedHadithInstance  = hadithFactory.createHadithType("stopped");
+			HadithType sacredHadithInstance   = hadithFactory.createHadithType("sacred");
+			NarratorChain narratorChainInstance;
+			NarratorChainSegment narratorChainSegmentInstance, narratorChainSegmentInstance2;
+			RootNarratorChainSegment rootNarratorSegmentInstance;
+			HadithNarrator narratorInstance, n2;
+			
+			String collection = hadithTable.replaceAll("\\_.*","");
+			int collection_id;
+			if(hadithTable.equals("csb_hadith"))
+				collection_id  = 1;
+			else if (hadithTable.equals("csm_hadith"))
+				collection_id  = 2;
+			else if (hadithTable.equals("sad_hadith"))
+				collection_id  = 3;
+			else if (hadithTable.equals("maj_hadith"))
+				collection_id  = 4;
+				else if (hadithTable.equals("nis_hadith"))
+				collection_id  = 5;
+			else if (hadithTable.equals("tir_hadith"))
+				collection_id  = 6;
+			else
+				collection_id  = 1;
+			
+			String collectionPrefix = CollectionName(collection_id);
+			HadithDataAccess hda = new HadithDataAccess();
+			closeConnection();
+
+			for(int i=1; i<=row; i++){
+				createConnection("hadithFH");
+				HadithData hd = hda.setHadithAtt(i, conn, st);
+				if(hd.getBookId()!=null)
+				{
+
+					//Instance Name functionality
+					int hadithKey = Integer.parseInt(hd.getHadithRefNo());
+					String hadithKeyPadded = padding(hadithKey, 4);
+					String instanceName = collectionPrefix+"-"+"HD"+hadithKeyPadded;
+					// Create Hadith Instance and add its data properties
+					hadithInstance = hadithFactory.createHadith(instanceName);
+					System.out.println(instanceName);
+					String chainInstanceName = instanceName+"-"+"Chain";
+
+					String type;
+					
+					hadithInstance.addHadithReferenceNo(hd.getHadithRefNo());
+					hadithInstance.addSequenceNo(hd.getSequenceNo());
+					//clean Arabic text from html tags
+					String fullHadith = hd.getFullHadithA().replaceAll("<[^>]*>", " ");
+					hadithInstance.addFullHadithText(fullHadith+"@ar");
+					hadithInstance.addFullHadithText(hd.getFullHadithU()+"@ur");
+					hadithInstance.addFullHadithText(hd.getFullHadithE()+"@en");
+					type = hd.getHadithType();
+					if(!(type.equals("0")))
+					{
+						hadithInstance.addHadithType(hd.getHadithType()+"@ar");
+
+						if(type.equals("مرفوع"))
+						{	
+//							hadithTypeInstance  =  hadithFactory.getHadithType("elevated"); 
+							//System.out.println(elevatedHadithInstance);
+							hadithInstance.addHasHadithType(elevatedHadithInstance);
+						}
+						else if (type.equals("موقوف"))
+						{
+//							hadithTypeInstance  =  hadithFactory.getHadithType("stopped"); 
+							hadithInstance.addHasHadithType(stoppedHadithInstance);
+						}
+						else if (type.equals("مقطوع"))
+						{
+//							hadithTypeInstance  =  hadithFactory.getHadithType("severed"); 
+							hadithInstance.addHasHadithType(severedHadithInstance);
+						}
+						else if (type.equals("قدسي"))
+						{
+//							hadithTypeInstance  =  hadithFactory.getHadithType("sacred"); 
+							hadithInstance.addHasHadithType(sacredHadithInstance);
+						}
+					}
+					hadithInstance.addHadithURL("http://islamicurdubooks.com/Sahih-Bukhari/Sahih-Bukhari-.php?hadith_number="+hd.getHadithRefNo());
+
+					// Object Type Properties
+					String ChapterName = collectionPrefix+"-CH"+padding(hd.getChapterId(),4);
+					chapterInstance = hadithFactory.getHadithChapter(ChapterName);
+					hadithInstance.addIsPartOfChapter(chapterInstance);
+					closeConnection();
+					System.out.println("refNo:"+hd.getHadithRefNo()+" vol: "+hd.getEngVol()+" book: "+hd.getEngBook()+" hadith: "+hd.getEngNumber());
+					if(hd.getEngBook()!=null)
+					{
+						String narratorEng = getSunnahLinks(hd.getEngVol(),hd.getEngBook(), hd.getEngNumber(), instanceName, hadithInstance);
+					}
+					narratorChainInstance = hadithFactory.createNarratorChain(chainInstanceName);
+					hadithInstance.addHasNarratorChain(narratorChainInstance);
+					narratorChainInstance.addIsPartOfHadith(hadithInstance);
+					
+					String chainSegmentInstanceName, chainSegmentInstanceName2;
+
+					ArrayList<String> raqmList = ExtractRaqm(hd.getFullHadithA());
+				//	NDetailDataAccess nda = new NDetailDataAccess();
+					int raqmSize = raqmList.size();
+					if(raqmSize!=0)
+					{
+						for(int j=1; j<raqmSize;j++)
+						{
+							chainSegmentInstanceName = instanceName+"-"+"ChainSeg"+"-"+(j);
+							narratorChainSegmentInstance = hadithFactory.createNarratorChainSegment(chainSegmentInstanceName);
+							narratorChainInstance.addHasNarratorChainSegment(narratorChainSegmentInstance);
+	
+							//narratorChainSegmentInstance2.addPrecedes(narratorChainSegmentInstance);
+							//NarratorsDetail nd = nda.setNarratorAtt(Integer.parseInt(raqmList.get(j)), conn, st);
+	
+						}
+						chainSegmentInstanceName = instanceName+"-"+"ChainSeg"+"-"+raqmSize;
+						rootNarratorSegmentInstance = hadithFactory.createRootNarratorChainSegment(chainSegmentInstanceName);
+						narratorChainInstance.addHasRootNarratorSegment(rootNarratorSegmentInstance);
+						
+						int k = 0;
+						for(int j=1; j<raqmSize;j++)
+						{
+							chainSegmentInstanceName = instanceName+"-"+"ChainSeg"+"-"+(j+1);
+							narratorChainSegmentInstance = hadithFactory.getNarratorChainSegment(chainSegmentInstanceName);
+
+							chainSegmentInstanceName2 = instanceName+"-"+"ChainSeg"+"-"+j ;
+							narratorChainSegmentInstance2 = hadithFactory.getNarratorChainSegment(chainSegmentInstanceName2);
+							
+							narratorChainSegmentInstance.addPrecedes(narratorChainSegmentInstance2);
+							narratorChainSegmentInstance2.addFollows(narratorChainSegmentInstance);
+
+							System.out.println(raqmList.get(k));
+							 
+							String narratorInstanceName = "HN"+ padding(Integer.parseInt(raqmList.get(k)), 5);
+							narratorInstance = hadithFactory.getHadithNarrator(narratorInstanceName);
+							if(narratorInstance==null) 
+							{ // Check if Narrator already Exists in ontology
+
+								narratorInstance =	hadithFactory.createHadithNarrator(narratorInstanceName);
+								narratorInstance.addNarratorID(raqmList.get(k));
+								numberOfMissingRaqm++;
+							}
+							narratorChainSegmentInstance2.addRefersToNarrator(narratorInstance);							
+							k++;
+							
+						}
+						String narratorInstanceName = "HN"+ padding(Integer.parseInt(raqmList.get(k)), 5);
+						narratorInstance = hadithFactory.getHadithNarrator(narratorInstanceName);
+						if(narratorInstance==null) 
+						{ // Check if Narrator already Exists in ontology
+
+							narratorInstance =	hadithFactory.createHadithNarrator(narratorInstanceName);
+							narratorInstance.addNarratorID(raqmList.get(k));
+							numberOfMissingRaqm++;
+						}
+						rootNarratorSegmentInstance.addRefersToNarrator(narratorInstance);
+						
+							
+						int a = 0;
+						for(int j=0; j<raqmSize-1;j++)
+						{
+							a = j+1;
+							String narratorInstanceName1 = "HN"+ padding(Integer.parseInt(raqmList.get(j)), 5);
+							narratorInstance = hadithFactory.getHadithNarrator(narratorInstanceName1);
+							String n2InstanceName = "HN"+ padding(Integer.parseInt(raqmList.get(a)), 5);
+							n2 = hadithFactory.getHadithNarrator(n2InstanceName);
+							narratorInstance.addHeardFrom(n2);
+							n2.addTransferredTo(narratorInstance);
+						}
+						
+		
+					}
+
+					
+
+				}
+			}
+			//System.out.println("missing narrators Record = "+ numberOfMissingRaqm);
+			//System.out.println("shown null in mapping = "+ nullInMapping);
+			closeConnection();
+		}
+		
+		public static void HNarrator1(String narratorsdetail)
+		{
+			createConnection("hadithFH");
+			int row = rowCount(narratorsdetail);
+			//System.out.println(row);
+			NDetailDataAccess nda = new NDetailDataAccess();
+		
+			for(int i=1; i<=row; i++)
+			{
+				// Create Narrator Instance and add its data properties
+				NarratorsDetail nd = nda.setNarratorAtt(i, conn, st);
+				if(nd!=null)
+				{	
+					//int narratorKey = nd.getNarratorKey();
+					int raqm = nd.getNarratorId();
+					if(raqm != 0)
+					{	
+						//Instance Name functionality
+						String instanceName = "HN"+padding(raqm, 5);
+			
+						HadithNarrator narratorInstance1 =	hadithFactory.createHadithNarrator(instanceName);
+	
+						System.out.println(instanceName);
+						if(!(nd.getNarratorName().equals("0")))
+						{							
+							narratorInstance1.addName(nd.getNarratorName()+"@ar");
+						}
+						if(!(nd.getnFirstChar().equals("0")))
+						{
+							narratorInstance1.addFirstChar(nd.getnFirstChar());
+						}
+						if(!(nd.getAkhtalatTadlees().equals("0")))
+						{
+							narratorInstance1.addConcealment(nd.getAkhtalatTadlees());
+					
+						}
+						if(!(nd.getAqamah().equals("0")))
+						{
+							narratorInstance1.addResidence(nd.getAqamah());
+						}
+						if(!(nd.getAlMawali().equals("0")))
+						{
+							narratorInstance1.addHasMaster(nd.getAlMawali());
+						}
+						if(!(nd.getAnNishat().equals("0")))
+						{
+							narratorInstance1.addOffice(nd.getAnNishat());
+						}
+						if(!(nd.getDeathCity().equals("0")))
+						{
+							narratorInstance1.addDeathPlace(nd.getDeathCity());
+						}
+						if(!(nd.getIsmShuhra().equals("0")))
+						{
+							narratorInstance1.addPopularName(nd.getIsmShuhra());
+						}
+						if(!(nd.getTabqa().equals("0")))
+						{
+							narratorInstance1.addGeneration(nd.getTabqa());
+						}
+						if(!(nd.getNasab().equals("0")))
+						{
+							narratorInstance1.addLineage(nd.getNasab());
+						}
+						if(!(nd.getLaqab().equals("0")))
+						{
+							narratorInstance1.addTitle(nd.getLaqab());
+						}
+						if((nd.getAge() != 0))
+						{
+							narratorInstance1.addAge(nd.getAge());
+						}
+						if(!(nd.getMazhab().equals("0")))
+						{
+							narratorInstance1.addSchoolOfThought(nd.getMazhab());
+						}
+						if(!(nd.getKunyat().equals("0")))
+						{
+							narratorInstance1.addTeknonym(nd.getKunyat());
+						}
+						if(!(nd.getBirthYear().equals("0")))
+						{
+							narratorInstance1.addBirthYear(nd.getBirthYear());
+						}
+						if(!(nd.getDeathYear().equals("0")))
+						{
+							narratorInstance1.addDeathYear(nd.getDeathYear());
+						}
+						if(!(nd.getNarratorId()==0))
+						{
+							narratorInstance1.addNarratorID(nd.getNarratorId());
+						}
+						if(!(nd.getWasaf().equals("0")))
+						{
+							narratorInstance1.addAttribute(nd.getWasaf());
+						}
+
+				 }
+				}
+				
+			}
+		}
+
 		
 }

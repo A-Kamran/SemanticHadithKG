@@ -15,7 +15,7 @@ public class MainGlue {
 	public static void main(String[] args) {
 		
 		// *****************input vocabulary file (Ontology)*****************
-		String SOURCE_FILE = "SemanticHadith_v3.owl";
+		String SOURCE_FILE = "SemanticHadith_v4.owl";
 		String workingDir = System.getProperty("user.dir");
 		// *****************Path and file to save resulting Graph.*****************
 		String OutputFile = workingDir+"/SemanticHadithKG.rdf";
@@ -35,7 +35,9 @@ public class MainGlue {
 		//*****************Creating Instances for Sahih Bukhari *****************
 		ic.BookInstance("csb_bookschapters");
 		ic.ChapterInstance("csb_bookssubchapters");
-		ic.HadithInstance("csb_hadith");
+		ic.HNarrator1("narratorsdetail");
+		//ic.HadithInstance("csb_hadith");
+		ic.HadithInstance1("csb_hadith");
 		ic.HadithToHadith("csb_hadith");
 		
 		ic.saveOnt();	
