@@ -6,13 +6,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class NDetailDataAccess {
-	public static NarratorsDetail setNarratorAtt(int raqm,Connection conn, Statement st){
+	public static NarratorsDetail setNarratorAtt(int Index,Connection conn, Statement st){
 		NarratorsDetail narratorDetail;
 		try {
 			ResultSet s = st.executeQuery("SELECT `RaqamArRavi`,`IsmArRavi`,`Kunyat`,`IsmAsSuhra`,`Nasab`,`Laqab`, `AnNishat`,`Mazhab`,"
-					+ "`Rutba`,`Tabqa`,`SunAlWafat`,`SunAlMilad`,`UmmarArRavi`,`AlAqama`,`BaladAlWafat`,`AkhtalatTadlees`,`AlMawali`,`FirstChar`"
+					+ "`Rutba`,`Tabqa`,`SunAlWafat`,`SunAlMilad`,`UmmarArRavi`,`AlAqama`,`BaladAlWafat`,`AkhtalatTadlees`,`AlMawali`, `FirstChar`, `narratorsdetail_id`, `Wasaf`"
 					+ "FROM `narratorsdetail` "
-					+ "WHERE `RaqamArRavi` ="+raqm);
+					+ "WHERE narratorsdetail_id=" + Index); 
+					//+ "WHERE `RaqamArRavi` ="+raqm);
 				while(s.next()){
 					narratorDetail = new NarratorsDetail();
 					narratorDetail.setNarratorId(Integer.parseInt(s.getString(1)));
@@ -33,6 +34,9 @@ public class NDetailDataAccess {
 					narratorDetail.setAkhtalatTadlees(s.getString(16));
 					narratorDetail.setAlMawali(s.getString(17));
 					narratorDetail.setnFirstChar(s.getString(18));
+					narratorDetail.setNarratorKey(Integer.parseInt(s.getString(19)));
+					narratorDetail.setWasaf(s.getString(20));
+
 					return narratorDetail;
 				}
 				//return book;

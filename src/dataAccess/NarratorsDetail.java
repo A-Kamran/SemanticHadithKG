@@ -3,6 +3,7 @@ package dataAccess;
 public class NarratorsDetail {
 	
 	private Integer narratorId;
+	private Integer narratorKey;
 	private String narratorName;
 	private String kunyat;
 	private String IsmShuhra;
@@ -20,6 +21,7 @@ public class NarratorsDetail {
 	private String akhtalatTadlees;
 	private String alMawali;
 	private String nFirstChar;
+	private String wasaf;
 	
 	public String getnFirstChar() {
 		return nFirstChar;
@@ -130,6 +132,19 @@ public class NarratorsDetail {
 	}
 	public void setAlMawali(String alMawali) {
 		this.alMawali = alMawali;
+	}
+	public void setNarratorKey(int key) {
+			this.narratorKey = key; 		
+	}
+	public int getNarratorKey() {
+		return narratorKey; 		
+}
+	public void setWasaf(String wasaf) {
+		this.wasaf = wasaf;
+	}
+	public String getWasaf() 
+	{
+		return wasaf;
 	}
 
 

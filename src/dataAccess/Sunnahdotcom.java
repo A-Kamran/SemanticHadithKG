@@ -12,6 +12,7 @@ public class Sunnahdotcom {
 	private ArrayList<Integer> startVerse;
 	private ArrayList<Integer> EndVerse;
 	private ArrayList<Integer> chapterIndex;
+	private String textEng;
 	public Sunnahdotcom(){
 		startVerse = new ArrayList<Integer>();
 		EndVerse = new ArrayList<Integer>();
@@ -67,4 +68,11 @@ public class Sunnahdotcom {
 		NarratorEnglish = narratorEnglish;
 	}
 
+	public void settextEng(String textEng) {
+		this.textEng = textEng;
+	}
+	
+	public String gettextEng() {
+		return textEng;
+	}
 }

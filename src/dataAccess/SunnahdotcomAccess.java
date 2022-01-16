@@ -18,12 +18,13 @@ public class SunnahdotcomAccess {
 		ArrayList<Integer> EndVerse = new ArrayList<Integer>();
 		ArrayList<Integer> chapterIndex = new ArrayList<Integer>();
 		String verses;
+		String textEng;
 		ArrayList<String> verseList = new ArrayList() ;
 		try {
 			
 			
 			
-			String query = "SELECT `narratorEng` ,`shareLink`, `verseNo`"
+			String query = "SELECT `narratorEng` ,`shareLink`, `verseNo`,`textEng` "
 					+ " FROM `hadith2`"
 					+ " WHERE `voLId`="+volId+" AND `bookId`="+bookId+" AND `hadithId`="+number ;
 			ResultSet s = st.executeQuery(query);
@@ -35,6 +36,8 @@ public class SunnahdotcomAccess {
 			//	System.out.println(s.getString(1));
 				sdc.setLink(s.getString(2));
 				System.out.println(s.getString(2));
+				sdc.settextEng(s.getString(4));
+
 				verses = s.getString(3);
 				 // if hadith contains some verse
 				 if(verses!=null){
