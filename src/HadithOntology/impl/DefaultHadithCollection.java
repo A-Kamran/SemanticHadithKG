@@ -32,7 +32,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#author
+     * Object Property http://www.i-knex.com/ontology/hadith#author
      */
      
     public Collection<? extends HadithCollectionAuthor> getAuthor() {
@@ -59,7 +59,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasBook
+     * Object Property http://www.i-knex.com/ontology/hadith#hasBook
      */
      
     public Collection<? extends HadithBook> getHasBook() {
@@ -86,7 +86,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasHadithType
+     * Object Property http://www.i-knex.com/ontology/hadith#hasHadithType
      */
      
     public Collection<? extends HadithType> getHasHadithType() {
@@ -113,7 +113,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#hasNarrator
      */
      
     public Collection<? extends WrappedIndividual> getHasNarrator() {
@@ -140,7 +140,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasPart
+     * Object Property http://www.i-knex.com/ontology/hadith#hasPart
      */
      
     public Collection<? extends WrappedIndividual> getHasPart() {
@@ -167,7 +167,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#hasRootNarrator
      */
      
     public Collection<? extends WrappedIndividual> getHasRootNarrator() {
@@ -194,7 +194,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
+     * Object Property http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment
      */
      
     public Collection<? extends WrappedIndividual> getHasRootNarratorSegment() {
@@ -221,7 +221,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOf
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOf
      */
      
     public Collection<? extends WrappedIndividual> getIsPartOf() {
@@ -248,7 +248,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#mentions
+     * Object Property http://www.i-knex.com/ontology/hadith#mentions
      */
      
     public Collection<? extends Hadith> getMentions() {
@@ -275,7 +275,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#refersToRootNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#refersToRootNarrator
      */
      
     public Collection<? extends WrappedIndividual> getRefersToRootNarrator() {
@@ -329,7 +329,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#attribute
+     * Data Property http://www.i-knex.com/ontology/hadith#attribute
      */
      
     public Collection<? extends Object> getAttribute() {
@@ -350,7 +350,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#birthPlace
+     * Data Property http://www.i-knex.com/ontology/hadith#birthPlace
      */
      
     public Collection<? extends Object> getBirthPlace() {
@@ -371,7 +371,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#birthYear
+     * Data Property http://www.i-knex.com/ontology/hadith#birthYear
      */
      
     public Collection<? extends Object> getBirthYear() {
@@ -392,7 +392,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#chapterNo
+     * Data Property http://www.i-knex.com/ontology/hadith#chapterNo
      */
      
     public Collection<? extends Object> getChapterNo() {
@@ -413,7 +413,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#chapterPreface
+     * Data Property http://www.i-knex.com/ontology/hadith#chapterPreface
      */
      
     public Collection<? extends Object> getChapterPreface() {
@@ -434,7 +434,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#collectionName
+     * Data Property http://www.i-knex.com/ontology/hadith#collectionName
      */
      
     public Collection<? extends Object> getCollectionName() {
@@ -455,7 +455,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#concealment
+     * Data Property http://www.i-knex.com/ontology/hadith#concealment
      */
      
     public Collection<? extends Object> getConcealment() {
@@ -476,7 +476,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#deathPlace
+     * Data Property http://www.i-knex.com/ontology/hadith#deathPlace
      */
      
     public Collection<? extends Object> getDeathPlace() {
@@ -497,7 +497,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#deathYear
+     * Data Property http://www.i-knex.com/ontology/hadith#deathYear
      */
      
     public Collection<? extends Object> getDeathYear() {
@@ -518,7 +518,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engBookNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engBookNo
      */
      
     public Collection<? extends Object> getEngBookNo() {
@@ -539,7 +539,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engHadithNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engHadithNo
      */
      
     public Collection<? extends Object> getEngHadithNo() {
@@ -560,7 +560,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engVolNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engVolNo
      */
      
     public Collection<? extends Object> getEngVolNo() {
@@ -581,7 +581,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#englishReference
+     * Data Property http://www.i-knex.com/ontology/hadith#englishReference
      */
      
     public Collection<? extends Object> getEnglishReference() {
@@ -602,7 +602,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#firstChar
+     * Data Property http://www.i-knex.com/ontology/hadith#firstChar
      */
      
     public Collection<? extends Object> getFirstChar() {
@@ -623,7 +623,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#fullHadithText
+     * Data Property http://www.i-knex.com/ontology/hadith#fullHadithText
      */
      
     public Collection<? extends Object> getFullHadithText() {
@@ -644,7 +644,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#generation
+     * Data Property http://www.i-knex.com/ontology/hadith#generation
      */
      
     public Collection<? extends Object> getGeneration() {
@@ -665,7 +665,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithBookIntro
      */
      
     public Collection<? extends Object> getHadithBookIntro() {
@@ -686,7 +686,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithBookNo
      */
      
     public Collection<? extends Object> getHadithBookNo() {
@@ -707,7 +707,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithChapterNo
      */
      
     public Collection<? extends Object> getHadithChapterNo() {
@@ -728,7 +728,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithGrade
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithGrade
      */
      
     public Collection<? extends Object> getHadithGrade() {
@@ -749,7 +749,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithReferenceNo
      */
      
     public Collection<? extends Object> getHadithReferenceNo() {
@@ -770,7 +770,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithType
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithType
      */
      
     public Collection<? extends Object> getHadithType() {
@@ -791,7 +791,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithURL
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithURL
      */
      
     public Collection<? extends Object> getHadithURL() {
@@ -812,7 +812,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hasMaster
+     * Data Property http://www.i-knex.com/ontology/hadith#hasMaster
      */
      
     public Collection<? extends Object> getHasMaster() {
@@ -833,7 +833,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#lineage
+     * Data Property http://www.i-knex.com/ontology/hadith#lineage
      */
      
     public Collection<? extends Object> getLineage() {
@@ -854,7 +854,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#name
+     * Data Property http://www.i-knex.com/ontology/hadith#name
      */
      
     public Collection<? extends Object> getName() {
@@ -875,7 +875,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorChain
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorChain
      */
      
     public Collection<? extends Object> getNarratorChain() {
@@ -896,7 +896,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorID
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorID
      */
      
     public Collection<? extends Object> getNarratorID() {
@@ -917,7 +917,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorURL
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorURL
      */
      
     public Collection<? extends Object> getNarratorURL() {
@@ -938,7 +938,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#office
+     * Data Property http://www.i-knex.com/ontology/hadith#office
      */
      
     public Collection<? extends Object> getOffice() {
@@ -959,7 +959,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#popularName
+     * Data Property http://www.i-knex.com/ontology/hadith#popularName
      */
      
     public Collection<? extends Object> getPopularName() {
@@ -980,7 +980,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#rank
+     * Data Property http://www.i-knex.com/ontology/hadith#rank
      */
      
     public Collection<? extends Object> getRank() {
@@ -1001,7 +1001,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#residence
+     * Data Property http://www.i-knex.com/ontology/hadith#residence
      */
      
     public Collection<? extends Object> getResidence() {
@@ -1022,7 +1022,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought
+     * Data Property http://www.i-knex.com/ontology/hadith#schoolOfThought
      */
      
     public Collection<? extends Object> getSchoolOfThought() {
@@ -1043,7 +1043,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#sequenceNo
+     * Data Property http://www.i-knex.com/ontology/hadith#sequenceNo
      */
      
     public Collection<? extends Object> getSequenceNo() {
@@ -1064,7 +1064,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#teknonym
+     * Data Property http://www.i-knex.com/ontology/hadith#teknonym
      */
      
     public Collection<? extends Object> getTeknonym() {
@@ -1085,7 +1085,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#title
+     * Data Property http://www.i-knex.com/ontology/hadith#title
      */
      
     public Collection<? extends Object> getTitle() {
@@ -1106,7 +1106,7 @@ public class DefaultHadithCollection extends WrappedIndividualImpl implements Ha
 
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#verseNo
+     * Data Property http://www.i-knex.com/ontology/hadith#verseNo
      */
      
     public Collection<? extends Object> getVerseNo() {
