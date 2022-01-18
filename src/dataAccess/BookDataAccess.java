@@ -26,12 +26,12 @@ public class BookDataAccess {
 					book.setCollectionID(Integer.parseInt(s.getString(1)));
 					book.setSequenceNo(Integer.parseInt(s.getString(2)));
 					book.setHadithBookNo(Integer.parseInt(s.getString(3)));
-					book.setHadithBookIntroA(s.getString(4));
-					book.setHadithBookIntroU(s.getString(5));
-					book.setHadithBookIntroE(s.getString(6));
-					book.setBookTitleA(s.getString(7));
-					book.setBookTitleU(s.getString(8));
-					book.setBookTitleE(s.getString(9));	
+					book.setHadithBookIntroA(s.getString(7));
+					book.setHadithBookIntroU(s.getString(8));
+					book.setHadithBookIntroE(s.getString(9));
+					book.setBookTitleA(s.getString(4));
+					book.setBookTitleU(s.getString(5));
+					book.setBookTitleE(s.getString(6));	
 					book.setBookKey(Integer.parseInt(s.getString(10)));
 					
 				}
