@@ -3,6 +3,8 @@
  */
 package SemHadith;
 
+import KG_Generator.KG_Generation;
+
 /**
  * @author Amna
  *
@@ -15,13 +17,13 @@ public class MainGlue {
 	public static void main(String[] args) {
 		
 		// *****************input vocabulary file (Ontology)*****************
-		String SOURCE_FILE = "SemanticHadith_v4.owl";
+		String SOURCE_FILE = "SemanticHadith_v5.owl";
 		String workingDir = System.getProperty("user.dir");
 		// *****************Path and file to save resulting Graph.*****************
 		String OutputFile = workingDir+"/SemanticHadithKG.rdf";
 		System.out.println(OutputFile);
 		
-		InstanceCreation ic = new InstanceCreation(SOURCE_FILE, OutputFile);
+		KG_Generation ic = new KG_Generation(SOURCE_FILE, OutputFile);
 		
 		ic.InitializeHadithEngine();
 		
@@ -35,9 +37,8 @@ public class MainGlue {
 		//*****************Creating Instances for Sahih Bukhari *****************
 		ic.BookInstance("csb_bookschapters");
 		ic.ChapterInstance("csb_bookssubchapters");
-		ic.HNarrator1("narratorsdetail");
-		//ic.HadithInstance("csb_hadith");
-		ic.HadithInstance1("csb_hadith");
+		ic.HNarrator("narratorsdetail");
+		ic.HadithInstance("csb_hadith");
 		ic.HadithToHadith("csb_hadith");
 		
 		ic.saveOnt();	
