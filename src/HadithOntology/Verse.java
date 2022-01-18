@@ -19,7 +19,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 public interface Verse extends WrappedIndividual {
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasHadithType
+     * Property http://www.i-knex.com/ontology/hadith#hasHadithType
      */
      
     /**
@@ -52,7 +52,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasNarrator
+     * Property http://www.i-knex.com/ontology/hadith#hasNarrator
      */
      
     /**
@@ -85,7 +85,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasPart
+     * Property http://www.i-knex.com/ontology/hadith#hasPart
      */
      
     /**
@@ -118,7 +118,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator
+     * Property http://www.i-knex.com/ontology/hadith#hasRootNarrator
      */
      
     /**
@@ -151,7 +151,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorOccurrence
+     * Property http://www.i-knex.com/ontology/hadith#hasRootNarratorOccurrence
      */
      
     /**
@@ -184,7 +184,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#isPartOf
+     * Property http://www.i-knex.com/ontology/hadith#isPartOf
      */
      
     /**
@@ -217,7 +217,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#mentionedIn
+     * Property http://www.i-knex.com/ontology/hadith#mentionedIn
      */
      
     /**
@@ -250,7 +250,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#mentions
+     * Property http://www.i-knex.com/ontology/hadith#mentions
      */
      
     /**
@@ -283,7 +283,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#refersToRootNarrator
+     * Property http://www.i-knex.com/ontology/hadith#refersToRootNarrator
      */
      
     /**
@@ -349,7 +349,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#attribute
+     * Property http://www.i-knex.com/ontology/hadith#attribute
      */
      
     /**
@@ -383,7 +383,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#birthPlace
+     * Property http://www.i-knex.com/ontology/hadith#birthPlace
      */
      
     /**
@@ -417,7 +417,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#birthYear
+     * Property http://www.i-knex.com/ontology/hadith#birthYear
      */
      
     /**
@@ -451,7 +451,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#chapterNo
+     * Property http://www.i-knex.com/ontology/hadith#chapterNo
      */
      
     /**
@@ -485,7 +485,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#chapterPreface
+     * Property http://www.i-knex.com/ontology/hadith#chapterPreface
      */
      
     /**
@@ -519,7 +519,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#collectionName
+     * Property http://www.i-knex.com/ontology/hadith#collectionName
      */
      
     /**
@@ -553,7 +553,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#concealment
+     * Property http://www.i-knex.com/ontology/hadith#concealment
      */
      
     /**
@@ -587,7 +587,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#deathPlace
+     * Property http://www.i-knex.com/ontology/hadith#deathPlace
      */
      
     /**
@@ -621,7 +621,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#deathYear
+     * Property http://www.i-knex.com/ontology/hadith#deathYear
      */
      
     /**
@@ -655,7 +655,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#engBookNo
+     * Property http://www.i-knex.com/ontology/hadith#engBookNo
      */
      
     /**
@@ -689,7 +689,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#engHadithNo
+     * Property http://www.i-knex.com/ontology/hadith#engHadithNo
      */
      
     /**
@@ -723,7 +723,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#engVolNo
+     * Property http://www.i-knex.com/ontology/hadith#engVolNo
      */
      
     /**
@@ -757,7 +757,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#englishReference
+     * Property http://www.i-knex.com/ontology/hadith#englishReference
      */
      
     /**
@@ -791,7 +791,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#firstChar
+     * Property http://www.i-knex.com/ontology/hadith#firstChar
      */
      
     /**
@@ -825,7 +825,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#fullHadithText
+     * Property http://www.i-knex.com/ontology/hadith#fullHadithText
      */
      
     /**
@@ -859,7 +859,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#generation
+     * Property http://www.i-knex.com/ontology/hadith#generation
      */
      
     /**
@@ -893,7 +893,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro
+     * Property http://www.i-knex.com/ontology/hadith#hadithBookIntro
      */
      
     /**
@@ -927,7 +927,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo
+     * Property http://www.i-knex.com/ontology/hadith#hadithBookNo
      */
      
     /**
@@ -961,7 +961,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo
+     * Property http://www.i-knex.com/ontology/hadith#hadithChapterNo
      */
      
     /**
@@ -995,7 +995,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithGrade
+     * Property http://www.i-knex.com/ontology/hadith#hadithGrade
      */
      
     /**
@@ -1029,7 +1029,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo
+     * Property http://www.i-knex.com/ontology/hadith#hadithReferenceNo
      */
      
     /**
@@ -1063,7 +1063,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithType
+     * Property http://www.i-knex.com/ontology/hadith#hadithType
      */
      
     /**
@@ -1097,7 +1097,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hadithURL
+     * Property http://www.i-knex.com/ontology/hadith#hadithURL
      */
      
     /**
@@ -1131,7 +1131,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#hasMaster
+     * Property http://www.i-knex.com/ontology/hadith#hasMaster
      */
      
     /**
@@ -1165,7 +1165,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#lineage
+     * Property http://www.i-knex.com/ontology/hadith#lineage
      */
      
     /**
@@ -1199,7 +1199,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#name
+     * Property http://www.i-knex.com/ontology/hadith#name
      */
      
     /**
@@ -1233,7 +1233,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#narratorChain
+     * Property http://www.i-knex.com/ontology/hadith#narratorChain
      */
      
     /**
@@ -1267,7 +1267,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#narratorID
+     * Property http://www.i-knex.com/ontology/hadith#narratorID
      */
      
     /**
@@ -1301,7 +1301,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#narratorURL
+     * Property http://www.i-knex.com/ontology/hadith#narratorURL
      */
      
     /**
@@ -1335,7 +1335,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#office
+     * Property http://www.i-knex.com/ontology/hadith#office
      */
      
     /**
@@ -1369,7 +1369,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#popularName
+     * Property http://www.i-knex.com/ontology/hadith#popularName
      */
      
     /**
@@ -1403,7 +1403,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#rank
+     * Property http://www.i-knex.com/ontology/hadith#rank
      */
      
     /**
@@ -1437,7 +1437,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#residence
+     * Property http://www.i-knex.com/ontology/hadith#residence
      */
      
     /**
@@ -1471,7 +1471,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought
+     * Property http://www.i-knex.com/ontology/hadith#schoolOfThought
      */
      
     /**
@@ -1505,7 +1505,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#sequenceNo
+     * Property http://www.i-knex.com/ontology/hadith#sequenceNo
      */
      
     /**
@@ -1539,7 +1539,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#teknonym
+     * Property http://www.i-knex.com/ontology/hadith#teknonym
      */
      
     /**
@@ -1573,7 +1573,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#title
+     * Property http://www.i-knex.com/ontology/hadith#title
      */
      
     /**
@@ -1607,7 +1607,7 @@ public interface Verse extends WrappedIndividual {
 
 
     /* ***************************************************
-     * Property http://www.lodislamica.me/ontology/hadithVoc#verseNo
+     * Property http://www.i-knex.com/ontology/hadith#verseNo
      */
      
     /**

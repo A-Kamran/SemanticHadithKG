@@ -74,11 +74,11 @@ public class HadithFactory implements CodeGenerationFactory {
     }
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Person
+     * Class http://www.i-knex.com/ontology/hadith#Person
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Person", Person.class, DefaultPerson.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Person", Person.class, DefaultPerson.class);
     }
 
     /**
@@ -103,11 +103,11 @@ public class HadithFactory implements CodeGenerationFactory {
 		return delegate.getWrappedIndividuals(Vocabulary.CLASS_PERSON, DefaultPerson.class);
     }
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Believer
+     * Class http://www.i-knex.com/ontology/hadith#Believer
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Believer", Believer.class, DefaultBeliever.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Believer", Believer.class, DefaultBeliever.class);
     }
 
     /**
@@ -134,11 +134,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Companion
+     * Class http://www.i-knex.com/ontology/hadith#Companion
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Companion", Companion.class, DefaultCompanion.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Companion", Companion.class, DefaultCompanion.class);
     }
 
     /**
@@ -165,11 +165,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Elevated_Hadith
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith", Elevated_Hadith.class, DefaultElevated_Hadith.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Elevated_Hadith", Elevated_Hadith.class, DefaultElevated_Hadith.class);
     }
 
     /**
@@ -196,11 +196,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Hadith
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Hadith", Hadith.class, DefaultHadith.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Hadith", Hadith.class, DefaultHadith.class);
     }
 
     /**
@@ -227,11 +227,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithBook
+     * Class http://www.i-knex.com/ontology/hadith#HadithBook
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithBook", HadithBook.class, DefaultHadithBook.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithBook", HadithBook.class, DefaultHadithBook.class);
     }
 
     /**
@@ -258,11 +258,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithChapter
+     * Class http://www.i-knex.com/ontology/hadith#HadithChapter
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithChapter", HadithChapter.class, DefaultHadithChapter.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithChapter", HadithChapter.class, DefaultHadithChapter.class);
     }
 
     /**
@@ -289,11 +289,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithCollection
+     * Class http://www.i-knex.com/ontology/hadith#HadithCollection
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithCollection", HadithCollection.class, DefaultHadithCollection.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithCollection", HadithCollection.class, DefaultHadithCollection.class);
     }
 
     /**
@@ -320,11 +320,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor
+     * Class http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor", HadithCollectionAuthor.class, DefaultHadithCollectionAuthor.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor", HadithCollectionAuthor.class, DefaultHadithCollectionAuthor.class);
     }
 
     /**
@@ -351,11 +351,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator
+     * Class http://www.i-knex.com/ontology/hadith#HadithNarrator
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator", HadithNarrator.class, DefaultHadithNarrator.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithNarrator", HadithNarrator.class, DefaultHadithNarrator.class);
     }
 
     /**
@@ -382,11 +382,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithText
+     * Class http://www.i-knex.com/ontology/hadith#HadithText
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithText", HadithText.class, DefaultHadithText.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithText", HadithText.class, DefaultHadithText.class);
     }
 
     /**
@@ -413,11 +413,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithType
+     * Class http://www.i-knex.com/ontology/hadith#HadithType
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#HadithType", HadithType.class, DefaultHadithType.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#HadithType", HadithType.class, DefaultHadithType.class);
     }
 
     /**
@@ -444,11 +444,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChain
+     * Class http://www.i-knex.com/ontology/hadith#NarratorChain
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#NarratorChain", NarratorChain.class, DefaultNarratorChain.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#NarratorChain", NarratorChain.class, DefaultNarratorChain.class);
     }
 
     /**
@@ -475,11 +475,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment
+     * Class http://www.i-knex.com/ontology/hadith#NarratorChainSegment
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment", NarratorChainSegment.class, DefaultNarratorChainSegment.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#NarratorChainSegment", NarratorChainSegment.class, DefaultNarratorChainSegment.class);
     }
 
     /**
@@ -506,11 +506,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarrator
+     * Class http://www.i-knex.com/ontology/hadith#RootNarrator
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#RootNarrator", RootNarrator.class, DefaultRootNarrator.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#RootNarrator", RootNarrator.class, DefaultRootNarrator.class);
     }
 
     /**
@@ -537,11 +537,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment
+     * Class http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment", RootNarratorChainSegment.class, DefaultRootNarratorChainSegment.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment", RootNarratorChainSegment.class, DefaultRootNarratorChainSegment.class);
     }
 
     /**
@@ -570,11 +570,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Sacred_Hadith
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith", Sacred_Hadith.class, DefaultSacred_Hadith.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Sacred_Hadith", Sacred_Hadith.class, DefaultSacred_Hadith.class);
     }
 
     /**
@@ -601,11 +601,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Severed_Hadith
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith", Severed_Hadith.class, DefaultSevered_Hadith.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Severed_Hadith", Severed_Hadith.class, DefaultSevered_Hadith.class);
     }
 
     /**
@@ -632,11 +632,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Stopped_Hadith
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith", Stopped_Hadith.class, DefaultStopped_Hadith.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Stopped_Hadith", Stopped_Hadith.class, DefaultStopped_Hadith.class);
     }
 
     /**
@@ -663,11 +663,11 @@ public class HadithFactory implements CodeGenerationFactory {
 
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Verse
+     * Class http://www.i-knex.com/ontology/hadith#Verse
      */
 
     {
-        javaMapping.add("http://www.lodislamica.me/ontology/hadithVoc#Verse", Verse.class, DefaultVerse.class);
+        javaMapping.add("http://www.i-knex.com/ontology/hadith#Verse", Verse.class, DefaultVerse.class);
     }
 
     /**

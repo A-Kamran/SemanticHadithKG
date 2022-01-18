@@ -24,154 +24,154 @@ public class Vocabulary {
 	private static final OWLDataFactory factory = OWLManager.createOWLOntologyManager().getOWLDataFactory();
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Believer
+     * Class http://www.i-knex.com/ontology/hadith#Believer
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class BELIEVER.<p>
      * 
      */
-    public static final OWLClass CLASS_BELIEVER = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Believer"));
+    public static final OWLClass CLASS_BELIEVER = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Believer"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Companion
+     * Class http://www.i-knex.com/ontology/hadith#Companion
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class COMPANION.<p>
      * 
      */
-    public static final OWLClass CLASS_COMPANION = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Companion"));
+    public static final OWLClass CLASS_COMPANION = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Companion"));
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#precedes
+     * Object Property http://www.i-knex.com/ontology/hadith#precedes
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property PRECEDES.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_PRECEDES = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#precedes"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_PRECEDES = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#precedes"));
 
    
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Elevated_Hadith
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class ELEVATED_HADITH.<p>
      * 
      */
-    public static final OWLClass CLASS_ELEVATED_HADITH = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Elevated_Hadith"));
+    public static final OWLClass CLASS_ELEVATED_HADITH = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Elevated_Hadith"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Hadith
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITH.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITH = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Hadith"));
+    public static final OWLClass CLASS_HADITH = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Hadith"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithBook
+     * Class http://www.i-knex.com/ontology/hadith#HadithBook
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHBOOK.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHBOOK = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithBook"));
+    public static final OWLClass CLASS_HADITHBOOK = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithBook"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithChapter
+     * Class http://www.i-knex.com/ontology/hadith#HadithChapter
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHCHAPTER.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHCHAPTER = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithChapter"));
+    public static final OWLClass CLASS_HADITHCHAPTER = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithChapter"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithCollection
+     * Class http://www.i-knex.com/ontology/hadith#HadithCollection
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHCOLLECTION.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHCOLLECTION = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithCollection"));
+    public static final OWLClass CLASS_HADITHCOLLECTION = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithCollection"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor
+     * Class http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHCOLLECTIONAUTHOR.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHCOLLECTIONAUTHOR = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithCollectionAuthor"));
+    public static final OWLClass CLASS_HADITHCOLLECTIONAUTHOR = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator
+     * Class http://www.i-knex.com/ontology/hadith#HadithNarrator
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHNARRATOR.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHNARRATOR = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithNarrator"));
+    public static final OWLClass CLASS_HADITHNARRATOR = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithNarrator"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithText
+     * Class http://www.i-knex.com/ontology/hadith#HadithText
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHTEXT.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHTEXT = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithText"));
+    public static final OWLClass CLASS_HADITHTEXT = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithText"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#HadithType
+     * Class http://www.i-knex.com/ontology/hadith#HadithType
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class HADITHTYPE.<p>
      * 
      */
-    public static final OWLClass CLASS_HADITHTYPE = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#HadithType"));
+    public static final OWLClass CLASS_HADITHTYPE = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#HadithType"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChain
+     * Class http://www.i-knex.com/ontology/hadith#NarratorChain
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class NARRATORCHAIN.<p>
      * 
      */
-    public static final OWLClass CLASS_NARRATORCHAIN = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#NarratorChain"));
+    public static final OWLClass CLASS_NARRATORCHAIN = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#NarratorChain"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence
+     * Class http://www.i-knex.com/ontology/hadith#NarratorOccurrence
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class NARRATOROCCURRENCE.<p>
      * 
      */
-    public static final OWLClass CLASS_NARRATOROCCURRENCE = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#NarratorOccurrence"));
+    public static final OWLClass CLASS_NARRATOROCCURRENCE = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#NarratorOccurrence"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Person
+     * Class http://www.i-knex.com/ontology/hadith#Person
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class PERSON.<p>
      * 
      */
-    public static final OWLClass CLASS_PERSON = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Person"));
+    public static final OWLClass CLASS_PERSON = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Person"));
     /* ***************************************************
      * Class http://schema.org/Person
      */
@@ -183,718 +183,718 @@ public class Vocabulary {
     public static final OWLClass CLASS_SCHEMA_PERSON = factory.getOWLClass(IRI.create("http://schema.org/Person"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarrator
+     * Class http://www.i-knex.com/ontology/hadith#RootNarrator
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class ROOTNARRATOR.<p>
      * 
      */
-    public static final OWLClass CLASS_ROOTNARRATOR = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#RootNarrator"));
+    public static final OWLClass CLASS_ROOTNARRATOR = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#RootNarrator"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence
+     * Class http://www.i-knex.com/ontology/hadith#RootNarratorOccurrence
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class ROOTNARRATOROCCURRENCE.<p>
      * 
      */
-    public static final OWLClass CLASS_ROOTNARRATOROCCURRENCE = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorOccurrence"));
+    public static final OWLClass CLASS_ROOTNARRATOROCCURRENCE = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#RootNarratorOccurrence"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Sacred_Hadith
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class SACRED_HADITH.<p>
      * 
      */
-    public static final OWLClass CLASS_SACRED_HADITH = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Sacred_Hadith"));
+    public static final OWLClass CLASS_SACRED_HADITH = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Sacred_Hadith"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Severed_Hadith
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class SEVERED_HADITH.<p>
      * 
      */
-    public static final OWLClass CLASS_SEVERED_HADITH = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Severed_Hadith"));
+    public static final OWLClass CLASS_SEVERED_HADITH = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Severed_Hadith"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith
+     * Class http://www.i-knex.com/ontology/hadith#Stopped_Hadith
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class STOPPED_HADITH.<p>
      * 
      */
-    public static final OWLClass CLASS_STOPPED_HADITH = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Stopped_Hadith"));
+    public static final OWLClass CLASS_STOPPED_HADITH = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Stopped_Hadith"));
 
     /* ***************************************************
-     * Class http://www.lodislamica.me/ontology/hadithVoc#Verse
+     * Class http://www.i-knex.com/ontology/hadith#Verse
      */
 
     /**
      * A constant to give access to the Manchester OWL api representation of the class VERSE.<p>
      * 
      */
-    public static final OWLClass CLASS_VERSE = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#Verse"));
+    public static final OWLClass CLASS_VERSE = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#Verse"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#author
+     * Object Property http://www.i-knex.com/ontology/hadith#author
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property AUTHOR.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_AUTHOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#author"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_AUTHOR = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#author"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf
+     * Object Property http://www.i-knex.com/ontology/hadith#containsMentionOf
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property CONTAINSMENTIONOF.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_CONTAINSMENTIONOF = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#containsMentionOf"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_CONTAINSMENTIONOF = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#containsMentionOf"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasBook
+     * Object Property http://www.i-knex.com/ontology/hadith#hasBook
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASBOOK.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASBOOK = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasBook"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASBOOK = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasBook"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasChapter
+     * Object Property http://www.i-knex.com/ontology/hadith#hasChapter
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASCHAPTER.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASCHAPTER = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasChapter"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASCHAPTER = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasChapter"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasHadith
+     * Object Property http://www.i-knex.com/ontology/hadith#hasHadith
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASHADITH.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITH = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasHadith"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITH = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasHadith"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasHadithText
+     * Object Property http://www.i-knex.com/ontology/hadith#hasHadithText
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASHADITHTEXT.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITHTEXT = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasHadithText"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITHTEXT = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasHadithText"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasHadithType
+     * Object Property http://www.i-knex.com/ontology/hadith#hasHadithType
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASHADITHTYPE.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITHTYPE = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasHadithType"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASHADITHTYPE = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasHadithType"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#hasNarrator
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASNARRATOR.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarrator"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasNarrator"));
 
     /* ***************************************************
-      * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain
+      * Object Property http://www.i-knex.com/ontology/hadith#hasNarratorChain
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASNARRATORCHAIN.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATORCHAIN = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarratorChain"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATORCHAIN = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasNarratorChain"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasNarratorOccurence
+     * Object Property http://www.i-knex.com/ontology/hadith#hasNarratorOccurence
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASNARRATORSEGMENT.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasNarratorSegment"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasNarratorSegment"));
 
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment
+     * Object Property http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASROOTNARRATORSEGMENT.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasRootNarratorSegment"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATORSEGMENT = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment"));
 
  
    /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasPart
+     * Object Property http://www.i-knex.com/ontology/hadith#hasPart
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASPART.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASPART = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasPart"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASPART = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasPart"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#hasRootNarrator
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HASROOTNARRATOR.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasRootNarrator"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HASROOTNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasRootNarrator"));
 
 
      
    /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#heardFrom
+     * Object Property http://www.i-knex.com/ontology/hadith#heardFrom
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property HEARDFROM.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_HEARDFROM = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#heardFrom"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_HEARDFROM = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#heardFrom"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOf
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOf
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property ISPARTOF.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOF = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#isPartOf"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOF = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#isPartOf"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOfBook
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property ISPARTOFBOOK.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFBOOK = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#isPartOfBook"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFBOOK = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#isPartOfBook"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOfChapter
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property ISPARTOFCHAPTER.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFCHAPTER = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#isPartOfChapter"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFCHAPTER = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#isPartOfChapter"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOfCollection
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property ISPARTOFCOLLECTION.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFCOLLECTION = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#isPartOfCollection"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFCOLLECTION = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#isPartOfCollection"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith
+     * Object Property http://www.i-knex.com/ontology/hadith#isPartOfHadith
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property ISPARTOFHADITH.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFHADITH = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#isPartOfHadith"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_ISPARTOFHADITH = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#isPartOfHadith"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#mentionedIn
+     * Object Property http://www.i-knex.com/ontology/hadith#mentionedIn
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property MENTIONEDIN.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_MENTIONEDIN = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#mentionedIn"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_MENTIONEDIN = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#mentionedIn"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#mentions
+     * Object Property http://www.i-knex.com/ontology/hadith#mentions
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property MENTIONS.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_MENTIONS = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#mentions"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_MENTIONS = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#mentions"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#narrated
+     * Object Property http://www.i-knex.com/ontology/hadith#narrated
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property NARRATED.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_NARRATED = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#narrated"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_NARRATED = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#narrated"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#refersToNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#refersToNarrator
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property REFERSTONARRATOR.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_REFERSTONARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#refersToNarrator"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_REFERSTONARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#refersToNarrator"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#refersToRootNarrator
+     * Object Property http://www.i-knex.com/ontology/hadith#refersToRootNarrator
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property REFERSTOROOTNARRATOR.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_REFERSTOROOTNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#refersToRootNarrator"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_REFERSTOROOTNARRATOR = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#refersToRootNarrator"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#transferredTo
+     * Object Property http://www.i-knex.com/ontology/hadith#transferredTo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property TRANSFERREDTO.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_TRANSFERREDTO = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#transferredTo"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_TRANSFERREDTO = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#transferredTo"));
 
     /* ***************************************************
-     * Object Property http://www.lodislamica.me/ontology/hadithVoc#follows
+     * Object Property http://www.i-knex.com/ontology/hadith#follows
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the object property FOLLOWS.<p>
      * 
      */
-    public static final OWLObjectProperty OBJECT_PROPERTY_FOLLOWS = factory.getOWLObjectProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#follows"));
+    public static final OWLObjectProperty OBJECT_PROPERTY_FOLLOWS = factory.getOWLObjectProperty(IRI.create("http://www.i-knex.com/ontology/hadith#follows"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#age
+     * Data Property http://www.i-knex.com/ontology/hadith#age
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property AGE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_AGE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#age"));
+    public static final OWLDataProperty DATA_PROPERTY_AGE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#age"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#attribute
+     * Data Property http://www.i-knex.com/ontology/hadith#attribute
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property ATTRIBUTE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_ATTRIBUTE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#attribute"));
+    public static final OWLDataProperty DATA_PROPERTY_ATTRIBUTE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#attribute"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#birthPlace
+     * Data Property http://www.i-knex.com/ontology/hadith#birthPlace
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property BIRTHPLACE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_BIRTHPLACE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#birthPlace"));
+    public static final OWLDataProperty DATA_PROPERTY_BIRTHPLACE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#birthPlace"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#birthYear
+     * Data Property http://www.i-knex.com/ontology/hadith#birthYear
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property BIRTHYEAR.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_BIRTHYEAR = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#birthYear"));
+    public static final OWLDataProperty DATA_PROPERTY_BIRTHYEAR = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#birthYear"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#chapterNo
+     * Data Property http://www.i-knex.com/ontology/hadith#chapterNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property CHAPTERNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_CHAPTERNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#chapterNo"));
+    public static final OWLDataProperty DATA_PROPERTY_CHAPTERNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#chapterNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#chapterPreface
+     * Data Property http://www.i-knex.com/ontology/hadith#chapterPreface
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property CHAPTERPREFACE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_CHAPTERPREFACE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#chapterPreface"));
+    public static final OWLDataProperty DATA_PROPERTY_CHAPTERPREFACE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#chapterPreface"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#collectionName
+     * Data Property http://www.i-knex.com/ontology/hadith#collectionName
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property COLLECTIONNAME.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_COLLECTIONNAME = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#collectionName"));
+    public static final OWLDataProperty DATA_PROPERTY_COLLECTIONNAME = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#collectionName"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#concealment
+     * Data Property http://www.i-knex.com/ontology/hadith#concealment
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property CONCEALMENT.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_CONCEALMENT = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#concealment"));
+    public static final OWLDataProperty DATA_PROPERTY_CONCEALMENT = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#concealment"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#deathPlace
+     * Data Property http://www.i-knex.com/ontology/hadith#deathPlace
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property DEATHPLACE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_DEATHPLACE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#deathPlace"));
+    public static final OWLDataProperty DATA_PROPERTY_DEATHPLACE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#deathPlace"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#deathYear
+     * Data Property http://www.i-knex.com/ontology/hadith#deathYear
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property DEATHYEAR.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_DEATHYEAR = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#deathYear"));
+    public static final OWLDataProperty DATA_PROPERTY_DEATHYEAR = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#deathYear"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engBookNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engBookNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property ENGBOOKNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_ENGBOOKNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#engBookNo"));
+    public static final OWLDataProperty DATA_PROPERTY_ENGBOOKNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#engBookNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engHadithNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engHadithNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property ENGHADITHNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_ENGHADITHNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#engHadithNo"));
+    public static final OWLDataProperty DATA_PROPERTY_ENGHADITHNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#engHadithNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#engVolNo
+     * Data Property http://www.i-knex.com/ontology/hadith#engVolNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property ENGVOLNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_ENGVOLNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#engVolNo"));
+    public static final OWLDataProperty DATA_PROPERTY_ENGVOLNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#engVolNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#englishReference
+     * Data Property http://www.i-knex.com/ontology/hadith#englishReference
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property ENGLISHREFERENCE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_ENGLISHREFERENCE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#englishReference"));
+    public static final OWLDataProperty DATA_PROPERTY_ENGLISHREFERENCE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#englishReference"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#firstChar
+     * Data Property http://www.i-knex.com/ontology/hadith#firstChar
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property FIRSTCHAR.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_FIRSTCHAR = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#firstChar"));
+    public static final OWLDataProperty DATA_PROPERTY_FIRSTCHAR = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#firstChar"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#fullHadithText
+     * Data Property http://www.i-knex.com/ontology/hadith#fullHadithText
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property FULLHADITHTEXT.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_FULLHADITHTEXT = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#fullHadithText"));
+    public static final OWLDataProperty DATA_PROPERTY_FULLHADITHTEXT = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#fullHadithText"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#generation
+     * Data Property http://www.i-knex.com/ontology/hadith#generation
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property GENERATION.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_GENERATION = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#generation"));
+    public static final OWLDataProperty DATA_PROPERTY_GENERATION = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#generation"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithBookIntro
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHBOOKINTRO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHBOOKINTRO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithBookIntro"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHBOOKINTRO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithBookIntro"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithBookNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHBOOKNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHBOOKNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithBookNo"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHBOOKNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithBookNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithChapterNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHCHAPTERNO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHCHAPTERNO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithChapterNo"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHCHAPTERNO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithChapterNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithGrade
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithGrade
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHGRADE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHGRADE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithGrade"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHGRADE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithGrade"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithReferenceNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHREFERENCENO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHREFERENCENO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithReferenceNo"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHREFERENCENO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithReferenceNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithType
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithType
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHTYPE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHTYPE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithType"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHTYPE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithType"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithURL
+     * Data Property http://www.i-knex.com/ontology/hadith#hadithURL
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HADITHURL.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HADITHURL = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithURL"));
+    public static final OWLDataProperty DATA_PROPERTY_HADITHURL = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithURL"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#hasMaster
+     * Data Property http://www.i-knex.com/ontology/hadith#hasMaster
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property HASMASTER.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_HASMASTER = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hasMaster"));
+    public static final OWLDataProperty DATA_PROPERTY_HASMASTER = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hasMaster"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#lineage
+     * Data Property http://www.i-knex.com/ontology/hadith#lineage
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property LINEAGE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_LINEAGE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#lineage"));
+    public static final OWLDataProperty DATA_PROPERTY_LINEAGE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#lineage"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#name
+     * Data Property http://www.i-knex.com/ontology/hadith#name
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property NAME.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_NAME = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#name"));
+    public static final OWLDataProperty DATA_PROPERTY_NAME = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#name"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorChain
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorChain
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property NARRATORCHAIN.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_NARRATORCHAIN = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#narratorChain"));
+    public static final OWLDataProperty DATA_PROPERTY_NARRATORCHAIN = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#narratorChain"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorID
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorID
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property NARRATORID.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_NARRATORID = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#narratorID"));
+    public static final OWLDataProperty DATA_PROPERTY_NARRATORID = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#narratorID"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#narratorURL
+     * Data Property http://www.i-knex.com/ontology/hadith#narratorURL
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property NARRATORURL.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_NARRATORURL = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#narratorURL"));
+    public static final OWLDataProperty DATA_PROPERTY_NARRATORURL = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#narratorURL"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#office
+     * Data Property http://www.i-knex.com/ontology/hadith#office
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property OFFICE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_OFFICE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#office"));
+    public static final OWLDataProperty DATA_PROPERTY_OFFICE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#office"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#popularName
+     * Data Property http://www.i-knex.com/ontology/hadith#popularName
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property POPULARNAME.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_POPULARNAME = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#popularName"));
+    public static final OWLDataProperty DATA_PROPERTY_POPULARNAME = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#popularName"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#rank
+     * Data Property http://www.i-knex.com/ontology/hadith#rank
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property RANK.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_RANK = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#rank"));
+    public static final OWLDataProperty DATA_PROPERTY_RANK = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#rank"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#residence
+     * Data Property http://www.i-knex.com/ontology/hadith#residence
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property RESIDENCE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_RESIDENCE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#residence"));
+    public static final OWLDataProperty DATA_PROPERTY_RESIDENCE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#residence"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought
+     * Data Property http://www.i-knex.com/ontology/hadith#schoolOfThought
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property SCHOOLOFTHOUGHT.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_SCHOOLOFTHOUGHT = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#schoolOfThought"));
+    public static final OWLDataProperty DATA_PROPERTY_SCHOOLOFTHOUGHT = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#schoolOfThought"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#sequenceNo
+     * Data Property http://www.i-knex.com/ontology/hadith#sequenceNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property SEQUENCENO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_SEQUENCENO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#sequenceNo"));
+    public static final OWLDataProperty DATA_PROPERTY_SEQUENCENO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#sequenceNo"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#teknonym
+     * Data Property http://www.i-knex.com/ontology/hadith#teknonym
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property TEKNONYM.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_TEKNONYM = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#teknonym"));
+    public static final OWLDataProperty DATA_PROPERTY_TEKNONYM = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#teknonym"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#title
+     * Data Property http://www.i-knex.com/ontology/hadith#title
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property TITLE.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_TITLE = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#title"));
+    public static final OWLDataProperty DATA_PROPERTY_TITLE = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#title"));
 
     /* ***************************************************
-     * Data Property http://www.lodislamica.me/ontology/hadithVoc#verseNo
+     * Data Property http://www.i-knex.com/ontology/hadith#verseNo
      */
      
     /**
      * A constant to give access to the Manchester OWL API representation of the data property VERSENO.<p>
      * 
      */
-    public static final OWLDataProperty DATA_PROPERTY_VERSENO = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#verseNo"));
+    public static final OWLDataProperty DATA_PROPERTY_VERSENO = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#verseNo"));
 
     /* ***************************************************
      * Data Property http://www.w3.org/2000/01/rdf-schema#label
@@ -927,31 +927,31 @@ public class Vocabulary {
 
 
        /* ***************************************************
-        * Class http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment
+        * Class http://www.i-knex.com/ontology/hadith#NarratorChainSegment
         */
 
        /**
         * A constant to give access to the Manchester OWL api representation of the class NARRATORCHAINSEGMENT.<p>
         * 
         */
-       public static final OWLClass CLASS_NARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#NarratorChainSegment"));
+       public static final OWLClass CLASS_NARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#NarratorChainSegment"));
        /* ***************************************************
-        * Class http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment
+        * Class http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment
         */
 
        /**
         * A constant to give access to the Manchester OWL api representation of the class ROOTNARRATORCHAINSEGMENT.<p>
         * 
         */
-       public static final OWLClass CLASS_ROOTNARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#RootNarratorChainSegment"));
+       public static final OWLClass CLASS_ROOTNARRATORCHAINSEGMENT = factory.getOWLClass(IRI.create("http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment"));
        /* ***************************************************
-        * Data Property http://www.lodislamica.me/ontology/hadithVoc#hadithText
+        * Data Property http://www.i-knex.com/ontology/hadith#hadithText
         */
         
        /**
         * A constant to give access to the Manchester OWL API representation of the data property HADITHTEXT.<p>
         * 
         */
-       public static final OWLDataProperty DATA_PROPERTY_HADITHTEXT = factory.getOWLDataProperty(IRI.create("http://www.lodislamica.me/ontology/hadithVoc#hadithText"));
+       public static final OWLDataProperty DATA_PROPERTY_HADITHTEXT = factory.getOWLDataProperty(IRI.create("http://www.i-knex.com/ontology/hadith#hadithText"));
 
 }
