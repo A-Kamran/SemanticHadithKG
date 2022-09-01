@@ -13,6 +13,7 @@
         <terms:contributor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Amna binte Kamran</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bushra Abro</terms:contributor>
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by-sa/4.0/</terms:license>
         <terms:title rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">The Semantic Hadith Ontology</terms:title>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">hadith:</rdfs:isDefinedBy>
     </owl:Ontology>
