@@ -1,0 +1,1292 @@
+<http://www.i-knex.com/ontology/hadith#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.i-knex.com/ontology/hadith#> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.i-knex.com/ontology/hadith#/1.0.1> .
+<http://www.i-knex.com/ontology/hadith#> <http://purl.org/dc/terms/contributor> "Bushra Abro"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.i-knex.com/ontology/hadith#> <http://purl.org/dc/terms/creator> "Amna binte Kamran"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.i-knex.com/ontology/hadith#> <http://purl.org/dc/terms/description> "Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.i-knex.com/ontology/hadith#> <http://purl.org/dc/terms/title> "The Semantic Hadith Ontology"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.i-knex.com/ontology/hadith#> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "hadith:"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#equivalentClass
+<http://www.w3.org/2002/07/owl#equivalentClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#equivalentProperty
+<http://www.w3.org/2002/07/owl#equivalentProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#sameAs
+<http://www.w3.org/2002/07/owl#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/author
+<http://schema.org/author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithCollection> .
+<http://schema.org/author> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> .
+# 
+# http://schema.org/hasPart
+<http://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/hasPart> <http://www.w3.org/2002/07/owl#inverseOf> <http://schema.org/isPartOf> .
+<http://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+# 
+# http://schema.org/isPartOf
+<http://schema.org/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://schema.org/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithCollection> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid8 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#NarratorChain> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithText> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/mentions
+<http://schema.org/mentions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/mentions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#containsMentionOf
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/mentions> .
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.i-knex.com/ontology/hadith#mentionedIn> .
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#Hadith> .
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#Verse> .
+# 
+# http://www.i-knex.com/ontology/hadith#follows
+<http://www.i-knex.com/ontology/hadith#follows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#follows> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.i-knex.com/ontology/hadith#precedes> .
+<http://www.i-knex.com/ontology/hadith#follows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+<http://www.i-knex.com/ontology/hadith#follows> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasBook
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithCollection> .
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasChapter
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasHadith
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasHadithText
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#Hadith> .
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithText> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasHadithType
+<http://www.i-knex.com/ontology/hadith#hasHadithType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasHadithType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.i-knex.com/ontology/hadith#hasHadithType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithType> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasNarrator
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.i-knex.com/ontology/hadith#narrated> .
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#refersToNarrator> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#hasNarratorSegment> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#hasNarratorChain> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasNarratorChain
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#Hadith> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#NarratorChain> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasNarratorSegment
+<http://www.i-knex.com/ontology/hadith#hasNarratorSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#NarratorChain> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasRootNarrator
+<http://www.i-knex.com/ontology/hadith#hasRootNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasRootNarrator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#RootNarrator> .
+<http://www.i-knex.com/ontology/hadith#hasRootNarrator> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#refersToNarrator> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#hasNarratorChain> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment
+<http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#NarratorChain> .
+<http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> .
+# 
+# http://www.i-knex.com/ontology/hadith#heardFrom
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.i-knex.com/ontology/hadith#transferredTo> .
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfBook
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/isPartOf> .
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfChapter
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/isPartOf> .
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#Hadith> .
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfCollection
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/isPartOf> .
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithCollection> .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfHadith
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/isPartOf> .
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#mentionedIn
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#Verse> .
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#narrated
+<http://www.i-knex.com/ontology/hadith#narrated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#precedes
+<http://www.i-knex.com/ontology/hadith#precedes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#precedes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+<http://www.i-knex.com/ontology/hadith#precedes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+# 
+# http://www.i-knex.com/ontology/hadith#refersToNarrator
+<http://www.i-knex.com/ontology/hadith#refersToNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#refersToNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.i-knex.com/ontology/hadith#refersToNarrator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+<http://www.i-knex.com/ontology/hadith#refersToNarrator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+# 
+# http://www.i-knex.com/ontology/hadith#transferredTo
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.i-knex.com/ontology/hadith#age
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+# 
+# http://www.i-knex.com/ontology/hadith#attribute
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#birthPlace
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#birthYear
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#chapterNo
+<http://www.i-knex.com/ontology/hadith#chapterNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#chapterPreface
+<http://www.i-knex.com/ontology/hadith#chapterPreface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#collectionName
+<http://www.i-knex.com/ontology/hadith#collectionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#collectionName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#concealment
+<http://www.i-knex.com/ontology/hadith#concealment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#deathPlace
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#deathYear
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#engBookNo
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.i-knex.com/ontology/hadith#englishReference> .
+# 
+# http://www.i-knex.com/ontology/hadith#engHadithNo
+<http://www.i-knex.com/ontology/hadith#engHadithNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#engHadithNo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.i-knex.com/ontology/hadith#englishReference> .
+# 
+# http://www.i-knex.com/ontology/hadith#engVolNo
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.i-knex.com/ontology/hadith#englishReference> .
+# 
+# http://www.i-knex.com/ontology/hadith#englishReference
+<http://www.i-knex.com/ontology/hadith#englishReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#firstChar
+<http://www.i-knex.com/ontology/hadith#firstChar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#fullHadithText
+<http://www.i-knex.com/ontology/hadith#fullHadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#generation
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithBookIntro
+<http://www.i-knex.com/ontology/hadith#hadithBookIntro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithBookNo
+<http://www.i-knex.com/ontology/hadith#hadithBookNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithChapterNo
+<http://www.i-knex.com/ontology/hadith#hadithChapterNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithGrade
+<http://www.i-knex.com/ontology/hadith#hadithGrade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#hadithGrade> <http://purl.org/dc/terms/description> "Ibn al-Salah said, \"Hadith, in the view of scholars of this discipline, fall into the divisions of 'sound' (ṣaḥīḥ), 'fair' (ḥasan), and 'weak' (ḍaʻīf).\" While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.\n\nṢaḥīḥ\nSahih (Arabic: صحيح, Ṣaḥīḥ) may be translated as \"authentic\" or \"sound.\"[6] Ibn Hajar defines a hadith that is ṣaḥīḥ lidhātihi (\"ṣaḥīḥ in and of itself\") as a singular narration (ahaad; see below) conveyed by a trustworthy, completely competent person, either in his ability to memorize or to preserve what he wrote, with a muttaṣil (\"connected\") isnād (\"chain of narration\") that contains neither a serious concealed flaw (ʻillah)علة nor irregularity (shādhdh). He then defines a hadith that is ṣaḥīḥ lighairihi (\"ṣaḥīḥ due to external factors\") as a hadith \"with something, such as numerous chains of narration, strengthening it.\"\n\nIbn Hajar's definitions indicate that there are five conditions to be met for a particular hadith to be considered ṣaḥīḥ:\n\n1. Each narrator in the chain of narration must be trustworthy;\n2. Each narrator must be reliable in his ability to preserve that narration, be it in his ability to memorize to the extent that he can recall it as he heard it, or, that he has written it as he heard it and has preserved that written document unchanged;\n3. The isnād must be connected (muttasil) insofar as it is at least possible for each narrator in the chain to have received the hadith from a predecessor;\n4. The hadith, including its isnād, is free of ʻillah (hidden detrimental flaw or flaws, e.g. the establishment that two narrators, although contemporaries, could not have shared the hadith, thereby breaking the isnād.)\n5. The hadith is free of irregularity, meaning that it does not contradict another hadith already established (accepted).\n\nA number of books were authored in which the author stipulated the inclusion of ṣaḥīḥ hadith alone. \n\nṢaḥīḥ al-Bukhārī. Considered the most authentic book after the Quran.\nṢaḥīḥ Muslim. Considered the next most authentic book after Ṣaḥīḥ al-Bukhārī." .
+<http://www.i-knex.com/ontology/hadith#hadithGrade> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Hadith_terminology" .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithReferenceNo
+<http://www.i-knex.com/ontology/hadith#hadithReferenceNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithText
+<http://www.i-knex.com/ontology/hadith#hadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithType
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithURL
+<http://www.i-knex.com/ontology/hadith#hadithURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#hasMaster
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#lineage
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#name
+<http://www.i-knex.com/ontology/hadith#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorChain
+<http://www.i-knex.com/ontology/hadith#narratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorID
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorURL
+<http://www.i-knex.com/ontology/hadith#narratorURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#office
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#popularName
+<http://www.i-knex.com/ontology/hadith#popularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#rank
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#residence
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#schoolOfThought
+<http://www.i-knex.com/ontology/hadith#schoolOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#sequenceNo
+<http://www.i-knex.com/ontology/hadith#sequenceNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#teknonym
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#title
+<http://www.i-knex.com/ontology/hadith#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.i-knex.com/ontology/hadith#verseNo
+<http://www.i-knex.com/ontology/hadith#verseNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Person
+<http://schema.org/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.i-knex.com/ontology/hadith#Believer
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Person> .
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#name> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#Companion
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Believer> .
+# 
+# http://www.i-knex.com/ontology/hadith#Elevated_Hadith
+<http://www.i-knex.com/ontology/hadith#Elevated_Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Elevated_Hadith> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid21 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#hasValue> <http://www.i-knex.com/ontology/hadith#elevated> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadithType> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.i-knex.com/ontology/hadith#Elevated_Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#Hadith
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#Verse> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#containsMentionOf> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithText> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadithText> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#NarratorChain> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasNarratorChain> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#RootNarrator> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasRootNarrator> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#isPartOfChapter> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#engHadithNo> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid31 .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#fullHadithText> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithReferenceNo> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithType> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid34 .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithURL> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithBook
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithChapter> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasChapter> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithCollection> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#isPartOfCollection> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid37 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#engBookNo> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithBookIntro> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid39 .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithBookNo> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#sequenceNo> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithChapter
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid41 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadith> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#isPartOfBook> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithChapterNo> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#sequenceNo> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithCollection
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/author> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithBook> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/hasPart> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#collectionName> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#engVolNo> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Believer> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithNarrator
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Believer> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid49 .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#age> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#attribute> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#birthYear> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#concealment> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#deathPlace> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#deathYear> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#firstChar> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#generation> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasMaster> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+_:genid58 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#lineage> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#name> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#narratorID> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#anyURI> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#narratorURL> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#office> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid63 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#popularName> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid64 .
+_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#rank> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#residence> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+_:genid66 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#schoolOfThought> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#teknonym> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#title> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithText
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid69 .
+_:genid69 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid69 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#isPartOfHadith> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid70 .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hadithText> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithType
+<http://www.i-knex.com/ontology/hadith#HadithType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#oneOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#stopped> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#severed> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#sacred> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#elevated> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#HadithType> <http://purl.org/dc/terms/description> "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure." .
+# 
+# http://www.i-knex.com/ontology/hadith#NarratorChain
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/isPartOf> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasNarratorSegment> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#isPartOfHadith> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#narratorChain> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#NarratorChainSegment
+<http://www.i-knex.com/ontology/hadith#NarratorChainSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#NarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.i-knex.com/ontology/hadith#NarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid81 .
+_:genid81 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+_:genid81 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#refersToNarrator> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#NarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid82 .
+_:genid82 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#refersToNarrator> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+# 
+# http://www.i-knex.com/ontology/hadith#RootNarrator
+<http://www.i-knex.com/ontology/hadith#RootNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#RootNarrator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#HadithNarrator> .
+# 
+# http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment
+<http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#NarratorChainSegment> .
+<http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+_:genid83 <http://www.w3.org/2002/07/owl#maxCardinality> "0"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#heardFrom> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment> <http://www.w3.org/2000/01/rdf-schema#comment> "The Root Narrator (First Narrator Occurrence) has no heardFrom since they are the eyewitness to the Hadith contents" .
+# 
+# http://www.i-knex.com/ontology/hadith#Sacred_Hadith
+<http://www.i-knex.com/ontology/hadith#Sacred_Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Sacred_Hadith> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/2002/07/owl#hasValue> <http://www.i-knex.com/ontology/hadith#sacred> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadithType> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# http://www.i-knex.com/ontology/hadith#Severed_Hadith
+<http://www.i-knex.com/ontology/hadith#Severed_Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Severed_Hadith> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid90 .
+_:genid90 <http://www.w3.org/2002/07/owl#hasValue> <http://www.i-knex.com/ontology/hadith#severed> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadithType> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.i-knex.com/ontology/hadith#Severed_Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#Stopped_Hadith
+<http://www.i-knex.com/ontology/hadith#Stopped_Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.i-knex.com/ontology/hadith#Stopped_Hadith> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid95 .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/2002/07/owl#hasValue> <http://www.i-knex.com/ontology/hadith#stopped> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.i-knex.com/ontology/hadith#hasHadithType> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.i-knex.com/ontology/hadith#Hadith> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.i-knex.com/ontology/hadith#Stopped_Hadith> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.i-knex.com/ontology/hadith#Hadith> .
+# 
+# http://www.i-knex.com/ontology/hadith#Verse
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.i-knex.com/ontology/hadith#Believer
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/2000/01/rdf-schema#label> "Believer"@en .
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/2000/01/rdf-schema#label> "مومن"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#Companion
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/2000/01/rdf-schema#label> "Companion"@en .
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/2000/01/rdf-schema#label> "Companion of a prophet"@en .
+<http://www.i-knex.com/ontology/hadith#Companion> <http://www.w3.org/2000/01/rdf-schema#label> "صحابي"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#Hadith
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#label> "حديث"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithBook
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Book"@en .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2000/01/rdf-schema#label> "كتاب الحديث"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithChapter
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Chapter"@en .
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://www.w3.org/2000/01/rdf-schema#label> "باب"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithCollection
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Collection"@en .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2000/01/rdf-schema#label> "مجموعة الحديث"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Collection Author"@en .
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "محدث"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithNarrator
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Narrator"@en .
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://www.w3.org/2000/01/rdf-schema#label> "راوى"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#HadithText
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Text"@en .
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/2000/01/rdf-schema#label> "متن"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#NarratorChain
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "Chain of Narrators"@en .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Chain of Narrtors"@en .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "Narrator Chain"@en .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "سند"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#NarratorOccurrence
+<http://www.i-knex.com/ontology/hadith#NarratorOccurrence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#NarratorOccurrence> <http://www.w3.org/2000/01/rdf-schema#label> "Narrator Occurance"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#RootNarrator
+<http://www.i-knex.com/ontology/hadith#RootNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#RootNarrator> <http://www.w3.org/2000/01/rdf-schema#label> "Root Narrator"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#Verse
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/2000/01/rdf-schema#label> "Qur'anic Verse"@en .
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/2000/01/rdf-schema#label> "Verse"@en .
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/2000/01/rdf-schema#label> "Verse of the Quran"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#age
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/2000/01/rdf-schema#label> "Age"@en .
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/2000/01/rdf-schema#label> "Age of narrator"@en .
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/2000/01/rdf-schema#label> "عمر الراوي"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#attribute
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Attribute"@en .
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/2000/01/rdf-schema#label> "Quality"@en .
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/2000/01/rdf-schema#label> "الوصف"@ar .
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/2000/01/rdf-schema#label> "وصف"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#birthPlace
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Birth Place"@en .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Country of Birth"@en .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Birth"@en .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2000/01/rdf-schema#label> "بلدالميلاد"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#birthYear
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "Birth Year"@en .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "Year of Birth"@en .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2000/01/rdf-schema#label> "سنة الميلاد"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#chapterNo
+<http://www.i-knex.com/ontology/hadith#chapterNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#chapterNo> <http://www.w3.org/2000/01/rdf-schema#label> "Chapter Index"@en .
+<http://www.i-knex.com/ontology/hadith#chapterNo> <http://www.w3.org/2000/01/rdf-schema#label> "Chapter Index (Quran)"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#chapterPreface
+<http://www.i-knex.com/ontology/hadith#chapterPreface> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#chapterPreface> <http://www.w3.org/2000/01/rdf-schema#label> "Chapter Preface"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#collectionName
+<http://www.i-knex.com/ontology/hadith#collectionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#collectionName> <http://www.w3.org/2000/01/rdf-schema#label> "Collection Name"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#concealment
+<http://www.i-knex.com/ontology/hadith#concealment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#concealment> <http://www.w3.org/2000/01/rdf-schema#label> "Concealment"@en .
+<http://www.i-knex.com/ontology/hadith#concealment> <http://www.w3.org/2000/01/rdf-schema#label> "اختلاط تدليس الأقرباء"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#containsMentionOf
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://www.w3.org/2000/01/rdf-schema#label> "contains mention of"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#deathPlace
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Country of Death"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Death Place"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Place of Death"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2000/01/rdf-schema#label> "بلد الوفاة"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#deathYear
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2000/01/rdf-schema#label> "Death Year"@en .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2000/01/rdf-schema#label> "Year of Death"@en .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2000/01/rdf-schema#label> "سنة الوفاة"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#elevated
+<http://www.i-knex.com/ontology/hadith#elevated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.i-knex.com/ontology/hadith#HadithType> .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://www.w3.org/2000/01/rdf-schema#label> "Elevated_Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://www.w3.org/2000/01/rdf-schema#label> "مرفوع"@ar .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://purl.org/dc/terms/description> "refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories."@en .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://purl.org/dc/terms/description> "وہ حدیث جس میں کسی قول، فعل یا تقریر کو رسول اللہ صلی اللہ علیہ وسلم کی طرف منسوب کیا گیا ہو۔"@ur .
+<http://www.i-knex.com/ontology/hadith#elevated> <http://www.w3.org/2004/02/skos/core#altLabel> "Marfūʿ"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#engBookNo
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://www.w3.org/2000/01/rdf-schema#label> "Book Number (English)"@en .
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Book Number (English)"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#engHadithNo
+<http://www.i-knex.com/ontology/hadith#engHadithNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#engHadithNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Number (English)"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#engVolNo
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Collection Volume Number (English)"@en .
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://www.w3.org/2000/01/rdf-schema#label> "Volume Number (English)"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#englishReference
+<http://www.i-knex.com/ontology/hadith#englishReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#englishReference> <http://www.w3.org/2000/01/rdf-schema#label> "English Reference"@en .
+<http://www.i-knex.com/ontology/hadith#englishReference> <http://www.w3.org/2000/01/rdf-schema#label> "Reference of Hadith (English)"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#firstChar
+<http://www.i-knex.com/ontology/hadith#firstChar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#firstChar> <http://www.w3.org/2000/01/rdf-schema#label> "First Character"@en .
+<http://www.i-knex.com/ontology/hadith#firstChar> <http://www.w3.org/2000/01/rdf-schema#label> "First Character of Narrator's name"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#fullHadithText
+<http://www.i-knex.com/ontology/hadith#fullHadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#fullHadithText> <http://www.w3.org/2000/01/rdf-schema#label> "Full Hadith"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#generation
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/2000/01/rdf-schema#label> "Generation"@en .
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/2000/01/rdf-schema#label> "Generation of Narrator"@en .
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/2000/01/rdf-schema#label> "الطبقة"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithBookIntro
+<http://www.i-knex.com/ontology/hadith#hadithBookIntro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithBookIntro> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Book Introduction"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithBookNo
+<http://www.i-knex.com/ontology/hadith#hadithBookNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithBookNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Book Number"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithChapterNo
+<http://www.i-knex.com/ontology/hadith#hadithChapterNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithChapterNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Chapter Number"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithReferenceNo
+<http://www.i-knex.com/ontology/hadith#hadithReferenceNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithReferenceNo> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Reference Number"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithType
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith Type"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hadithURL
+<http://www.i-knex.com/ontology/hadith#hadithURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hadithURL> <http://www.w3.org/2000/01/rdf-schema#label> "Hadith URL"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasBook
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://www.w3.org/2000/01/rdf-schema#label> "has book"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasChapter
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://www.w3.org/2000/01/rdf-schema#label> "has chapter"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasHadith
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://www.w3.org/2000/01/rdf-schema#label> "has Hadith"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasHadithText
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/2000/01/rdf-schema#label> "Has Hadith Text"@en .
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://www.w3.org/2000/01/rdf-schema#label> "has Hadith text"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasMaster
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/2000/01/rdf-schema#label> "has Master"@en .
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/2000/01/rdf-schema#label> "hasMawla"@en .
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/2000/01/rdf-schema#label> "الموالي"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#hasNarrator
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://www.w3.org/2000/01/rdf-schema#label> "has Narrator"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#hasNarratorChain
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "has Narrator Chain"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#heardFrom
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://www.w3.org/2000/01/rdf-schema#label> "Heard from"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfBook
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://www.w3.org/2000/01/rdf-schema#label> "is part of book"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfChapter
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://www.w3.org/2000/01/rdf-schema#label> "is part of chapter"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfCollection
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://www.w3.org/2000/01/rdf-schema#label> "is part of collection"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#isPartOfHadith
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://www.w3.org/2000/01/rdf-schema#label> "is Part of Hadith"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#lineage
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/2000/01/rdf-schema#label> "Descent"@en .
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/2000/01/rdf-schema#label> "Lineage"@en .
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/2000/01/rdf-schema#label> "النسب"@ar .
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/2000/01/rdf-schema#label> "Nasab" .
+# 
+# http://www.i-knex.com/ontology/hadith#mentionedIn
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Mentioned in"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#name
+<http://www.i-knex.com/ontology/hadith#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#name> <http://www.w3.org/2000/01/rdf-schema#label> "Name of Narrator"@en .
+<http://www.i-knex.com/ontology/hadith#name> <http://www.w3.org/2000/01/rdf-schema#label> "اسم الراوي"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#narrated
+<http://www.i-knex.com/ontology/hadith#narrated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#narrated> <http://www.w3.org/2000/01/rdf-schema#label> "Narrated"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorChain
+<http://www.i-knex.com/ontology/hadith#narratorChain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#narratorChain> <http://www.w3.org/2000/01/rdf-schema#label> "Narrator Chain"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorID
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/2000/01/rdf-schema#label> "Narrator ID"@en .
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/2000/01/rdf-schema#label> "Ravi Id"@en .
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/2000/01/rdf-schema#label> "رقم الراوي"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#narratorURL
+<http://www.i-knex.com/ontology/hadith#narratorURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#narratorURL> <http://www.w3.org/2000/01/rdf-schema#label> "Narrator URL"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#office
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/2000/01/rdf-schema#label> "Office"@en .
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/2000/01/rdf-schema#label> "النشاط"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#popularName
+<http://www.i-knex.com/ontology/hadith#popularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#popularName> <http://www.w3.org/2000/01/rdf-schema#label> "Popular Name"@en .
+<http://www.i-knex.com/ontology/hadith#popularName> <http://www.w3.org/2000/01/rdf-schema#label> "اسم الشهرة"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#rank
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/2000/01/rdf-schema#label> "Rank of Narrator"@en .
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/2000/01/rdf-schema#label> "grade"@en .
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/2000/01/rdf-schema#label> "الرتبة"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#residence
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/2000/01/rdf-schema#label> "Residence"@en .
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/2000/01/rdf-schema#label> "الإقامة"@ar .
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/2000/01/rdf-schema#label> "alAqama" .
+# 
+# http://www.i-knex.com/ontology/hadith#sacred
+<http://www.i-knex.com/ontology/hadith#sacred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#sacred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.i-knex.com/ontology/hadith#HadithType> .
+<http://www.i-knex.com/ontology/hadith#sacred> <http://www.w3.org/2000/01/rdf-schema#label> "Sacred_Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#sacred> <http://www.w3.org/2000/01/rdf-schema#label> "قدسی"@ar .
+<http://www.i-knex.com/ontology/hadith#sacred> <http://purl.org/dc/terms/description> "اللہ تعالیٰ کا وہ فرمان جسے نبی اکرم صلی اللہ علیہ وسلم نے اللہ تعالیٰ سے روایت کیا ہو، راویوں کے ذریعے سے ہم تک پہنچا ہو اور قرآن مجید میں موجود نہ ہو۔\n\nحدیث قدسی کی ایک اور تعریف: حدیث قدسی وہ حدیث ہے جس میں نبی کریم صلی اللہ علیہ وسلم ارشاد فرمائیں: ”اللہ تعالى نے فرمایا ہے۔“"@ur .
+<http://www.i-knex.com/ontology/hadith#sacred> <http://www.w3.org/2004/02/skos/core#altLabel> "Qudsi" .
+# 
+# http://www.i-knex.com/ontology/hadith#schoolOfThought
+<http://www.i-knex.com/ontology/hadith#schoolOfThought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#schoolOfThought> <http://www.w3.org/2000/01/rdf-schema#label> "School of Thought"@en .
+<http://www.i-knex.com/ontology/hadith#schoolOfThought> <http://www.w3.org/2000/01/rdf-schema#label> "mazhab"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#sequenceNo
+<http://www.i-knex.com/ontology/hadith#sequenceNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#sequenceNo> <http://www.w3.org/2000/01/rdf-schema#label> "Sequence Number"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#severed
+<http://www.i-knex.com/ontology/hadith#severed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#severed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.i-knex.com/ontology/hadith#HadithType> .
+<http://www.i-knex.com/ontology/hadith#severed> <http://www.w3.org/2000/01/rdf-schema#label> "Severed_Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#severed> <http://www.w3.org/2000/01/rdf-schema#label> "موقوف"@ar .
+<http://www.i-knex.com/ontology/hadith#severed> <http://purl.org/dc/terms/description> "refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise."@en .
+<http://www.i-knex.com/ontology/hadith#severed> <http://purl.org/dc/terms/description> "وہ حدیث جس میں کسی قول، فعل یا تقریر کو صحابی کی طرف منسوب کیا گیا ہو۔"@ur .
+<http://www.i-knex.com/ontology/hadith#severed> <http://www.w3.org/2004/02/skos/core#altLabel> "Mawquf"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#stopped
+<http://www.i-knex.com/ontology/hadith#stopped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.i-knex.com/ontology/hadith#HadithType> .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://www.w3.org/2000/01/rdf-schema#label> "Stopped_Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://www.w3.org/2000/01/rdf-schema#label> "مقطوع"@ar .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://purl.org/dc/terms/description> "a narration attributed to a Tabi‘i (a successor of one of Muhammad's companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ"@en .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://purl.org/dc/terms/description> "وہ حدیث جس میں کسی قول یا فعل کو تابعی یا تبع تابعی کی طرف منسوب کیا گیا ہو۔"@ur .
+<http://www.i-knex.com/ontology/hadith#stopped> <http://www.w3.org/2004/02/skos/core#altLabel> "Maqtu‘"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#teknonym
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/2000/01/rdf-schema#label> "Teknonym"@ar .
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/2000/01/rdf-schema#label> "النوع رجل الكنية"@ar .
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/2000/01/rdf-schema#label> "كنية"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#title
+<http://www.i-knex.com/ontology/hadith#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+<http://www.i-knex.com/ontology/hadith#title> <http://www.w3.org/2000/01/rdf-schema#label> "اللقب"@ar .
+# 
+# http://www.i-knex.com/ontology/hadith#transferredTo
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://www.w3.org/2000/01/rdf-schema#label> "Transfer To"@en .
+# 
+# http://www.i-knex.com/ontology/hadith#verseNo
+<http://www.i-knex.com/ontology/hadith#verseNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.i-knex.com/ontology/hadith#verseNo> <http://www.w3.org/2000/01/rdf-schema#label> "Verse Index"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.i-knex.com/ontology/hadith#Believer> <http://purl.org/dc/terms/description> "A Believer (Muslim) who may or may not be a companion (مومن)."@en .
+<http://www.i-knex.com/ontology/hadith#Believer> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://dbpedia.org/page/Muslims"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#Companion> <http://purl.org/dc/terms/description> "Companion to Prophet Muhammad (peace be upon him)"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://purl.org/dc/terms/description> "Hadith is the Arabic word for speech, account, report and narrative. In the Islamic context, they are the collection of sayings, actions and silent approval of the Prophet Muhammad (peace be upon him). The Hadith can include the illustration of historical events during his lifetime, the interpretation of Qur’anic verses, the reasons for revelations and contextual background, and the elaboration of essential Islamic concepts."@en .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://islamicurdubooks.com/info/info-detail.php?bookid=1" .
+<http://www.i-knex.com/ontology/hadith#Hadith> <http://www.w3.org/2002/07/owl#equivalentClass> "https://dbpedia.org/page/Hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://purl.org/dc/terms/description> "A book of Hadith. Each Hadith Book consists of several Hadith chapters."@en .
+<http://www.i-knex.com/ontology/hadith#HadithBook> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.org/ontology/bibo/Book"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithChapter> <http://purl.org/dc/terms/description> "Chapters in the Hadith Book"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://purl.org/dc/terms/description> "Collection of Hadith (مجموعة الحديث) e.g. Sahih Bukhari."@en .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2002/07/owl#equivalentClass> "http://purl.org/ontology/bibo/Collection"@en .
+<http://www.i-knex.com/ontology/hadith#HadithCollection> <http://www.w3.org/2002/07/owl#equivalentClass> "https://dbpedia.org/page/Category:Hadith_collections"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor> <http://purl.org/dc/terms/description> "Author of a Hadith Collection"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithNarrator> <http://purl.org/dc/terms/description> "Represents a person who is a narrator of a Hadith (راوى)."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://purl.org/dc/terms/description> "This is primarily a textual entity, which contains the main narration or content of the Hadith, without the chain of narrators or the Sanad."@en .
+<http://www.i-knex.com/ontology/hadith#HadithText> <http://www.w3.org/2004/02/skos/core#altLabel> "Matan (Matn)"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://purl.org/dc/terms/description> "Chain of Narrators who narrated the Hadith"@en .
+<http://www.i-knex.com/ontology/hadith#NarratorChain> <http://www.w3.org/2004/02/skos/core#altLabel> "Sanad"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#RootNarrator> <http://purl.org/dc/terms/description> "The first person to directly hear or witness the contents of a Hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#Verse> <http://purl.org/dc/terms/description> "Verse from the Holy Qur'an."@en .
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/2002/07/owl#equivalentClass> "http://mlode.nlp2rdf.org/quranvocab#Verse"@en .
+<http://www.i-knex.com/ontology/hadith#Verse> <http://www.w3.org/2002/07/owl#equivalentClass> "http://quranontology.com/Resource/Verse"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#age> <http://purl.org/dc/terms/description> "Age of the Narrator"@en .
+<http://www.i-knex.com/ontology/hadith#age> <http://www.w3.org/2004/02/skos/core#altLabel> "ummarArRavi"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#attribute> <http://purl.org/dc/terms/description> "a quality or feature regarded as a characteristic of a narrator"@en .
+<http://www.i-knex.com/ontology/hadith#attribute> <http://www.w3.org/2004/02/skos/core#altLabel> "wasaf"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://purl.org/dc/terms/description> "Country or place of narrator’s birth"@en .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://dbpedia.org/ontology/birthPlace"@en .
+<http://www.i-knex.com/ontology/hadith#birthPlace> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://dbpedia.org/property/birthPlace"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://purl.org/dc/terms/description> "Year of birth of narrator"@en .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://dbpedia.org/ontology/birthYear"@en .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2002/07/owl#equivalentProperty> "https://schema.org/birthDate"@en .
+<http://www.i-knex.com/ontology/hadith#birthYear> <http://www.w3.org/2004/02/skos/core#altLabel> "sunalMilad"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#chapterNo> <http://purl.org/dc/terms/description> "Chapter Number from Qu'ran"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#chapterPreface> <http://purl.org/dc/terms/description> "Preface of a Hadith Chapter"@en .
+<http://www.i-knex.com/ontology/hadith#chapterPreface> <http://www.w3.org/2004/02/skos/core#altLabel> "chapterTarjama"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#concealment> <http://purl.org/dc/terms/description> "Concealment of relatives"@en .
+<http://www.i-knex.com/ontology/hadith#concealment> <http://www.w3.org/2004/02/skos/core#altLabel> "Akhtalat Tadlees" .
+# 
+<http://www.i-knex.com/ontology/hadith#containsMentionOf> <http://purl.org/dc/terms/description> "A hadith mentions a verse of Quran."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://purl.org/dc/terms/description> "Country or place of narrator’s death"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://dbpedia.org/property/deathPlace"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2002/07/owl#equivalentProperty> "https://schema.org/deathPlace"@en .
+<http://www.i-knex.com/ontology/hadith#deathPlace> <http://www.w3.org/2004/02/skos/core#altLabel> "baladAlWafat"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://purl.org/dc/terms/description> "Year of death of narrator"@en .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://dbpedia.org/ontology/deathYear"@en .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2002/07/owl#equivalentProperty> "https://schema.org/deathDate"@en .
+<http://www.i-knex.com/ontology/hadith#deathYear> <http://www.w3.org/2004/02/skos/core#altLabel> "sunAlWafat"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#engBookNo> <http://purl.org/dc/terms/description> "english Refence Number for Book"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#engHadithNo> <http://purl.org/dc/terms/description> "english Refence Number for Hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#engVolNo> <http://purl.org/dc/terms/description> "english Refence Number for Volume"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#firstChar> <http://purl.org/dc/terms/description> "First character of the narrator's name (arabic)."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#fullHadithText> <http://purl.org/dc/terms/description> "Complete Hadith Contents (Chain of Narrators (Sanad) + Hadith Text (Matan) )"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#generation> <http://purl.org/dc/terms/description> "The generations (Tabqat) is defined by the hadith scholars as a group of people who were similar in age and generally met the same narrators of hadith before them. In Taqrib al-Tahzeeb and his other works on hadith narrators, Ibn Hajar has altogether identified twelve classes of narrators from the time of the Companions down to the time when the six major collections were written. These may be summarized as follows. It should be noted that first 9 categories actually fall under the basic three, namely, the Companions, the Followers (tabi'un) and the Successors (tabi' tabi'un).\n\n\n1.          1st Generation: The Companions.\n2.          2nd Generation: The older/leading Followers of the Companions (Ibn Musaib, 'Alqama) including Makhdaram.\n3.          3rd Generation: The 1st middle level of the Followers (al-Hasan al-Basri, Ibn Sirin).\n4.          4th generation: The 2nd middle level of the Followers, who narrated mostly from the Followers (not Companions), (al-Zuhri, Qatada).\n5.          5th generation: The younger Followers who may not have received any hadith from the Companions (al-A'mash).\n6.          6th generation: The youngest Followers that were acquainted with the previous generation but it has not been established that they met any of the Companions (ibn Jurayj, Abu Hanifa).\n \n7.          7th generation: The leading Successors (kubbar atba' al-tabi'un) or older followers of the Tabi'een such as Malik ibn Anas and Sufyan at-Thawri.\n8.          8th generation: The middle order of the Successors such as Sufyan ibn Uyainah and Ibn 'Aliya.\n9.          9th generation: The youngest of the Successors such as Abu Daud at-Tayalisi, Imam as-Shaafi'ii, and Yazid bin Harun.\n \n10.     10th generation: The eldest of those who received from the Successors but did not meet any of the Followers (Tabi'een) such as Imam Ahmad bin Hanbal.\n11.     11th generation: The middle order of those who received from the Successors such as Bukhari\n12.     12th generation: The youngest of those who received from the Successors such as Tirmidhi"@en .
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://muslimscholars.info"@en .
+<http://www.i-knex.com/ontology/hadith#generation> <http://www.w3.org/2004/02/skos/core#altLabel> "Tabqa (Tabaqa)"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithBookIntro> <http://purl.org/dc/terms/description> "Introduction of the Hadith Book"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithBookNo> <http://purl.org/dc/terms/description> "Hadith Book number"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithChapterNo> <http://purl.org/dc/terms/description> "Hadith Chapter number"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithReferenceNo> <http://purl.org/dc/terms/description> "Reference Number for Hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://purl.org/dc/terms/description> "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure.\n(Qudsi (Sacred), Marfūʿ(elevated), Mawquf (stopped) and maqtu' (severed))\n\nMarfūʿ\nIbn al-Salah said: \"Marfūʿ (Arabic: مرفوع, Marfūʿ) refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories.\"\n\nMawquf\nAccording to Ibn al-Salah, \"Mawquf (Arabic: موقوف, Mawqūf) refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise.\"\n\nMaqtu‘\nIbn al-Salah defined maqtu‘ (مقطوع, Maqṭūʿ) as a narration attributed to a Tabi‘i (a successor of one of Muhammad's companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ"@en .
+<http://www.i-knex.com/ontology/hadith#hadithType> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Hadith_terminology"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hadithURL> <http://purl.org/dc/terms/description> "link to the hadith on the Islamic Urdu Website"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasBook> <http://purl.org/dc/terms/description> "A collection of hadith has book of hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasChapter> <http://purl.org/dc/terms/description> "A hadith book has a chapter."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasHadith> <http://purl.org/dc/terms/description> "A hadith chapter has a hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasHadithText> <http://purl.org/dc/terms/description> "Hadith has a textual entity of the content of the hadith"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://purl.org/dc/terms/description> "The master or Mawla of the narrator (الموالي)."@en .
+<http://www.i-knex.com/ontology/hadith#hasMaster> <http://www.w3.org/2004/02/skos/core#altLabel> "alMawali" .
+# 
+<http://www.i-knex.com/ontology/hadith#hasNarrator> <http://purl.org/dc/terms/description> "a hadith has been narrated by a narrator."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#hasNarratorChain> <http://purl.org/dc/terms/description> "Chain of Narrators of Hadith."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#heardFrom> <http://purl.org/dc/terms/description> "Hadith is heard from another narrator, (inverse of transferTo)."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#isPartOfBook> <http://purl.org/dc/terms/description> "Hadith chapter is a part of a hadith book"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#isPartOfChapter> <http://purl.org/dc/terms/description> "a hadith is a part of hadith chapter"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#isPartOfCollection> <http://purl.org/dc/terms/description> "A hadith book is part of a hadith collection."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#isPartOfHadith> <http://purl.org/dc/terms/description> "HadithText and NarratorChain are parts of Hadith."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#lineage> <http://purl.org/dc/terms/description> "Lineage or descent of the narrator (النسب)."@en .
+<http://www.i-knex.com/ontology/hadith#lineage> <http://www.w3.org/2004/02/skos/core#altLabel> "Nasab" .
+# 
+<http://www.i-knex.com/ontology/hadith#mentionedIn> <http://purl.org/dc/terms/description> "A qur’anic verse or any other entity is mentioned in the text of the hadith."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#narrated> <http://purl.org/dc/terms/description> "A narrator narrates a Hadith."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#narratorChain> <http://purl.org/dc/terms/description> "content of the Hadith Narrator Chain"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://purl.org/dc/terms/description> "Unique ID for narrator (رقم الراوي)."@en .
+<http://www.i-knex.com/ontology/hadith#narratorID> <http://www.w3.org/2004/02/skos/core#altLabel> "raqamArRavi"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#narratorURL> <http://purl.org/dc/terms/description> "link to the narrator details on the Islamic Urdu Website"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#office> <http://purl.org/dc/terms/description> "a position of authority or service, typically one of a public nature."@en .
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/2000/01/rdf-schema#comment> "post\nposition\nappointment\njob\noccupation\nrole\noffice"@en .
+<http://www.i-knex.com/ontology/hadith#office> <http://www.w3.org/2004/02/skos/core#altLabel> "anNishat"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#popularName> <http://purl.org/dc/terms/description> "Name with which the narrator was known by."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#rank> <http://purl.org/dc/terms/description> "The narrators of ahadith were broken up into different grades, ranks or levels based on whether or not ahadith could be accepted from them. Ibn Hajar al-'Asqalani placed the narrators into twelve ranks. The ranks as named and categorized by Ibn Hajar are widely accepted but not universal.\n\n1.          Companions: The first generation of Muslims did not need testimony to their knowledge or character as Allah the Most High has already done so in the Qur'an.\n2.          Awthaqun Nas (Thiqa Thiqa): These are the trustworthiest of people outside of the first generation of Muslims and this is the highest rank. They were learned scholars who were also of the most upright moral characters.\n3.          Thiqat: These narrators are trustworthy in all areas including good retentive memory, but not to a superlative degree like those in the second rank.\n4.          Saduq: truthful but less than rank three.\n5.          Saduq Yahim: Those who are trustworthy but who sometimes made mistakes in narrating ahadith, or have some delusion.\n6.          Maqbool/Layyin: Those who are accepted or acceptable. They transmitted a smaller number of ahadith, and we do not have proof against their reliability (or for them to be extraordinarily sound).\n7.          Majhool al-haal/Mastur (not Thiqa): Those whose situation is not precisely known. He had students who transmitted ahadith from him, but he does not have tawtheeq, or a testimony of trustworthiness, from the scholars of ahadith. There is nothing wrong with him from that which is apparent, but we don't really know anything about him.\n8.          Da'eef or weak: This means that there is nobody speaking positively on his behalf, and some of the scholars have spoken against him.\n9.          Majhool or unknown: This is not the same as majhool al-haal. The majhool al-haal had more than one student narrate from him; the majhool is narrated from by only one individual, and we know nothing of him or his honesty.\n10.     Matruk or abandoned: This rank covers a few categories of narrators. This includes the one who committed many mistakes, the one who has detailed criticisms against him from the scholars, or one who did not meet the requirement for moral character. Also included here are the ones upon major sins (the fasiq) and the one who is unintelligent.\n11.     Muttaham bi'l kadhib: The one who was accused of lying and/or making up fake ahadith. The ahadith he narrates are considered batil.\n12.     Kadhdhaab, waddaa': This is the one who is actually called a liar or fabricator. Being labeled with such a title is not the same as merely being accused of committing those acts in some instances. The ahadith he narrates are considered"@en .
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://muslimscholars.info"@en .
+<http://www.i-knex.com/ontology/hadith#rank> <http://www.w3.org/2004/02/skos/core#altLabel> "Rutba (Rotba)"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#residence> <http://purl.org/dc/terms/description> "A place for a person's residence"^^<http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.i-knex.com/ontology/hadith#residence> <http://www.w3.org/2002/07/owl#equivalentProperty> "http://schema.org/homeLocation" .
+# 
+<http://www.i-knex.com/ontology/hadith#schoolOfThought> <http://purl.org/dc/terms/description> "A madhhab is a school of thought within fiqh (Islamic jurisprudence)"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#sequenceNo> <http://purl.org/dc/terms/description> "Sequence number of Hadith book, hadith chapter, hadith."@en .
+# 
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://purl.org/dc/terms/description> "the name of an adult derived from their oldest child."@en .
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Kunya_(Arabic)"@ar .
+<http://www.i-knex.com/ontology/hadith#teknonym> <http://www.w3.org/2004/02/skos/core#altLabel> "Kunyah"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#title> <http://purl.org/dc/terms/description> "honorific title"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#transferredTo> <http://purl.org/dc/terms/description> "A narrator tells the hadith to another narrator"@en .
+# 
+<http://www.i-knex.com/ontology/hadith#verseNo> <http://purl.org/dc/terms/description> "Verse Number from the Qur'an"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
