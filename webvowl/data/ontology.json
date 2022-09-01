@@ -1,0 +1,2632 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "ar", "en", "ur", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.i-knex.com/ontology/hadith", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "The Semantic Hadith Ontology"
+    },
+    "iri" : "http://www.i-knex.com/ontology/hadith#",
+    "author" : [ "Amna binte Kamran" ],
+    "description" : {
+      "undefined" : "Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Amna binte Kamran",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Bushra Abro",
+        "type" : "label"
+      } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "hadith:",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Semantic Hadith Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "34",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "37",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "44",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "42",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Author of a Hadith Collection"
+    },
+    "label" : {
+      "IRI-based" : "HadithCollectionAuthor"
+    },
+    "id" : "7",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "34",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "37",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Believer",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "A Believer (Muslim) who may or may not be a companion (مومن)."
+    },
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Muslims",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Believer"
+    },
+    "subClasses" : [ "21", "7", "13" ],
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithType",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "undefined" : "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure."
+    },
+    "label" : {
+      "IRI-based" : "HadithType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.i-knex.com/ontology/hadith#stopped",
+      "baseIri" : "http://www.i-knex.com/ontology/hadith",
+      "description" : {
+        "en" : "a narration attributed to a Tabi‘i (a successor of one of Muhammad's companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ",
+        "ur" : "وہ حدیث جس میں کسی قول یا فعل کو تابعی یا تبع تابعی کی طرف منسوب کیا گیا ہو۔"
+      },
+      "annotations" : {
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Maqtu‘",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "stopped"
+      }
+    }, {
+      "iri" : "http://www.i-knex.com/ontology/hadith#elevated",
+      "baseIri" : "http://www.i-knex.com/ontology/hadith",
+      "description" : {
+        "en" : "refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories.",
+        "ur" : "وہ حدیث جس میں کسی قول، فعل یا تقریر کو رسول اللہ صلی اللہ علیہ وسلم کی طرف منسوب کیا گیا ہو۔"
+      },
+      "annotations" : {
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Marfūʿ",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "elevated"
+      }
+    }, {
+      "iri" : "http://www.i-knex.com/ontology/hadith#severed",
+      "baseIri" : "http://www.i-knex.com/ontology/hadith",
+      "description" : {
+        "en" : "refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise.",
+        "ur" : "وہ حدیث جس میں کسی قول، فعل یا تقریر کو صحابی کی طرف منسوب کیا گیا ہو۔"
+      },
+      "annotations" : {
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "en",
+          "value" : "Mawquf",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "severed"
+      }
+    }, {
+      "iri" : "http://www.i-knex.com/ontology/hadith#sacred",
+      "baseIri" : "http://www.i-knex.com/ontology/hadith",
+      "description" : {
+        "ur" : "اللہ تعالیٰ کا وہ فرمان جسے نبی اکرم صلی اللہ علیہ وسلم نے اللہ تعالیٰ سے روایت کیا ہو، راویوں کے ذریعے سے ہم تک پہنچا ہو اور قرآن مجید میں موجود نہ ہو۔\n\nحدیث قدسی کی ایک اور تعریف: حدیث قدسی وہ حدیث ہے جس میں نبی کریم صلی اللہ علیہ وسلم ارشاد فرمائیں: ”اللہ تعالى نے فرمایا ہے۔“"
+      },
+      "annotations" : {
+        "altLabel" : [ {
+          "identifier" : "altLabel",
+          "language" : "undefined",
+          "value" : "Qudsi",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "sacred"
+      }
+    } ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Hadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Hadith is the Arabic word for speech, account, report and narrative. In the Islamic context, they are the collection of sayings, actions and silent approval of the Prophet Muhammad (peace be upon him). The Hadith can include the illustration of historical events during his lifetime, the interpretation of Qur’anic verses, the reasons for revelations and contextual background, and the elaboration of essential Islamic concepts."
+    },
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Hadith",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://islamicurdubooks.com/info/info-detail.php?bookid=1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hadith"
+    },
+    "subClasses" : [ "25", "31", "33" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithText",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "This is primarily a textual entity, which contains the main narration or content of the Hadith, without the chain of narrators or the Sanad."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Matan (Matn)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HadithText"
+    },
+    "id" : "53"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Severed_Hadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Severed_Hadith"
+    },
+    "intersection" : [ "15" ],
+    "attributes" : [ "intersection" ],
+    "id" : "25",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithBook",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "A book of Hadith. Each Hadith Book consists of several Hadith chapters."
+    },
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "http://purl.org/ontology/bibo/Book",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HadithBook"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RootNarratorChainSegment"
+    },
+    "comment" : {
+      "undefined" : "The Root Narrator (First Narrator Occurrence) has no heardFrom since they are the eyewitness to the Hadith contents"
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NarratorChainSegment"
+    },
+    "subClasses" : [ "9" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Represents a person who is a narrator of a Hadith (راوى)."
+    },
+    "label" : {
+      "IRI-based" : "HadithNarrator"
+    },
+    "subClasses" : [ "12" ],
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#RootNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "The first person to directly hear or witness the contents of a Hadith"
+    },
+    "label" : {
+      "IRI-based" : "RootNarrator"
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Elevated_Hadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Elevated_Hadith"
+    },
+    "intersection" : [ "15" ],
+    "attributes" : [ "intersection" ],
+    "id" : "33",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Sacred_Hadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sacred_Hadith"
+    },
+    "intersection" : [ "15" ],
+    "attributes" : [ "intersection" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithCollection",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Collection of Hadith (مجموعة الحديث) e.g. Sahih Bukhari."
+    },
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "http://purl.org/ontology/bibo/Collection",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Category:Hadith_collections",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HadithCollection"
+    },
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Stopped_Hadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Stopped_Hadith"
+    },
+    "intersection" : [ "15" ],
+    "attributes" : [ "intersection" ],
+    "id" : "31",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.org/Person",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "5" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#NarratorChain",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Chain of Narrators who narrated the Hadith"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Sanad",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NarratorChain"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "40",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "44",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "42",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Verse",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Verse from the Holy Qur'an."
+    },
+    "annotations" : {
+      "equivalentClass" : [ {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "http://quranontology.com/Resource/Verse",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentClass",
+        "language" : "en",
+        "value" : "http://mlode.nlp2rdf.org/quranvocab#Verse",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Verse"
+    },
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "144",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "146",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#Companion",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Companion to Prophet Muhammad (peace be upon him)"
+    },
+    "label" : {
+      "IRI-based" : "Companion"
+    },
+    "id" : "21",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "2", "73", "1" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#HadithChapter",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "instances" : 0,
+    "description" : {
+      "en" : "Chapters in the Hadith Book"
+    },
+    "label" : {
+      "IRI-based" : "HadithChapter"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "64",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "65",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "66",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "67",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "77",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "78",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "81",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "82",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "83",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "84",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "87",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "100",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "101",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "107",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "109",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "111",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "112",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "113",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "115",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "117",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "121",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "124",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "125",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "129",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "132",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "140",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "142",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "143",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "155",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "158",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "160",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "163",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "165",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "167",
+    "type" : "owl:someValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfBook",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "2",
+    "description" : {
+      "en" : "Hadith chapter is a part of a hadith book"
+    },
+    "label" : {
+      "IRI-based" : "isPartOfBook"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "8"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasHadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "A hadith chapter has a hadith"
+    },
+    "label" : {
+      "IRI-based" : "hasHadith"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "1",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "range" : "5",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "5",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "15",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#containsMentionOf",
+    "inverse" : "28",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "27",
+    "description" : {
+      "en" : "A hadith mentions a verse of Quran."
+    },
+    "label" : {
+      "IRI-based" : "containsMentionOf"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "15",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "15",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasChapter",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "1",
+    "description" : {
+      "en" : "A hadith book has a chapter."
+    },
+    "label" : {
+      "IRI-based" : "hasChapter"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasRootNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasRootNarrator"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "HadithText and NarratorChain are parts of Hadith."
+    },
+    "label" : {
+      "IRI-based" : "isPartOfHadith"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#chapterPreface",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "45",
+    "description" : {
+      "en" : "Preface of a Hadith Chapter"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "chapterTarjama",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "chapterPreface"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://schema.org/hasPart",
+    "inverse" : "3",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "37",
+    "subproperty" : [ "14", "49", "38", "50", "51" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#transferredTo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "13",
+    "description" : {
+      "en" : "A narrator tells the hadith to another narrator"
+    },
+    "label" : {
+      "IRI-based" : "transferredTo"
+    },
+    "domain" : "13",
+    "attributes" : [ "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#narrated",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "44",
+    "description" : {
+      "en" : "A narrator narrates a Hadith."
+    },
+    "label" : {
+      "IRI-based" : "narrated"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasRootNarratorSegment"
+    },
+    "domain" : "56",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#verseNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "36",
+    "description" : {
+      "en" : "Verse Number from the Qur'an"
+    },
+    "label" : {
+      "IRI-based" : "verseNo"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfChapter",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "1",
+    "description" : {
+      "en" : "a hadith is a part of hadith chapter"
+    },
+    "label" : {
+      "IRI-based" : "isPartOfChapter"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#mentionedIn",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "A qur’anic verse or any other entity is mentioned in the text of the hadith."
+    },
+    "label" : {
+      "IRI-based" : "mentionedIn"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#age",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "19",
+    "description" : {
+      "en" : "Age of the Narrator"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "ummarArRavi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "age"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasHadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "A hadith chapter has a hadith"
+    },
+    "label" : {
+      "IRI-based" : "hasHadith"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "1",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfBook",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "2",
+    "description" : {
+      "en" : "Hadith chapter is a part of a hadith book"
+    },
+    "label" : {
+      "IRI-based" : "isPartOfBook"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "1",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithBookIntro",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "63",
+    "description" : {
+      "en" : "Introduction of the Hadith Book"
+    },
+    "label" : {
+      "IRI-based" : "hadithBookIntro"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#sequenceNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "62",
+    "description" : {
+      "en" : "Sequence number of Hadith book, hadith chapter, hadith."
+    },
+    "label" : {
+      "IRI-based" : "sequenceNo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasChapter",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "1",
+    "description" : {
+      "en" : "A hadith book has a chapter."
+    },
+    "label" : {
+      "IRI-based" : "hasChapter"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "2",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#engBookNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "68",
+    "description" : {
+      "en" : "english Refence Number for Book"
+    },
+    "label" : {
+      "IRI-based" : "engBookNo"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#label",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "label"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfCollection",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "73",
+    "description" : {
+      "en" : "A hadith book is part of a hadith collection."
+    },
+    "label" : {
+      "IRI-based" : "isPartOfCollection"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "2",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://schema.org/mentions",
+    "baseIri" : "http://schema.org",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "mentions"
+    },
+    "domain" : "42",
+    "subproperty" : [ "26" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#sequenceNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "75",
+    "description" : {
+      "en" : "Sequence number of Hadith book, hadith chapter, hadith."
+    },
+    "label" : {
+      "IRI-based" : "sequenceNo"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithBookNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "69",
+    "description" : {
+      "en" : "Hadith Book number"
+    },
+    "label" : {
+      "IRI-based" : "hadithBookNo"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfChapter",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "1",
+    "description" : {
+      "en" : "a hadith is a part of hadith chapter"
+    },
+    "label" : {
+      "IRI-based" : "isPartOfChapter"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithReferenceNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "80",
+    "description" : {
+      "en" : "Reference Number for Hadith"
+    },
+    "label" : {
+      "IRI-based" : "hadithReferenceNo"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasRootNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasRootNarrator"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithType",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "79",
+    "description" : {
+      "en" : "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure.\n(Qudsi (Sacred), Marfūʿ(elevated), Mawquf (stopped) and maqtu' (severed))\n\nMarfūʿ\nIbn al-Salah said: \"Marfūʿ (Arabic: مرفوع, Marfūʿ) refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories.\"\n\nMawquf\nAccording to Ibn al-Salah, \"Mawquf (Arabic: موقوف, Mawqūf) refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise.\"\n\nMaqtu‘\nIbn al-Salah defined maqtu‘ (مقطوع, Maqṭūʿ) as a narration attributed to a Tabi‘i (a successor of one of Muhammad's companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ"
+    },
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "https://en.wikipedia.org/wiki/Hadith_terminology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hadithType"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasHadithText",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "53",
+    "description" : {
+      "en" : "Hadith has a textual entity of the content of the hadith"
+    },
+    "label" : {
+      "IRI-based" : "hasHadithText"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#generation",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "86",
+    "description" : {
+      "en" : "The generations (Tabqat) is defined by the hadith scholars as a group of people who were similar in age and generally met the same narrators of hadith before them. In Taqrib al-Tahzeeb and his other works on hadith narrators, Ibn Hajar has altogether identified twelve classes of narrators from the time of the Companions down to the time when the six major collections were written. These may be summarized as follows. It should be noted that first 9 categories actually fall under the basic three, namely, the Companions, the Followers (tabi'un) and the Successors (tabi' tabi'un).\n\n\n1.          1st Generation: The Companions.\n2.          2nd Generation: The older/leading Followers of the Companions (Ibn Musaib, 'Alqama) including Makhdaram.\n3.          3rd Generation: The 1st middle level of the Followers (al-Hasan al-Basri, Ibn Sirin).\n4.          4th generation: The 2nd middle level of the Followers, who narrated mostly from the Followers (not Companions), (al-Zuhri, Qatada).\n5.          5th generation: The younger Followers who may not have received any hadith from the Companions (al-A'mash).\n6.          6th generation: The youngest Followers that were acquainted with the previous generation but it has not been established that they met any of the Companions (ibn Jurayj, Abu Hanifa).\n \n7.          7th generation: The leading Successors (kubbar atba' al-tabi'un) or older followers of the Tabi'een such as Malik ibn Anas and Sufyan at-Thawri.\n8.          8th generation: The middle order of the Successors such as Sufyan ibn Uyainah and Ibn 'Aliya.\n9.          9th generation: The youngest of the Successors such as Abu Daud at-Tayalisi, Imam as-Shaafi'ii, and Yazid bin Harun.\n \n10.     10th generation: The eldest of those who received from the Successors but did not meet any of the Followers (Tabi'een) such as Imam Ahmad bin Hanbal.\n11.     11th generation: The middle order of those who received from the Successors such as Bukhari\n12.     12th generation: The youngest of those who received from the Successors such as Tirmidhi"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Tabqa (Tabaqa)",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "https://muslimscholars.info",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "generation"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://schema.org/author",
+    "baseIri" : "http://schema.org",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "domain" : "73",
+    "attributes" : [ "external", "object" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#birthPlace",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "90",
+    "description" : {
+      "en" : "Country or place of narrator’s birth"
+    },
+    "annotations" : {
+      "equivalentProperty" : [ {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/birthPlace",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "http://dbpedia.org/property/birthPlace",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "birthPlace"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#rank",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "92",
+    "description" : {
+      "en" : "The narrators of ahadith were broken up into different grades, ranks or levels based on whether or not ahadith could be accepted from them. Ibn Hajar al-'Asqalani placed the narrators into twelve ranks. The ranks as named and categorized by Ibn Hajar are widely accepted but not universal.\n\n1.          Companions: The first generation of Muslims did not need testimony to their knowledge or character as Allah the Most High has already done so in the Qur'an.\n2.          Awthaqun Nas (Thiqa Thiqa): These are the trustworthiest of people outside of the first generation of Muslims and this is the highest rank. They were learned scholars who were also of the most upright moral characters.\n3.          Thiqat: These narrators are trustworthy in all areas including good retentive memory, but not to a superlative degree like those in the second rank.\n4.          Saduq: truthful but less than rank three.\n5.          Saduq Yahim: Those who are trustworthy but who sometimes made mistakes in narrating ahadith, or have some delusion.\n6.          Maqbool/Layyin: Those who are accepted or acceptable. They transmitted a smaller number of ahadith, and we do not have proof against their reliability (or for them to be extraordinarily sound).\n7.          Majhool al-haal/Mastur (not Thiqa): Those whose situation is not precisely known. He had students who transmitted ahadith from him, but he does not have tawtheeq, or a testimony of trustworthiness, from the scholars of ahadith. There is nothing wrong with him from that which is apparent, but we don't really know anything about him.\n8.          Da'eef or weak: This means that there is nobody speaking positively on his behalf, and some of the scholars have spoken against him.\n9.          Majhool or unknown: This is not the same as majhool al-haal. The majhool al-haal had more than one student narrate from him; the majhool is narrated from by only one individual, and we know nothing of him or his honesty.\n10.     Matruk or abandoned: This rank covers a few categories of narrators. This includes the one who committed many mistakes, the one who has detailed criticisms against him from the scholars, or one who did not meet the requirement for moral character. Also included here are the ones upon major sins (the fasiq) and the one who is unintelligent.\n11.     Muttaham bi'l kadhib: The one who was accused of lying and/or making up fake ahadith. The ahadith he narrates are considered batil.\n12.     Kadhdhaab, waddaa': This is the one who is actually called a liar or fabricator. Being labeled with such a title is not the same as merely being accused of committing those acts in some instances. The ahadith he narrates are considered"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Rutba (Rotba)",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "en",
+        "value" : "https://muslimscholars.info",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "rank"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#precedes",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "precedes"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#age",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "85",
+    "description" : {
+      "en" : "Age of the Narrator"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "ummarArRavi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "age"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfCollection",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "73",
+    "description" : {
+      "en" : "A hadith book is part of a hadith collection."
+    },
+    "label" : {
+      "IRI-based" : "isPartOfCollection"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#popularName",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "98",
+    "description" : {
+      "en" : "Name with which the narrator was known by."
+    },
+    "label" : {
+      "IRI-based" : "popularName"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#residence",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "93",
+    "description" : {
+      "undefined" : "A place for a person's residence"
+    },
+    "annotations" : {
+      "equivalentProperty" : [ {
+        "identifier" : "equivalentProperty",
+        "language" : "undefined",
+        "value" : "http://schema.org/homeLocation",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "residence"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#firstChar",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "99",
+    "description" : {
+      "en" : "First character of the narrator's name (arabic)."
+    },
+    "label" : {
+      "IRI-based" : "firstChar"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithGrade",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "104",
+    "description" : {
+      "undefined" : "Ibn al-Salah said, \"Hadith, in the view of scholars of this discipline, fall into the divisions of 'sound' (ṣaḥīḥ), 'fair' (ḥasan), and 'weak' (ḍaʻīf).\" While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.\n\nṢaḥīḥ\nSahih (Arabic: صحيح, Ṣaḥīḥ) may be translated as \"authentic\" or \"sound.\"[6] Ibn Hajar defines a hadith that is ṣaḥīḥ lidhātihi (\"ṣaḥīḥ in and of itself\") as a singular narration (ahaad; see below) conveyed by a trustworthy, completely competent person, either in his ability to memorize or to preserve what he wrote, with a muttaṣil (\"connected\") isnād (\"chain of narration\") that contains neither a serious concealed flaw (ʻillah)علة nor irregularity (shādhdh). He then defines a hadith that is ṣaḥīḥ lighairihi (\"ṣaḥīḥ due to external factors\") as a hadith \"with something, such as numerous chains of narration, strengthening it.\"\n\nIbn Hajar's definitions indicate that there are five conditions to be met for a particular hadith to be considered ṣaḥīḥ:\n\n1. Each narrator in the chain of narration must be trustworthy;\n2. Each narrator must be reliable in his ability to preserve that narration, be it in his ability to memorize to the extent that he can recall it as he heard it, or, that he has written it as he heard it and has preserved that written document unchanged;\n3. The isnād must be connected (muttasil) insofar as it is at least possible for each narrator in the chain to have received the hadith from a predecessor;\n4. The hadith, including its isnād, is free of ʻillah (hidden detrimental flaw or flaws, e.g. the establishment that two narrators, although contemporaries, could not have shared the hadith, thereby breaking the isnād.)\n5. The hadith is free of irregularity, meaning that it does not contradict another hadith already established (accepted).\n\nA number of books were authored in which the author stipulated the inclusion of ṣaḥīḥ hadith alone. \n\nṢaḥīḥ al-Bukhārī. Considered the most authentic book after the Quran.\nṢaḥīḥ Muslim. Considered the next most authentic book after Ṣaḥīḥ al-Bukhārī."
+    },
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://en.wikipedia.org/wiki/Hadith_terminology",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hadithGrade"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#schoolOfThought",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "102",
+    "description" : {
+      "en" : "A madhhab is a school of thought within fiqh (Islamic jurisprudence)"
+    },
+    "label" : {
+      "IRI-based" : "schoolOfThought"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#collectionName",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "collectionName"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#engVolNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "108",
+    "description" : {
+      "en" : "english Refence Number for Volume"
+    },
+    "label" : {
+      "IRI-based" : "engVolNo"
+    },
+    "domain" : "73",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithChapterNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "110",
+    "description" : {
+      "en" : "Hadith Chapter number"
+    },
+    "label" : {
+      "IRI-based" : "hadithChapterNo"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://schema.org/author",
+    "baseIri" : "http://schema.org",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "author"
+    },
+    "domain" : "73",
+    "attributes" : [ "external", "object", "someValues" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://schema.org/hasPart",
+    "inverse" : "3",
+    "baseIri" : "http://schema.org",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "73",
+    "subproperty" : [ "14", "49", "38", "50", "51" ],
+    "attributes" : [ "external", "object", "someValues", "transitive" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#narratorID",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "114",
+    "description" : {
+      "en" : "Unique ID for narrator (رقم الراوي)."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "raqamArRavi",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "narratorID"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#deathYear",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "116",
+    "description" : {
+      "en" : "Year of death of narrator"
+    },
+    "annotations" : {
+      "equivalentProperty" : [ {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/deathYear",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "https://schema.org/deathDate",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "sunAlWafat",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "deathYear"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#name",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasMaster",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "122",
+    "description" : {
+      "en" : "The master or Mawla of the narrator (الموالي)."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "alMawali",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMaster"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#teknonym",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "120",
+    "description" : {
+      "en" : "the name of an adult derived from their oldest child."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Kunyah",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "ar",
+        "value" : "https://en.wikipedia.org/wiki/Kunya_(Arabic)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "teknonym"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#title",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "126",
+    "description" : {
+      "en" : "honorific title"
+    },
+    "label" : {
+      "IRI-based" : "title"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "56",
+    "description" : {
+      "en" : "Chain of Narrators of Hadith."
+    },
+    "label" : {
+      "IRI-based" : "hasNarratorChain"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#deathPlace",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "123",
+    "description" : {
+      "en" : "Country or place of narrator’s death"
+    },
+    "annotations" : {
+      "equivalentProperty" : [ {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "http://dbpedia.org/property/deathPlace",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "https://schema.org/deathPlace",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "baladAlWafat",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "deathPlace"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasHadithType",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasHadithType"
+    },
+    "domain" : "34",
+    "attributes" : [ "functional", "object" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasHadithText",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "53",
+    "description" : {
+      "en" : "Hadith has a textual entity of the content of the hadith"
+    },
+    "label" : {
+      "IRI-based" : "hasHadithText"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#office",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "130",
+    "description" : {
+      "en" : "a position of authority or service, typically one of a public nature."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "anNishat",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "office"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "post\nposition\nappointment\njob\noccupation\nrole\noffice"
+    },
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#narratorURL",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "127",
+    "description" : {
+      "en" : "link to the narrator details on the Islamic Urdu Website"
+    },
+    "label" : {
+      "IRI-based" : "narratorURL"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://schema.org/isPartOf",
+    "baseIri" : "http://schema.org",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "48",
+    "subproperty" : [ "0", "58", "41", "96" ],
+    "attributes" : [ "external", "object", "transitive" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#attribute",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "133",
+    "description" : {
+      "en" : "a quality or feature regarded as a characteristic of a narrator"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "wasaf",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "attribute"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#englishReference",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "englishReference"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#chapterNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "18",
+    "description" : {
+      "en" : "Chapter Number from Qu'ran"
+    },
+    "label" : {
+      "IRI-based" : "chapterNo"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#birthYear",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "137",
+    "description" : {
+      "en" : "Year of birth of narrator"
+    },
+    "annotations" : {
+      "equivalentProperty" : [ {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "https://schema.org/birthDate",
+        "type" : "label"
+      }, {
+        "identifier" : "equivalentProperty",
+        "language" : "en",
+        "value" : "http://dbpedia.org/ontology/birthYear",
+        "type" : "label"
+      } ],
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "sunalMilad",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "birthYear"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasBook",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "2",
+    "description" : {
+      "en" : "A collection of hadith has book of hadith"
+    },
+    "label" : {
+      "IRI-based" : "hasBook"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "73",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#containsMentionOf",
+    "inverse" : "28",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "27",
+    "description" : {
+      "en" : "A hadith mentions a verse of Quran."
+    },
+    "label" : {
+      "IRI-based" : "containsMentionOf"
+    },
+    "superproperty" : [ "29" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithURL",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "141",
+    "description" : {
+      "en" : "link to the hadith on the Islamic Urdu Website"
+    },
+    "label" : {
+      "IRI-based" : "hadithURL"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "56",
+    "description" : {
+      "en" : "Chain of Narrators of Hadith."
+    },
+    "label" : {
+      "IRI-based" : "hasNarratorChain"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "15",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#engHadithNo",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "144",
+    "description" : {
+      "en" : "english Refence Number for Hadith"
+    },
+    "label" : {
+      "IRI-based" : "engHadithNo"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#fullHadithText",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "146",
+    "description" : {
+      "en" : "Complete Hadith Contents (Chain of Narrators (Sanad) + Hadith Text (Matan) )"
+    },
+    "label" : {
+      "IRI-based" : "fullHadithText"
+    },
+    "domain" : "15",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#name",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "5",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasNarratorSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasNarratorSegment"
+    },
+    "domain" : "56",
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://schema.org/isPartOf",
+    "baseIri" : "http://schema.org",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isPartOf"
+    },
+    "domain" : "56",
+    "subproperty" : [ "0", "58", "41", "96" ],
+    "attributes" : [ "external", "object", "someValues", "transitive" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#follows",
+    "inverse" : "94",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "follows"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasNarratorSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasNarratorSegment"
+    },
+    "domain" : "56",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#refersToNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "refersToNarrator"
+    },
+    "domain" : "10",
+    "attributes" : [ "allValues", "functional", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "hasRootNarratorSegment"
+    },
+    "domain" : "56",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "HadithText and NarratorChain are parts of Hadith."
+    },
+    "label" : {
+      "IRI-based" : "isPartOfHadith"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "56",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#narratorChain",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "156",
+    "description" : {
+      "en" : "content of the Hadith Narrator Chain"
+    },
+    "label" : {
+      "IRI-based" : "narratorChain"
+    },
+    "domain" : "56",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "15",
+    "description" : {
+      "en" : "HadithText and NarratorChain are parts of Hadith."
+    },
+    "label" : {
+      "IRI-based" : "isPartOfHadith"
+    },
+    "superproperty" : [ "3" ],
+    "domain" : "53",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#refersToNarrator",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "refersToNarrator"
+    },
+    "cardinality" : "1",
+    "domain" : "10",
+    "attributes" : [ "functional", "object" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#heardFrom",
+    "inverse" : "52",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "13",
+    "description" : {
+      "en" : "Hadith is heard from another narrator, (inverse of transferTo)."
+    },
+    "label" : {
+      "IRI-based" : "heardFrom"
+    },
+    "domain" : "13",
+    "attributes" : [ "functional", "object" ],
+    "id" : "161"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hadithText",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "hadithText"
+    },
+    "domain" : "53",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#hasNarrator",
+    "inverse" : "54",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "44",
+    "description" : {
+      "en" : "a hadith has been narrated by a narrator."
+    },
+    "label" : {
+      "IRI-based" : "hasNarrator"
+    },
+    "domain" : "44",
+    "attributes" : [ "object" ],
+    "id" : "163"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#lineage",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "164",
+    "description" : {
+      "en" : "Lineage or descent of the narrator (النسب)."
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Nasab",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "lineage"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.i-knex.com/ontology/hadith#concealment",
+    "baseIri" : "http://www.i-knex.com/ontology/hadith",
+    "range" : "166",
+    "description" : {
+      "en" : "Concealment of relatives"
+    },
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "undefined",
+        "value" : "Akhtalat Tadlees",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "concealment"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype", "someValues" ],
+    "id" : "167"
+  } ]
+}
