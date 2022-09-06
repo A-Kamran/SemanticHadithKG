@@ -28,11 +28,11 @@ The application of semantic web or open data in the Islamic knowledge domain is 
 So far, no ontologies are available representing Hadith.
 
 3. **Target audience (MUST)**
-
+Hadith Researchers, Students of The Islamic Knowledge. 
 
 ## C. Scope, requirements, development community
 1. **Scope and coverage (MUST)**
-The ontology covers the concepts necessary to create a .........
+The ontology covers the domain concepts of Hadith, Narrators and Narrator Chains. In particular the Narrator Chains have been modelled to a segment level to ensure retrieval of the Sequence of narrators
 The result is a vocabulary available to develop interoperable applications within the Islamic domain.
 
 2. **Development community (MUST)**
@@ -46,8 +46,10 @@ The result is a vocabulary available to develop interoperable applications withi
 Analysis of the available literature on Semantic Web, ontologies and Islamic Knowledge representation. In particular, how to represent Hadith and the Narrators of Hadith. Competency questions on the relevant domain.
 
 2. **Source knowledge location (SHOULD)** 
-3. **Content Selection (SHOULD)** 
+Competency Questions
 
+3. **Content Selection (SHOULD)** 
+Hadith Collections, Hadith, Narrators, and  Narrator Chains
 
 ## E. Ontology content
 1. **Knowledge representation language (MUST)**
@@ -56,9 +58,13 @@ it uses a reduced subset of OWL 2 capabilities, being the Description Logic ALCR
 
 2. **Development environment (OPTIONAL)**
 Protégé v5.5.0.
+OWL API  (Java API for OWL used to build, manipulate and store the ontology in various supported formats)
 
 3. **Ontology metrics (SHOULD)**
-Number of classes: 21; number of object properties: 27; number of data properties: 43; 104 individuals.
+Number of classes: 21; 
+Number of object properties: 27; 
+Number of data properties: 43;
+Individuals: 104.
 
 4. **Incorporation of other ontologies (MUST)**
 [DCTerms](<http://purl.org/dc/terms>), [schema](<http://schema.org>)
@@ -79,10 +85,13 @@ See point E.4.
 27 object properties; 43 datatype properties.
 
 10. **Axiom pattern (MUST)**
+<!-- 
 158 axioms included (of which 68 logical axioms, 40 declaration axioms, 12 SubClassOf, 6 EquivalentClasses, 1 DisjointClasses, 6 hidden GCI, 5 InverseObjectProperties, 2 FunctionalObjectProperties, 1 Inverse Functional, 4 Asymmetric Object Properties, 4 Irreflexive, 11 ObjectPropertyDomain and Range, 3 Functional DataProperty, 4 DP domain and range, 50 annotation assertions)
+ -->
 
 11. **Deferencable URI (OPTIONAL)** 
 It is possible to use deferencable URIs, but no assumption on this is made in the ontology.
+
 ## F. Managing change
 1. **Sustainability plan (MUST)**
 Some research projects are being prepared to leverage the ontology.
@@ -91,7 +100,7 @@ Some research projects are being prepared to leverage the ontology.
 Deprecated classes will be labelled as obsolete with a proper annotation property.
 
 3. **Versioning policy (MUST)**
-The IoMusT ontology adopts sequence-based identifiers for its versions with a major number and a minor number, separated by a dot. A novel release featuring only small changes will cause a switch of the minor number, while relevant and/or structural changes affects also the major number.
+The Semantic Hadith ontology adopts sequence-based identifiers for its versions with a major number and a minor number, separated by a dot. A novel release featuring only small changes will cause a switch of the minor number, while relevant and/or structural changes affects also the major number.
 
 ## G. Quality assurance
 1. **Testing (MUST)**
@@ -101,7 +110,7 @@ Tests have been made by checking competency questions in the paper. The Competen
 Metrics, and discussions over Semantic Hadith ontology evaluation have been discussed in the paper.
 
 3. **Examples of use (MUST)**
-
+At the moment, only theoretical examples of usage in the presentation paper.
 
 4. **Institutional endorsement (OPTIONAL)**
 None
