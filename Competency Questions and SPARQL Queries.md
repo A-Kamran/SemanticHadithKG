@@ -175,7 +175,7 @@ where
 ```
 
 ```
-26. Are there any narrators residing in Location\_X?
+26. Are there any narrators residing in Location_X?
 ```
 
 ```
@@ -183,15 +183,15 @@ where
 ```
 
 ```
-28. What is the generation of Narrator\_A? 
+28. What is the generation of Narrator_A? 
 ```
 
 ```
-30. What type of Hadith is Hadith\_X?
+30. What type of Hadith is Hadith_X?
 ```
 
 ```
-31. Is Hadith\_X Type\_X
+31. Is Hadith_X Type_X
 ```
 
 ```
@@ -199,11 +199,11 @@ where
 ```
 
 ```
-33.What is the most narrated TOPIC by Narrator\_A?
+33.What is the most narrated TOPIC by Narrator_A?
 ```
 
 ```
-34. When was Narrator\_A born?
+34. When was Narrator_A born?
 ```
 
 ```
