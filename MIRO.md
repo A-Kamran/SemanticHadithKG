@@ -104,7 +104,7 @@ The Semantic Hadith ontology adopts sequence-based identifiers for its versions 
 
 ## G. Quality assurance
 1. **Testing (MUST)**
-Tests have been made by checking competency questions in the paper. The Competency Questions with their Sparql Queries and results are available [here]().
+Tests have been made by checking competency questions in the paper. The Competency Questions with their Sparql Queries and results are available [here](https://github.com/A-Kamran/SemanticHadithKG/blob/main/Competency%20Questions%20and%20SPARQL%20Queries.md).
 
 2. **Evaluation (MUST)**
 Metrics, and discussions over Semantic Hadith ontology evaluation have been discussed in the paper.
