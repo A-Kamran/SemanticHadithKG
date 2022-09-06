@@ -1,0 +1,222 @@
+# Competencey questions for the Semantic Hadith ontology
+
+The given SPARQL are _examples_ that may be reinterpreted and reused for applications.
+
+1. Which Hadith 'containsMentionOf' Verse 11 of Surah 11?
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select 	?hadith ?verse
+where { 
+	?hadith rdf:type :Hadith .
+    ?hadith :containsMentionOf ?verse
+} 
+VALUES (?verse)
+{
+    (:V-1111)
+}
+```
+2. How many hadith were narrated by RAWI_A?
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select (COUNT (?name) AS ?num)
+where 
+{ 
+	?hadith rdf:type :Hadith .
+    ?hadith :hasNarratorChain ?o .
+    ?o :hasNarratorSegment	 ?x .
+    ?x :refersToNarrator+	 ?y .
+    ?y :name ?name
+    
+} 
+VALUES (?name)
+{
+    ("عبد الله بن يوسف@ar")
+}
+```
+
+
+3. What is the 'Lineage' of a particular narrator? 
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+
+select ?lineage
+where
+{
+    :HN05913 :lineage ?lineage.
+}
+```
+
+4. Show if any 2 Narrators share same deathPlace "المدينة"
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+
+select  ?narrators
+where 
+{ 
+	?narrators rdf:type :HadithNarrator .
+    ?narrators :deathPlace "المدينة".
+}
+```
+
+
+5. Who is the Root Narrator of a given Hadith?
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?root ?narrator ?name
+where 
+{ 
+    :SB-HD0001 :hasNarratorChain ?Chain. 
+    ?Chain :hasRootNarratorSegment ?root.
+    ?root :refersToNarrator ?narrator.
+    ?narrator :name ?name
+    
+}  
+```
+
+6. How many Hadith 'containsMentionOf' Verse X? 
+```
+
+```
+
+7. Find all Hadith related to Hadith_X?
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?hadith
+where 
+{ 
+    :SB-HD0001 rdf:seeAlso ?hadith. 
+ 
+  
+}  
+```
+
+8. What is the Hadith Type of Hadith_X.
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?hadithTpe 
+where 
+{ 
+    :SB-HD0001 :hasHadithType ?hadithType. 
+ 
+  
+}  
+```
+
+9. Mention all Narrators and the RootNarrator for a given Hadith 
+```
+
+```
+
+10. What are the types of Hadith?
+
+
+
+11. What is the frequency of a specific chain or part of chain i.e. How many times A>B>C>D is repeated.
+```
+
+```
+
+12. Is there ANY chain that is repeated more than x times?
+```
+
+```
+
+13.Search a hadith where the chain has Narrator_A and Narrator_B but not Narrator_C and matn includes TOPIC_A and LOCATION_B.
+```
+
+```
+14.What is the number of hadith by TOPIC narrated by Narrator_A?
+```
+
+```
+16.Search a hadith of type 'mauquf' from Narrator_A.
+```
+
+```
+17. Search for a hadith narrated by someone who lived/died in Medina.
+```
+
+```
+18.Find all the hadith narrated from ابن عباس about the topic 'fiqh' (Jurispudence)?
+```
+
+```
+19. What is the trustworthiness of the narrator or Ittisal of the chain? 
+```
+
+```
+20. Find Hadith Narrated by Narrator_A
+```
+
+```
+21.How many Hadith 'containsMentionOf' Verse_X?
+```
+
+```
+22.How many Hadith are narrated by Narrator_A who heardFrom Narrator_B? 
+```
+
+```
+23.Does Hadith_X 'containMentionOf' Verse_Y 
+```
+
+```
+24.Are there any Narrators born in Location_X?
+```
+
+```
+25. Who narrated Hadith_X?
+```
+
+```
+26. Are there any narrators residing in Location\_X?
+```
+
+```
+27. Which Hadith has no 'containsMentionOf' of verse?
+```
+
+```
+28. What is the generation of Narrator\_A? 
+```
+
+```
+30. What type of Hadith is Hadith\_X?
+```
+
+```
+31. Is Hadith\_X Type\_X
+```
+
+```
+32.What Narrator belongs to the first generation of Narrators?
+```
+
+```
+33.What is the most narrated TOPIC by Narrator\_A?
+```
+
+```
+34. When was Narrator\_A born?
+```
+
+```
+35. Which narrator narrated the most Hadith?
+```
+
+```
+36. Do Narrators have different values of rank?
+```
+
+```
+37.
+```
+
+```
+
