@@ -56,7 +56,7 @@ PREFIX : <http://www.i-knex.com/ontology/hadith#>
 select  ?narrators
 where 
 { 
-	?narrators rdf:type :HadithNarrator .
+    ?narrators rdf:type :HadithNarrator .
     ?narrators :deathPlace "المدينة".
 }
 ```
@@ -79,7 +79,19 @@ where
 
 6. How many Hadith 'containsMentionOf' Verse X? 
 ```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
+Select (count(?hadith) as ?numberOfhadith) 
+where { 
+	?hadith rdf:type :Hadith .
+    ?hadith :containsMentionOf ?verse
+} 
+VALUES (?verse)
+{
+    (:V-1111)
+}
 ```
 
 7. Find all Hadith related to Hadith_X?
@@ -89,9 +101,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 select ?hadith
 where 
 { 
-    :SB-HD0001 rdf:seeAlso ?hadith. 
- 
-  
+    :SB-HD0001 rdf:seeAlso ?hadith.  
 }  
 ```
 
@@ -103,18 +113,37 @@ select ?hadithTpe
 where 
 { 
     :SB-HD0001 :hasHadithType ?hadithType. 
- 
-  
 }  
 ```
 
 9. Mention all Narrators and the RootNarrator for a given Hadith 
 ```
-
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?name
+where 
+{ 
+    :SB-HD0001 :hasNarratorChain ?Chain. 
+    ?Chain :hasNarratorSegment ?root.
+    ?root :refersToNarrator ?narrator.
+    ?narrator :name ?name
+    
+}  
 ```
 
 10. What are the types of Hadith?
-
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select ?hadithType
+where 
+{ 
+    ?hadithType rdf:type :HadithType.
+ 
+} 
+```
 
 
 11. What is the frequency of a specific chain or part of chain i.e. How many times A>B>C>D is repeated.
@@ -127,15 +156,15 @@ where
 
 ```
 
-13.Search a hadith where the chain has Narrator_A and Narrator_B but not Narrator_C and matn includes TOPIC_A and LOCATION_B.
+13. Search a hadith where the chain has Narrator_A and Narrator_B but not Narrator_C and matn includes TOPIC_A and LOCATION_B.
 ```
 
 ```
-14.What is the number of hadith by TOPIC narrated by Narrator_A?
+14. What is the number of hadith by TOPIC narrated by Narrator_A?
 ```
 
 ```
-16.Search a hadith of type 'mauquf' from Narrator_A.
+16. Search a hadith of type 'mauquf' from Narrator_A.
 ```
 
 ```
@@ -143,80 +172,96 @@ where
 ```
 
 ```
-18.Find all the hadith narrated from ابن عباس about the topic 'fiqh' (Jurispudence)?
+18. Find all the hadith narrated from ابن عباس about the topic 'fiqh' (Jurispudence)?
 ```
 
 ```
-19. What is the trustworthiness of the narrator or Ittisal of the chain? 
+19. Find Hadith narrated by Narrator_A
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+select ?hadith 
+{ 
+	?hadith rdf:type :Hadith .
+    ?hadith :hasNarratorChain ?o .
+    ?o :hasNarratorSegment	 ?x .
+    ?x :refersToNarrator	 ?y .
+    ?y :name ?name
+    
+} 
+VALUES (?name)
+{
+    ("عبد الله بن يوسف@ar")
+}
 ```
 
-```
-20. Find Hadith Narrated by Narrator_A
-```
-
-```
-21.How many Hadith 'containsMentionOf' Verse_X?
-```
-
-```
-22.How many Hadith are narrated by Narrator_A who heardFrom Narrator_B? 
-```
-
-```
-23.Does Hadith_X 'containMentionOf' Verse_Y 
-```
-
-```
-24.Are there any Narrators born in Location_X?
-```
-
-```
-25. Who narrated Hadith_X?
-```
-
-```
-26. Are there any narrators residing in Location_X?
-```
-
-```
-27. Which Hadith has no 'containsMentionOf' of verse?
-```
-
-```
-28. What is the generation of Narrator_A? 
-```
-
-```
-30. What type of Hadith is Hadith_X?
-```
-
-```
-31. Is Hadith_X Type_X
-```
-
-```
-32.What Narrator belongs to the first generation of Narrators?
-```
-
-```
-33.What is the most narrated TOPIC by Narrator_A?
-```
-
-```
-34. When was Narrator_A born?
-```
-
-```
-35. Which narrator narrated the most Hadith?
-```
-
-```
-36. Do Narrators have different values of rank?
-```
-
-```
-37.
+20. How many Hadith are narrated by Narrator_A who heardFrom Narrator_B? 
 ```
 
 ```
 
+21. Are there any Narrators born in Location_X?
+```
+
+```
+22. Who narrated Hadith_X?
+```
+
+```
+23. Are there any narrators residing in Location_X?
+```
+
+```
+24. Which Hadith has no 'containsMentionOf' of verse?
+```
+
+```
+25. What is the generation of Narrator_A? 
+```
+
+```
+
+26. What Narrator belongs to the first generation of Narrators?
+```
+
+```
+27. What is the most narrated TOPIC by Narrator_A?
+```
+
+```
+28. When was Narrator_A born?
+```
+
+```
+29. Which narrator narrated the most Hadith?
+```
+
+```
+30. Do Narrators have different values of rank?
+```
+
+```
+31. 2 separate Narrator Chains with two same narrators but in different order.
+
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+select * where { 
+	?hadith :hasNarratorChain ?chain.
+	?chain :hasNarratorSegment ?s.
+	?s :refersToNarrator :HN08272.
+    ?s :precedes | :follows ?s2.
+	?s2 :refersToNarrator :HN02885.
+}
+
+```
+32. Visualising 2 separate Narrator Chains with two same narrators but in different order.
+```
+PREFIX : <http://www.i-knex.com/ontology/hadith#>
+construct {?c1 :relatedToChain ?c2} where { 
+	:SB-HD5292 :hasNarratorChain ?c1.
+	:SB-HD2661 :hasNarratorChain ?c2.
+}
+```
