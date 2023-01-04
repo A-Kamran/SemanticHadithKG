@@ -5,8 +5,7 @@ Have a look at the [documentation](https://a-kamran.github.io/SemanticHadithKG/)
 
 ## SPARQL Endpoint available at
 http://115.186.60.94:8890/sparql/.
-
-
+(Faceted Browsing is also enabled)
 
 
 
