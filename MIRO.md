@@ -22,7 +22,7 @@ The ontology defines the concepts about Hadith (Recorded narrations of the sayin
 
 ## B. Motivation
 1. **Need (MUST)**
-The application of semantic web or open data in the Islamic knowledge domain is limited. 
+The application of semantic web or open data in the Islamic knowledge domain is limited. Work on mature knowledge modelling for the Quran exists along with published linked data, but the domain of Hadith has failed to cache upon this potential; hence, lacking the digital connection between these two most important sources of Islamic religious knowledge that could help extract information from them. The Islamic knowledge domain has not taken advantage of the guaranteed capabilities of the semantic web and the knowledge graphs. 
 
 2. **Competition (MUST)**
 So far, no ontologies are available representing Hadith.
@@ -46,7 +46,6 @@ The result is a vocabulary available to develop interoperable applications withi
 Analysis of the available literature on Semantic Web, ontologies and Islamic Knowledge representation. In particular, how to represent Hadith and the Narrators of Hadith. Competency questions on the relevant domain.
 
 2. **Source knowledge location (SHOULD)** 
-Competency Questions
 
 3. **Content Selection (SHOULD)** 
 Hadith Collections, Hadith, Narrators, and  Narrator Chains
