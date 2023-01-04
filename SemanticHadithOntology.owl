@@ -115,7 +115,6 @@
 
     <owl:ObjectProperty rdf:about="http://schema.org/hasPart">
         <owl:inverseOf rdf:resource="http://schema.org/isPartOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
@@ -123,7 +122,6 @@
     <!-- http://schema.org/isPartOf -->
 
     <owl:ObjectProperty rdf:about="http://schema.org/isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
