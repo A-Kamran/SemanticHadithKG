@@ -14,7 +14,7 @@ Default Dataset Name (Graph IRI): http://www.i-knex.com/ontology/hadith#
 Faceted Search at:  http://115.186.60.94:8890/fct/
 
 For faceted Query Results: 
-Select the option (HTML (Faceted Browsing Links)) from the drop-down menu for Results Formats, before executing the query.
+Select the option (HTML (Faceted Browsing Links)) from the drop-down menu for Results Format, before executing the query.
 <img width="970" alt="image" src="https://user-images.githubusercontent.com/97387765/211258515-bf743526-0f2e-464e-9caa-deb837dec46b.png">
 
 
