@@ -4,8 +4,15 @@
 Have a look at the [documentation](https://a-kamran.github.io/SemanticHadithKG/) .
 
 ## SPARQL Endpoint available at
-http://115.186.60.94:8890/sparql/.
-(Faceted Browsing is also enabled)
+
+http://115.186.60.94:7200/.
+Choose Repository -> SemHadith
+For Sparql:
+http://115.186.60.94:7200/sparql
+
+
+<!-- http://115.186.60.94:8890/sparql/.
+(Faceted Browsing is also enabled) -->
 
 Default Dataset Name (Graph IRI): http://www.i-knex.com/ontology/hadith#
 
