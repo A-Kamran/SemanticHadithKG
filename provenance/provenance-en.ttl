@@ -2,12 +2,12 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://www.i-knex.com/ontology/hadith#/1.0.1> a prov:Entity;
+<http://www.semantichadith.com/ontology#/1.0.1> a prov:Entity;
 	 dc:title "The Semantic Hadith Ontology";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
-	 prov:specializationOf <http://www.i-knex.com/ontology/hadith#>;
+	 prov:specializationOf <http://www.semantichadith.com/ontology#>;
 .
 :agent0 a prov:Agent; foaf:name "Amna binte Kamran".
 :agent1 a prov:Agent; foaf:name "Bushra Abro".
