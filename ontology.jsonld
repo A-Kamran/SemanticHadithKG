@@ -3,20 +3,20 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+      "@id" : "http://www.semantichadith.com/ontology#HadithBook"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+      "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection"
+      "@id" : "http://www.semantichadith.com/ontology#HadithCollection"
     } ]
   } ]
 }, {
   "@id" : "_:genid20",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#name"
+    "@id" : "http://www.semantichadith.com/ontology#name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -26,7 +26,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
       "@id" : "_:genid23"
     } ]
@@ -35,61 +35,61 @@
   "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#elevated"
+    "@id" : "http://www.semantichadith.com/ontology#elevated"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithType"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadithType"
   } ]
 }, {
   "@id" : "_:genid25",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#containsMentionOf"
+    "@id" : "http://www.semantichadith.com/ontology#containsMentionOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Verse"
+    "@id" : "http://www.semantichadith.com/ontology#Verse"
   } ]
 }, {
   "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithText"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadithText"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithText"
+    "@id" : "http://www.semantichadith.com/ontology#HadithText"
   } ]
 }, {
   "@id" : "_:genid27",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#hasNarratorChain"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChain"
   } ]
 }, {
   "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasRootNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#hasRootNarrator"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#RootNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#RootNarrator"
   } ]
 }, {
   "@id" : "_:genid29",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfChapter"
+    "@id" : "http://www.semantichadith.com/ontology#isPartOfChapter"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ]
 }, {
   "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#engHadithNo"
+    "@id" : "http://www.semantichadith.com/ontology#engHadithNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -98,7 +98,7 @@
   "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#fullHadithText"
+    "@id" : "http://www.semantichadith.com/ontology#fullHadithText"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -107,7 +107,7 @@
   "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithReferenceNo"
+    "@id" : "http://www.semantichadith.com/ontology#hadithReferenceNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -116,7 +116,7 @@
   "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithType"
+    "@id" : "http://www.semantichadith.com/ontology#hadithType"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -125,7 +125,7 @@
   "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithURL"
+    "@id" : "http://www.semantichadith.com/ontology#hadithURL"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -134,25 +134,25 @@
   "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasChapter"
+    "@id" : "http://www.semantichadith.com/ontology#hasChapter"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ]
 }, {
   "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfCollection"
+    "@id" : "http://www.semantichadith.com/ontology#isPartOfCollection"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollection"
   } ]
 }, {
   "@id" : "_:genid37",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#engBookNo"
+    "@id" : "http://www.semantichadith.com/ontology#engBookNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -161,7 +161,7 @@
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithBookIntro"
+    "@id" : "http://www.semantichadith.com/ontology#hadithBookIntro"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -170,7 +170,7 @@
   "@id" : "_:genid39",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithBookNo"
+    "@id" : "http://www.semantichadith.com/ontology#hadithBookNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -179,7 +179,7 @@
   "@id" : "_:genid40",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#sequenceNo"
+    "@id" : "http://www.semantichadith.com/ontology#sequenceNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -188,25 +188,25 @@
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadith"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadith"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
   "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfBook"
+    "@id" : "http://www.semantichadith.com/ontology#isPartOfBook"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ]
 }, {
   "@id" : "_:genid43",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithChapterNo"
+    "@id" : "http://www.semantichadith.com/ontology#hadithChapterNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -215,7 +215,7 @@
   "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#sequenceNo"
+    "@id" : "http://www.semantichadith.com/ontology#sequenceNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -227,7 +227,7 @@
     "@id" : "http://schema.org/author"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollectionAuthor"
   } ]
 }, {
   "@id" : "_:genid46",
@@ -236,13 +236,13 @@
     "@id" : "http://schema.org/hasPart"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ]
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#collectionName"
+    "@id" : "http://www.semantichadith.com/ontology#collectionName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -251,7 +251,7 @@
   "@id" : "_:genid48",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#engVolNo"
+    "@id" : "http://www.semantichadith.com/ontology#engVolNo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -260,7 +260,7 @@
   "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#age"
+    "@id" : "http://www.semantichadith.com/ontology#age"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -269,7 +269,7 @@
   "@id" : "_:genid50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#attribute"
+    "@id" : "http://www.semantichadith.com/ontology#attribute"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -278,7 +278,7 @@
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#birthYear"
+    "@id" : "http://www.semantichadith.com/ontology#birthYear"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -287,7 +287,7 @@
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#concealment"
+    "@id" : "http://www.semantichadith.com/ontology#concealment"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -296,7 +296,7 @@
   "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#deathPlace"
+    "@id" : "http://www.semantichadith.com/ontology#deathPlace"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -305,7 +305,7 @@
   "@id" : "_:genid54",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#deathYear"
+    "@id" : "http://www.semantichadith.com/ontology#deathYear"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -314,7 +314,7 @@
   "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#firstChar"
+    "@id" : "http://www.semantichadith.com/ontology#firstChar"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -323,7 +323,7 @@
   "@id" : "_:genid56",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#generation"
+    "@id" : "http://www.semantichadith.com/ontology#generation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -332,7 +332,7 @@
   "@id" : "_:genid57",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasMaster"
+    "@id" : "http://www.semantichadith.com/ontology#hasMaster"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -341,7 +341,7 @@
   "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#lineage"
+    "@id" : "http://www.semantichadith.com/ontology#lineage"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -350,7 +350,7 @@
   "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#name"
+    "@id" : "http://www.semantichadith.com/ontology#name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -360,11 +360,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+      "@id" : "http://www.semantichadith.com/ontology#HadithBook"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+      "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
     }, {
       "@id" : "_:genid8"
     } ]
@@ -373,7 +373,7 @@
   "@id" : "_:genid60",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#narratorID"
+    "@id" : "http://www.semantichadith.com/ontology#narratorID"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
@@ -382,7 +382,7 @@
   "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#narratorURL"
+    "@id" : "http://www.semantichadith.com/ontology#narratorURL"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -391,7 +391,7 @@
   "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#office"
+    "@id" : "http://www.semantichadith.com/ontology#office"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -400,7 +400,7 @@
   "@id" : "_:genid63",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#popularName"
+    "@id" : "http://www.semantichadith.com/ontology#popularName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -409,7 +409,7 @@
   "@id" : "_:genid64",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#rank"
+    "@id" : "http://www.semantichadith.com/ontology#rank"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -418,7 +418,7 @@
   "@id" : "_:genid65",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#residence"
+    "@id" : "http://www.semantichadith.com/ontology#residence"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -427,7 +427,7 @@
   "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#schoolOfThought"
+    "@id" : "http://www.semantichadith.com/ontology#schoolOfThought"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -436,7 +436,7 @@
   "@id" : "_:genid67",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#teknonym"
+    "@id" : "http://www.semantichadith.com/ontology#teknonym"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -445,7 +445,7 @@
   "@id" : "_:genid68",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#title"
+    "@id" : "http://www.semantichadith.com/ontology#title"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -454,16 +454,16 @@
   "@id" : "_:genid69",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith"
+    "@id" : "http://www.semantichadith.com/ontology#isPartOfHadith"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
   "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hadithText"
+    "@id" : "http://www.semantichadith.com/ontology#hadithText"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -473,13 +473,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#elevated"
+      "@id" : "http://www.semantichadith.com/ontology#elevated"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#sacred"
+      "@id" : "http://www.semantichadith.com/ontology#sacred"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#severed"
+      "@id" : "http://www.semantichadith.com/ontology#severed"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#stopped"
+      "@id" : "http://www.semantichadith.com/ontology#stopped"
     } ]
   } ]
 }, {
@@ -489,50 +489,50 @@
     "@id" : "http://schema.org/isPartOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
   "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorSegment"
+    "@id" : "http://www.semantichadith.com/ontology#hasNarratorSegment"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ]
 }, {
   "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment"
+    "@id" : "http://www.semantichadith.com/ontology#hasRootNarratorSegment"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#RootNarratorChainSegment"
   } ]
 }, {
   "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith"
+    "@id" : "http://www.semantichadith.com/ontology#isPartOfHadith"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#HadithText"
+      "@id" : "http://www.semantichadith.com/ontology#HadithText"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain"
+      "@id" : "http://www.semantichadith.com/ontology#NarratorChain"
     } ]
   } ]
 }, {
   "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#narratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#narratorChain"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -541,10 +541,10 @@
   "@id" : "_:genid81",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#refersToNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#refersToNarrator"
   } ]
 }, {
   "@id" : "_:genid82",
@@ -554,7 +554,7 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#refersToNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#refersToNarrator"
   } ]
 }, {
   "@id" : "_:genid83",
@@ -564,14 +564,14 @@
     "@value" : "0"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#heardFrom"
+    "@id" : "http://www.semantichadith.com/ontology#heardFrom"
   } ]
 }, {
   "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
       "@id" : "_:genid86"
     } ]
@@ -580,17 +580,17 @@
   "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#sacred"
+    "@id" : "http://www.semantichadith.com/ontology#sacred"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithType"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadithType"
   } ]
 }, {
   "@id" : "_:genid88",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
       "@id" : "_:genid90"
     } ]
@@ -599,17 +599,17 @@
   "@id" : "_:genid90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#severed"
+    "@id" : "http://www.semantichadith.com/ontology#severed"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithType"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadithType"
   } ]
 }, {
   "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+      "@id" : "http://www.semantichadith.com/ontology#Hadith"
     }, {
       "@id" : "_:genid94"
     } ]
@@ -618,10 +618,10 @@
   "@id" : "_:genid94",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#stopped"
+    "@id" : "http://www.semantichadith.com/ontology#stopped"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithType"
+    "@id" : "http://www.semantichadith.com/ontology#hasHadithType"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/contributor",
@@ -645,10 +645,10 @@
   "@id" : "http://schema.org/author",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollectionAuthor"
   } ]
 }, {
   "@id" : "http://schema.org/hasPart",
@@ -669,10 +669,10 @@
   "@id" : "http://schema.org/mentions",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#",
+  "@id" : "http://www.semantichadith.com/ontology#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -695,10 +695,10 @@
     "@value" : "hadith:"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#/1.0.1"
+    "@id" : "http://www.semantichadith.com/ontology#/1.0.1"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Believer",
+  "@id" : "http://www.semantichadith.com/ontology#Believer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -721,7 +721,7 @@
     "@id" : "_:genid20"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Companion",
+  "@id" : "http://www.semantichadith.com/ontology#Companion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -738,19 +738,19 @@
     "@value" : "صحابي"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Believer"
+    "@id" : "http://www.semantichadith.com/ontology#Believer"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Elevated_Hadith",
+  "@id" : "http://www.semantichadith.com/ontology#Elevated_Hadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid21"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Hadith",
+  "@id" : "http://www.semantichadith.com/ontology#Hadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -792,7 +792,7 @@
     "@value" : "https://dbpedia.org/page/Hadith"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook",
+  "@id" : "http://www.semantichadith.com/ontology#HadithBook",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -823,7 +823,7 @@
     "@value" : "http://purl.org/ontology/bibo/Book"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter",
+  "@id" : "http://www.semantichadith.com/ontology#HadithChapter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -846,7 +846,7 @@
     "@id" : "_:genid44"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection",
+  "@id" : "http://www.semantichadith.com/ontology#HadithCollection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -876,7 +876,7 @@
     "@value" : "https://dbpedia.org/page/Category:Hadith_collections"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor",
+  "@id" : "http://www.semantichadith.com/ontology#HadithCollectionAuthor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -890,10 +890,10 @@
     "@value" : "محدث"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Believer"
+    "@id" : "http://www.semantichadith.com/ontology#Believer"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator",
+  "@id" : "http://www.semantichadith.com/ontology#HadithNarrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -907,7 +907,7 @@
     "@value" : "راوى"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Believer"
+    "@id" : "http://www.semantichadith.com/ontology#Believer"
   }, {
     "@id" : "_:genid49"
   }, {
@@ -950,7 +950,7 @@
     "@id" : "_:genid68"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithText",
+  "@id" : "http://www.semantichadith.com/ontology#HadithText",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -973,7 +973,7 @@
     "@value" : "Matan (Matn)"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#HadithType",
+  "@id" : "http://www.semantichadith.com/ontology#HadithType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure."
@@ -982,7 +982,7 @@
     "@id" : "_:genid71"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain",
+  "@id" : "http://www.semantichadith.com/ontology#NarratorChain",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1017,7 +1017,7 @@
     "@value" : "Sanad"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment",
+  "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#Thing"
@@ -1027,14 +1027,14 @@
     "@id" : "_:genid82"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#NarratorOccurrence",
+  "@id" : "http://www.semantichadith.com/ontology#NarratorOccurrence",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Narrator Occurance"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#RootNarrator",
+  "@id" : "http://www.semantichadith.com/ontology#RootNarrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1045,45 +1045,45 @@
     "@value" : "Root Narrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment",
+  "@id" : "http://www.semantichadith.com/ontology#RootNarratorChainSegment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "The Root Narrator (First Narrator Occurrence) has no heardFrom since they are the eyewitness to the Hadith contents"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   }, {
     "@id" : "_:genid83"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Sacred_Hadith",
+  "@id" : "http://www.semantichadith.com/ontology#Sacred_Hadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid84"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Severed_Hadith",
+  "@id" : "http://www.semantichadith.com/ontology#Severed_Hadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid88"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Stopped_Hadith",
+  "@id" : "http://www.semantichadith.com/ontology#Stopped_Hadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid92"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#Verse",
+  "@id" : "http://www.semantichadith.com/ontology#Verse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1107,14 +1107,14 @@
     "@value" : "http://quranontology.com/Resource/Verse"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#age",
+  "@id" : "http://www.semantichadith.com/ontology#age",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Age of the Narrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1131,7 +1131,7 @@
     "@value" : "ummarArRavi"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#attribute",
+  "@id" : "http://www.semantichadith.com/ontology#attribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1155,7 +1155,7 @@
     "@value" : "wasaf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#birthPlace",
+  "@id" : "http://www.semantichadith.com/ontology#birthPlace",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1182,7 +1182,7 @@
     "@value" : "http://dbpedia.org/property/birthPlace"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#birthYear",
+  "@id" : "http://www.semantichadith.com/ontology#birthYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1210,7 +1210,7 @@
     "@value" : "sunalMilad"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#chapterNo",
+  "@id" : "http://www.semantichadith.com/ontology#chapterNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1224,7 +1224,7 @@
     "@value" : "Chapter Index (Quran)"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#chapterPreface",
+  "@id" : "http://www.semantichadith.com/ontology#chapterPreface",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1239,7 +1239,7 @@
     "@value" : "chapterTarjama"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#collectionName",
+  "@id" : "http://www.semantichadith.com/ontology#collectionName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1249,7 +1249,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#concealment",
+  "@id" : "http://www.semantichadith.com/ontology#concealment",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1266,30 +1266,30 @@
     "@value" : "Akhtalat Tadlees"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#containsMentionOf",
+  "@id" : "http://www.semantichadith.com/ontology#containsMentionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A hadith mentions a verse of Quran."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contains mention of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Verse"
+    "@id" : "http://www.semantichadith.com/ontology#Verse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/mentions"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#mentionedIn"
+    "@id" : "http://www.semantichadith.com/ontology#mentionedIn"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#deathPlace",
+  "@id" : "http://www.semantichadith.com/ontology#deathPlace",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1320,7 +1320,7 @@
     "@value" : "baladAlWafat"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#deathYear",
+  "@id" : "http://www.semantichadith.com/ontology#deathYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1348,7 +1348,7 @@
     "@value" : "sunAlWafat"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#elevated",
+  "@id" : "http://www.semantichadith.com/ontology#elevated",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1358,7 +1358,7 @@
     "@value" : "وہ حدیث جس میں کسی قول، فعل یا تقریر کو رسول اللہ صلی اللہ علیہ وسلم کی طرف منسوب کیا گیا ہو۔"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithType"
+    "@id" : "http://www.semantichadith.com/ontology#HadithType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1372,7 +1372,7 @@
     "@value" : "Marfūʿ"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#engBookNo",
+  "@id" : "http://www.semantichadith.com/ontology#engBookNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1386,10 +1386,10 @@
     "@value" : "Hadith Book Number (English)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#englishReference"
+    "@id" : "http://www.semantichadith.com/ontology#englishReference"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#engHadithNo",
+  "@id" : "http://www.semantichadith.com/ontology#engHadithNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1400,10 +1400,10 @@
     "@value" : "Hadith Number (English)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#englishReference"
+    "@id" : "http://www.semantichadith.com/ontology#englishReference"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#engVolNo",
+  "@id" : "http://www.semantichadith.com/ontology#engVolNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1417,10 +1417,10 @@
     "@value" : "Volume Number (English)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#englishReference"
+    "@id" : "http://www.semantichadith.com/ontology#englishReference"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#englishReference",
+  "@id" : "http://www.semantichadith.com/ontology#englishReference",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1430,7 +1430,7 @@
     "@value" : "Reference of Hadith (English)"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#firstChar",
+  "@id" : "http://www.semantichadith.com/ontology#firstChar",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1444,19 +1444,19 @@
     "@value" : "First Character of Narrator's name"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#follows",
+  "@id" : "http://www.semantichadith.com/ontology#follows",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#precedes"
+    "@id" : "http://www.semantichadith.com/ontology#precedes"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#fullHadithText",
+  "@id" : "http://www.semantichadith.com/ontology#fullHadithText",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1467,7 +1467,7 @@
     "@value" : "Full Hadith"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#generation",
+  "@id" : "http://www.semantichadith.com/ontology#generation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1492,7 +1492,7 @@
     "@value" : "Tabqa (Tabaqa)"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithBookIntro",
+  "@id" : "http://www.semantichadith.com/ontology#hadithBookIntro",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1503,7 +1503,7 @@
     "@value" : "Hadith Book Introduction"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithBookNo",
+  "@id" : "http://www.semantichadith.com/ontology#hadithBookNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1514,7 +1514,7 @@
     "@value" : "Hadith Book Number"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithChapterNo",
+  "@id" : "http://www.semantichadith.com/ontology#hadithChapterNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1525,7 +1525,7 @@
     "@value" : "Hadith Chapter Number"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithGrade",
+  "@id" : "http://www.semantichadith.com/ontology#hadithGrade",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/description" : [ {
     "@value" : "Ibn al-Salah said, \"Hadith, in the view of scholars of this discipline, fall into the divisions of 'sound' (ṣaḥīḥ), 'fair' (ḥasan), and 'weak' (ḍaʻīf).\" While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.\n\nṢaḥīḥ\nSahih (Arabic: صحيح, Ṣaḥīḥ) may be translated as \"authentic\" or \"sound.\"[6] Ibn Hajar defines a hadith that is ṣaḥīḥ lidhātihi (\"ṣaḥīḥ in and of itself\") as a singular narration (ahaad; see below) conveyed by a trustworthy, completely competent person, either in his ability to memorize or to preserve what he wrote, with a muttaṣil (\"connected\") isnād (\"chain of narration\") that contains neither a serious concealed flaw (ʻillah)علة nor irregularity (shādhdh). He then defines a hadith that is ṣaḥīḥ lighairihi (\"ṣaḥīḥ due to external factors\") as a hadith \"with something, such as numerous chains of narration, strengthening it.\"\n\nIbn Hajar's definitions indicate that there are five conditions to be met for a particular hadith to be considered ṣaḥīḥ:\n\n1. Each narrator in the chain of narration must be trustworthy;\n2. Each narrator must be reliable in his ability to preserve that narration, be it in his ability to memorize to the extent that he can recall it as he heard it, or, that he has written it as he heard it and has preserved that written document unchanged;\n3. The isnād must be connected (muttasil) insofar as it is at least possible for each narrator in the chain to have received the hadith from a predecessor;\n4. The hadith, including its isnād, is free of ʻillah (hidden detrimental flaw or flaws, e.g. the establishment that two narrators, although contemporaries, could not have shared the hadith, thereby breaking the isnād.)\n5. The hadith is free of irregularity, meaning that it does not contradict another hadith already established (accepted).\n\nA number of books were authored in which the author stipulated the inclusion of ṣaḥīḥ hadith alone. \n\nṢaḥīḥ al-Bukhārī. Considered the most authentic book after the Quran.\nṢaḥīḥ Muslim. Considered the next most authentic book after Ṣaḥīḥ al-Bukhārī."
@@ -1534,7 +1534,7 @@
     "@value" : "https://en.wikipedia.org/wiki/Hadith_terminology"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithReferenceNo",
+  "@id" : "http://www.semantichadith.com/ontology#hadithReferenceNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1545,10 +1545,10 @@
     "@value" : "Hadith Reference Number"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithText",
+  "@id" : "http://www.semantichadith.com/ontology#hadithText",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithType",
+  "@id" : "http://www.semantichadith.com/ontology#hadithType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1566,7 +1566,7 @@
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hadithURL",
+  "@id" : "http://www.semantichadith.com/ontology#hadithURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1577,74 +1577,74 @@
     "@value" : "Hadith URL"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasBook",
+  "@id" : "http://www.semantichadith.com/ontology#hasBook",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A collection of hadith has book of hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has book"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/hasPart"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasChapter",
+  "@id" : "http://www.semantichadith.com/ontology#hasChapter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A hadith book has a chapter."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has chapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/hasPart"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasHadith",
+  "@id" : "http://www.semantichadith.com/ontology#hasHadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A hadith chapter has a hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/hasPart"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithText",
+  "@id" : "http://www.semantichadith.com/ontology#hasHadithText",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Hadith has a textual entity of the content of the hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1654,19 +1654,19 @@
     "@value" : "has Hadith text"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithText"
+    "@id" : "http://www.semantichadith.com/ontology#HadithText"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/hasPart"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasHadithType",
+  "@id" : "http://www.semantichadith.com/ontology#hasHadithType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithType"
+    "@id" : "http://www.semantichadith.com/ontology#HadithType"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasMaster",
+  "@id" : "http://www.semantichadith.com/ontology#hasMaster",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1686,7 +1686,7 @@
     "@value" : "alMawali"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasNarrator",
+  "@id" : "http://www.semantichadith.com/ontology#hasNarrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1697,152 +1697,152 @@
     "@value" : "has Narrator"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#narrated"
+    "@id" : "http://www.semantichadith.com/ontology#narrated"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain"
+      "@id" : "http://www.semantichadith.com/ontology#hasNarratorChain"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorSegment"
+      "@id" : "http://www.semantichadith.com/ontology#hasNarratorSegment"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#refersToNarrator"
+      "@id" : "http://www.semantichadith.com/ontology#refersToNarrator"
     } ]
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain",
+  "@id" : "http://www.semantichadith.com/ontology#hasNarratorChain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Chain of Narrators of Hadith."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Narrator Chain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/hasPart"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorSegment",
+  "@id" : "http://www.semantichadith.com/ontology#hasNarratorSegment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasRootNarrator",
+  "@id" : "http://www.semantichadith.com/ontology#hasRootNarrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#RootNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#RootNarrator"
   } ],
   "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
     "@list" : [ {
-      "@id" : "http://www.i-knex.com/ontology/hadith#hasNarratorChain"
+      "@id" : "http://www.semantichadith.com/ontology#hasNarratorChain"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment"
+      "@id" : "http://www.semantichadith.com/ontology#hasRootNarratorSegment"
     }, {
-      "@id" : "http://www.i-knex.com/ontology/hadith#refersToNarrator"
+      "@id" : "http://www.semantichadith.com/ontology#refersToNarrator"
     } ]
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment",
+  "@id" : "http://www.semantichadith.com/ontology#hasRootNarratorSegment",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChain"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#RootNarratorChainSegment"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#heardFrom",
+  "@id" : "http://www.semantichadith.com/ontology#heardFrom",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Hadith is heard from another narrator, (inverse of transferTo)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Heard from"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#transferredTo"
+    "@id" : "http://www.semantichadith.com/ontology#transferredTo"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfBook",
+  "@id" : "http://www.semantichadith.com/ontology#isPartOfBook",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Hadith chapter is a part of a hadith book"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is part of book"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/isPartOf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfChapter",
+  "@id" : "http://www.semantichadith.com/ontology#isPartOfChapter",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "a hadith is a part of hadith chapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is part of chapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithChapter"
+    "@id" : "http://www.semantichadith.com/ontology#HadithChapter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/isPartOf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfCollection",
+  "@id" : "http://www.semantichadith.com/ontology#isPartOfCollection",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A hadith book is part of a hadith collection."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithBook"
+    "@id" : "http://www.semantichadith.com/ontology#HadithBook"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is part of collection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithCollection"
+    "@id" : "http://www.semantichadith.com/ontology#HadithCollection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/isPartOf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#isPartOfHadith",
+  "@id" : "http://www.semantichadith.com/ontology#isPartOfHadith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1853,13 +1853,13 @@
     "@value" : "is Part of Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/isPartOf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#lineage",
+  "@id" : "http://www.semantichadith.com/ontology#lineage",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1881,24 +1881,24 @@
     "@value" : "Nasab"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#mentionedIn",
+  "@id" : "http://www.semantichadith.com/ontology#mentionedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A qur’anic verse or any other entity is mentioned in the text of the hadith."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Verse"
+    "@id" : "http://www.semantichadith.com/ontology#Verse"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Mentioned in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#Hadith"
+    "@id" : "http://www.semantichadith.com/ontology#Hadith"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#name",
+  "@id" : "http://www.semantichadith.com/ontology#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1908,7 +1908,7 @@
     "@value" : "اسم الراوي"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#narrated",
+  "@id" : "http://www.semantichadith.com/ontology#narrated",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1919,7 +1919,7 @@
     "@value" : "Narrated"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#narratorChain",
+  "@id" : "http://www.semantichadith.com/ontology#narratorChain",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1930,7 +1930,7 @@
     "@value" : "Narrator Chain"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#narratorID",
+  "@id" : "http://www.semantichadith.com/ontology#narratorID",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1951,7 +1951,7 @@
     "@value" : "raqamArRavi"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#narratorURL",
+  "@id" : "http://www.semantichadith.com/ontology#narratorURL",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1962,7 +1962,7 @@
     "@value" : "Narrator URL"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#office",
+  "@id" : "http://www.semantichadith.com/ontology#office",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1984,7 +1984,7 @@
     "@value" : "anNishat"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#popularName",
+  "@id" : "http://www.semantichadith.com/ontology#popularName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -1998,16 +1998,16 @@
     "@value" : "اسم الشهرة"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#precedes",
+  "@id" : "http://www.semantichadith.com/ontology#precedes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#rank",
+  "@id" : "http://www.semantichadith.com/ontology#rank",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2032,16 +2032,16 @@
     "@value" : "Rutba (Rotba)"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#refersToNarrator",
+  "@id" : "http://www.semantichadith.com/ontology#refersToNarrator",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#NarratorChainSegment"
+    "@id" : "http://www.semantichadith.com/ontology#NarratorChainSegment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#residence",
+  "@id" : "http://www.semantichadith.com/ontology#residence",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -2060,14 +2060,14 @@
     "@value" : "http://schema.org/homeLocation"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#sacred",
+  "@id" : "http://www.semantichadith.com/ontology#sacred",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "ur",
     "@value" : "اللہ تعالیٰ کا وہ فرمان جسے نبی اکرم صلی اللہ علیہ وسلم نے اللہ تعالیٰ سے روایت کیا ہو، راویوں کے ذریعے سے ہم تک پہنچا ہو اور قرآن مجید میں موجود نہ ہو۔\n\nحدیث قدسی کی ایک اور تعریف: حدیث قدسی وہ حدیث ہے جس میں نبی کریم صلی اللہ علیہ وسلم ارشاد فرمائیں: ”اللہ تعالى نے فرمایا ہے۔“"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithType"
+    "@id" : "http://www.semantichadith.com/ontology#HadithType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2080,7 +2080,7 @@
     "@value" : "Qudsi"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#schoolOfThought",
+  "@id" : "http://www.semantichadith.com/ontology#schoolOfThought",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2094,7 +2094,7 @@
     "@value" : "mazhab"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#sequenceNo",
+  "@id" : "http://www.semantichadith.com/ontology#sequenceNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2105,7 +2105,7 @@
     "@value" : "Sequence Number"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#severed",
+  "@id" : "http://www.semantichadith.com/ontology#severed",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2115,7 +2115,7 @@
     "@value" : "وہ حدیث جس میں کسی قول، فعل یا تقریر کو صحابی کی طرف منسوب کیا گیا ہو۔"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithType"
+    "@id" : "http://www.semantichadith.com/ontology#HadithType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2129,7 +2129,7 @@
     "@value" : "Mawquf"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#stopped",
+  "@id" : "http://www.semantichadith.com/ontology#stopped",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2139,7 +2139,7 @@
     "@value" : "وہ حدیث جس میں کسی قول یا فعل کو تابعی یا تبع تابعی کی طرف منسوب کیا گیا ہو۔"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithType"
+    "@id" : "http://www.semantichadith.com/ontology#HadithType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2153,7 +2153,7 @@
     "@value" : "Maqtu‘"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#teknonym",
+  "@id" : "http://www.semantichadith.com/ontology#teknonym",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2178,7 +2178,7 @@
     "@value" : "Kunyah"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#title",
+  "@id" : "http://www.semantichadith.com/ontology#title",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
@@ -2192,24 +2192,24 @@
     "@value" : "اللقب"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#transferredTo",
+  "@id" : "http://www.semantichadith.com/ontology#transferredTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "A narrator tells the hadith to another narrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Transfer To"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.i-knex.com/ontology/hadith#HadithNarrator"
+    "@id" : "http://www.semantichadith.com/ontology#HadithNarrator"
   } ]
 }, {
-  "@id" : "http://www.i-knex.com/ontology/hadith#verseNo",
+  "@id" : "http://www.semantichadith.com/ontology#verseNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
