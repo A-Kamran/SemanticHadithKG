@@ -1,13 +1,13 @@
-@prefix : <http://www.i-knex.com/ontology/hadith#> .
+@prefix : <http://www.semantichadith.com/ontology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.i-knex.com/ontology/hadith#> .
+@base <http://www.semantichadith.com/ontology#> .
 
-<http://www.i-knex.com/ontology/hadith#> rdf:type owl:Ontology ;
-                                          owl:versionIRI <http://www.i-knex.com/ontology/hadith#/1.0.1> ;
+<http://www.semantichadith.com/ontology#> rdf:type owl:Ontology ;
+                                          owl:versionIRI <http://www.semantichadith.com/ontology#/1.0.1> ;
                                           <http://purl.org/dc/terms/contributor> "Bushra Abro"^^rdfs:Literal ;
                                           <http://purl.org/dc/terms/creator> "Amna binte Kamran"^^rdfs:Literal ;
                                           <http://purl.org/dc/terms/description> "Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities"^^rdfs:Literal ;
@@ -102,7 +102,7 @@ owl:sameAs rdf:type owl:AnnotationProperty .
                              rdfs:range :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#containsMentionOf
+###  http://www.semantichadith.com/ontology#containsMentionOf
 :containsMentionOf rdf:type owl:ObjectProperty ;
                    rdfs:subPropertyOf <http://schema.org/mentions> ;
                    owl:inverseOf :mentionedIn ;
@@ -110,48 +110,48 @@ owl:sameAs rdf:type owl:AnnotationProperty .
                    rdfs:range :Verse .
 
 
-###  http://www.i-knex.com/ontology/hadith#follows
+###  http://www.semantichadith.com/ontology#follows
 :follows rdf:type owl:ObjectProperty ;
          owl:inverseOf :precedes ;
          rdfs:domain :NarratorChainSegment ;
          rdfs:range :NarratorChainSegment .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasBook
+###  http://www.semantichadith.com/ontology#hasBook
 :hasBook rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf <http://schema.org/hasPart> ;
          rdfs:domain :HadithCollection ;
          rdfs:range :HadithBook .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasChapter
+###  http://www.semantichadith.com/ontology#hasChapter
 :hasChapter rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://schema.org/hasPart> ;
             rdfs:domain :HadithBook ;
             rdfs:range :HadithChapter .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasHadith
+###  http://www.semantichadith.com/ontology#hasHadith
 :hasHadith rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://schema.org/hasPart> ;
            rdfs:domain :HadithChapter ;
            rdfs:range :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasHadithText
+###  http://www.semantichadith.com/ontology#hasHadithText
 :hasHadithText rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://schema.org/hasPart> ;
                rdfs:domain :Hadith ;
                rdfs:range :HadithText .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasHadithType
+###  http://www.semantichadith.com/ontology#hasHadithType
 :hasHadithType rdf:type owl:ObjectProperty ,
                         owl:FunctionalProperty ;
                rdfs:range :HadithType .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasNarrator
+###  http://www.semantichadith.com/ontology#hasNarrator
 :hasNarrator rdf:type owl:ObjectProperty ;
              owl:inverseOf :narrated ;
              owl:propertyChainAxiom ( :hasNarratorChain
@@ -160,20 +160,20 @@ owl:sameAs rdf:type owl:AnnotationProperty .
                                     ) .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasNarratorChain
+###  http://www.semantichadith.com/ontology#hasNarratorChain
 :hasNarratorChain rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf <http://schema.org/hasPart> ;
                   rdfs:domain :Hadith ;
                   rdfs:range :NarratorChain .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasNarratorSegment
+###  http://www.semantichadith.com/ontology#hasNarratorSegment
 :hasNarratorSegment rdf:type owl:ObjectProperty ;
                     rdfs:domain :NarratorChain ;
                     rdfs:range :NarratorChainSegment .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasRootNarrator
+###  http://www.semantichadith.com/ontology#hasRootNarrator
 :hasRootNarrator rdf:type owl:ObjectProperty ;
                  rdfs:range :RootNarrator ;
                  owl:propertyChainAxiom ( :hasNarratorChain
@@ -182,13 +182,13 @@ owl:sameAs rdf:type owl:AnnotationProperty .
                                         ) .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasRootNarratorSegment
+###  http://www.semantichadith.com/ontology#hasRootNarratorSegment
 :hasRootNarratorSegment rdf:type owl:ObjectProperty ;
                         rdfs:domain :NarratorChain ;
                         rdfs:range :RootNarratorChainSegment .
 
 
-###  http://www.i-knex.com/ontology/hadith#heardFrom
+###  http://www.semantichadith.com/ontology#heardFrom
 :heardFrom rdf:type owl:ObjectProperty ;
            owl:inverseOf :transferredTo ;
            rdf:type owl:FunctionalProperty ;
@@ -196,57 +196,57 @@ owl:sameAs rdf:type owl:AnnotationProperty .
            rdfs:range :HadithNarrator .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfBook
+###  http://www.semantichadith.com/ontology#isPartOfBook
 :isPartOfBook rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://schema.org/isPartOf> ;
               rdfs:domain :HadithChapter ;
               rdfs:range :HadithBook .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfChapter
+###  http://www.semantichadith.com/ontology#isPartOfChapter
 :isPartOfChapter rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf <http://schema.org/isPartOf> ;
                  rdfs:domain :Hadith ;
                  rdfs:range :HadithChapter .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfCollection
+###  http://www.semantichadith.com/ontology#isPartOfCollection
 :isPartOfCollection rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf <http://schema.org/isPartOf> ;
                     rdfs:domain :HadithBook ;
                     rdfs:range :HadithCollection .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfHadith
+###  http://www.semantichadith.com/ontology#isPartOfHadith
 :isPartOfHadith rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf <http://schema.org/isPartOf> ;
                 rdfs:range :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#mentionedIn
+###  http://www.semantichadith.com/ontology#mentionedIn
 :mentionedIn rdf:type owl:ObjectProperty ;
              rdfs:domain :Verse ;
              rdfs:range :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#narrated
+###  http://www.semantichadith.com/ontology#narrated
 :narrated rdf:type owl:ObjectProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#precedes
+###  http://www.semantichadith.com/ontology#precedes
 :precedes rdf:type owl:ObjectProperty ;
           rdfs:domain :NarratorChainSegment ;
           rdfs:range :NarratorChainSegment .
 
 
-###  http://www.i-knex.com/ontology/hadith#refersToNarrator
+###  http://www.semantichadith.com/ontology#refersToNarrator
 :refersToNarrator rdf:type owl:ObjectProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :NarratorChainSegment ;
                   rdfs:range :HadithNarrator .
 
 
-###  http://www.i-knex.com/ontology/hadith#transferredTo
+###  http://www.semantichadith.com/ontology#transferredTo
 :transferredTo rdf:type owl:ObjectProperty ;
                rdfs:domain :HadithNarrator ;
                rdfs:range :HadithNarrator .
@@ -256,92 +256,92 @@ owl:sameAs rdf:type owl:AnnotationProperty .
 #    Data properties
 #################################################################
 
-###  http://www.i-knex.com/ontology/hadith#age
+###  http://www.semantichadith.com/ontology#age
 :age rdf:type owl:DatatypeProperty ;
      rdfs:domain :HadithNarrator .
 
 
-###  http://www.i-knex.com/ontology/hadith#attribute
+###  http://www.semantichadith.com/ontology#attribute
 :attribute rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#birthPlace
+###  http://www.semantichadith.com/ontology#birthPlace
 :birthPlace rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#birthYear
+###  http://www.semantichadith.com/ontology#birthYear
 :birthYear rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#chapterNo
+###  http://www.semantichadith.com/ontology#chapterNo
 :chapterNo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#chapterPreface
+###  http://www.semantichadith.com/ontology#chapterPreface
 :chapterPreface rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#collectionName
+###  http://www.semantichadith.com/ontology#collectionName
 :collectionName rdf:type owl:DatatypeProperty ;
                 rdfs:subPropertyOf owl:topDataProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#concealment
+###  http://www.semantichadith.com/ontology#concealment
 :concealment rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#deathPlace
+###  http://www.semantichadith.com/ontology#deathPlace
 :deathPlace rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#deathYear
+###  http://www.semantichadith.com/ontology#deathYear
 :deathYear rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#engBookNo
+###  http://www.semantichadith.com/ontology#engBookNo
 :engBookNo rdf:type owl:DatatypeProperty ;
            rdfs:subPropertyOf :englishReference .
 
 
-###  http://www.i-knex.com/ontology/hadith#engHadithNo
+###  http://www.semantichadith.com/ontology#engHadithNo
 :engHadithNo rdf:type owl:DatatypeProperty ;
              rdfs:subPropertyOf :englishReference .
 
 
-###  http://www.i-knex.com/ontology/hadith#engVolNo
+###  http://www.semantichadith.com/ontology#engVolNo
 :engVolNo rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf :englishReference .
 
 
-###  http://www.i-knex.com/ontology/hadith#englishReference
+###  http://www.semantichadith.com/ontology#englishReference
 :englishReference rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#firstChar
+###  http://www.semantichadith.com/ontology#firstChar
 :firstChar rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#fullHadithText
+###  http://www.semantichadith.com/ontology#fullHadithText
 :fullHadithText rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#generation
+###  http://www.semantichadith.com/ontology#generation
 :generation rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithBookIntro
+###  http://www.semantichadith.com/ontology#hadithBookIntro
 :hadithBookIntro rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithBookNo
+###  http://www.semantichadith.com/ontology#hadithBookNo
 :hadithBookNo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithChapterNo
+###  http://www.semantichadith.com/ontology#hadithChapterNo
 :hadithChapterNo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithGrade
+###  http://www.semantichadith.com/ontology#hadithGrade
 :hadithGrade rdf:type owl:DatatypeProperty ;
              <http://purl.org/dc/terms/description> """Ibn al-Salah said, \"Hadith, in the view of scholars of this discipline, fall into the divisions of 'sound' (ṣaḥīḥ), 'fair' (ḥasan), and 'weak' (ḍaʻīf).\" While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.
 
@@ -363,80 +363,80 @@ A number of books were authored in which the author stipulated the inclusion of 
              rdfs:seeAlso "https://en.wikipedia.org/wiki/Hadith_terminology" .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithReferenceNo
+###  http://www.semantichadith.com/ontology#hadithReferenceNo
 :hadithReferenceNo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithText
+###  http://www.semantichadith.com/ontology#hadithText
 :hadithText rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithType
+###  http://www.semantichadith.com/ontology#hadithType
 :hadithType rdf:type owl:DatatypeProperty ;
             rdfs:subPropertyOf owl:topDataProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithURL
+###  http://www.semantichadith.com/ontology#hadithURL
 :hadithURL rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasMaster
+###  http://www.semantichadith.com/ontology#hasMaster
 :hasMaster rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#lineage
+###  http://www.semantichadith.com/ontology#lineage
 :lineage rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#name
+###  http://www.semantichadith.com/ontology#name
 :name rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorChain
+###  http://www.semantichadith.com/ontology#narratorChain
 :narratorChain rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorID
+###  http://www.semantichadith.com/ontology#narratorID
 :narratorID rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorURL
+###  http://www.semantichadith.com/ontology#narratorURL
 :narratorURL rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#office
+###  http://www.semantichadith.com/ontology#office
 :office rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#popularName
+###  http://www.semantichadith.com/ontology#popularName
 :popularName rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#rank
+###  http://www.semantichadith.com/ontology#rank
 :rank rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#residence
+###  http://www.semantichadith.com/ontology#residence
 :residence rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#schoolOfThought
+###  http://www.semantichadith.com/ontology#schoolOfThought
 :schoolOfThought rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#sequenceNo
+###  http://www.semantichadith.com/ontology#sequenceNo
 :sequenceNo rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#teknonym
+###  http://www.semantichadith.com/ontology#teknonym
 :teknonym rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#title
+###  http://www.semantichadith.com/ontology#title
 :title rdf:type owl:DatatypeProperty .
 
 
-###  http://www.i-knex.com/ontology/hadith#verseNo
+###  http://www.semantichadith.com/ontology#verseNo
 :verseNo rdf:type owl:DatatypeProperty .
 
 
@@ -452,7 +452,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
 <http://schema.org/Person> rdf:type owl:Class .
 
 
-###  http://www.i-knex.com/ontology/hadith#Believer
+###  http://www.semantichadith.com/ontology#Believer
 :Believer rdf:type owl:Class ;
           rdfs:subClassOf <http://schema.org/Person> ,
                           [ rdf:type owl:Restriction ;
@@ -461,12 +461,12 @@ rdfs:label rdf:type owl:DatatypeProperty .
                           ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#Companion
+###  http://www.semantichadith.com/ontology#Companion
 :Companion rdf:type owl:Class ;
            rdfs:subClassOf :Believer .
 
 
-###  http://www.i-knex.com/ontology/hadith#Elevated_Hadith
+###  http://www.semantichadith.com/ontology#Elevated_Hadith
 :Elevated_Hadith rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( :Hadith
                                                             [ rdf:type owl:Restriction ;
@@ -479,7 +479,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                  rdfs:subClassOf :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#Hadith
+###  http://www.semantichadith.com/ontology#Hadith
 :Hadith rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :containsMentionOf ;
@@ -523,7 +523,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                         ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithBook
+###  http://www.semantichadith.com/ontology#HadithBook
 :HadithBook rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :hasChapter ;
@@ -551,7 +551,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                             ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithChapter
+###  http://www.semantichadith.com/ontology#HadithChapter
 :HadithChapter rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty :hasHadith ;
@@ -571,7 +571,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithCollection
+###  http://www.semantichadith.com/ontology#HadithCollection
 :HadithCollection rdf:type owl:Class ;
                   rdfs:subClassOf [ rdf:type owl:Restriction ;
                                     owl:onProperty <http://schema.org/author> ;
@@ -591,12 +591,12 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                   ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
+###  http://www.semantichadith.com/ontology#HadithCollectionAuthor
 :HadithCollectionAuthor rdf:type owl:Class ;
                         rdfs:subClassOf :Believer .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithNarrator
+###  http://www.semantichadith.com/ontology#HadithNarrator
 :HadithNarrator rdf:type owl:Class ;
                 rdfs:subClassOf :Believer ,
                                 [ rdf:type owl:Restriction ;
@@ -681,7 +681,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                 ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithText
+###  http://www.semantichadith.com/ontology#HadithText
 :HadithText rdf:type owl:Class ;
             rdfs:subClassOf [ rdf:type owl:Restriction ;
                               owl:onProperty :isPartOfHadith ;
@@ -693,7 +693,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                             ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithType
+###  http://www.semantichadith.com/ontology#HadithType
 :HadithType rdf:type owl:Class ;
             owl:equivalentClass [ rdf:type owl:Class ;
                                   owl:oneOf ( :elevated
@@ -705,7 +705,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
             <http://purl.org/dc/terms/description> "Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure." .
 
 
-###  http://www.i-knex.com/ontology/hadith#NarratorChain
+###  http://www.semantichadith.com/ontology#NarratorChain
 :NarratorChain rdf:type owl:Class ;
                rdfs:subClassOf [ rdf:type owl:Restriction ;
                                  owl:onProperty <http://schema.org/isPartOf> ;
@@ -729,7 +729,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#NarratorChainSegment
+###  http://www.semantichadith.com/ontology#NarratorChainSegment
 :NarratorChainSegment rdf:type owl:Class ;
                       rdfs:subClassOf owl:Thing ,
                                       [ rdf:type owl:Restriction ;
@@ -742,12 +742,12 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                       ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#RootNarrator
+###  http://www.semantichadith.com/ontology#RootNarrator
 :RootNarrator rdf:type owl:Class ;
               rdfs:subClassOf :HadithNarrator .
 
 
-###  http://www.i-knex.com/ontology/hadith#RootNarratorChainSegment
+###  http://www.semantichadith.com/ontology#RootNarratorChainSegment
 :RootNarratorChainSegment rdf:type owl:Class ;
                           rdfs:subClassOf :NarratorChainSegment ,
                                           [ rdf:type owl:Restriction ;
@@ -757,7 +757,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                           rdfs:comment "The Root Narrator (First Narrator Occurrence) has no heardFrom since they are the eyewitness to the Hadith contents" .
 
 
-###  http://www.i-knex.com/ontology/hadith#Sacred_Hadith
+###  http://www.semantichadith.com/ontology#Sacred_Hadith
 :Sacred_Hadith rdf:type owl:Class ;
                owl:equivalentClass [ owl:intersectionOf ( :Hadith
                                                           [ rdf:type owl:Restriction ;
@@ -769,7 +769,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                                    ] .
 
 
-###  http://www.i-knex.com/ontology/hadith#Severed_Hadith
+###  http://www.semantichadith.com/ontology#Severed_Hadith
 :Severed_Hadith rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Hadith
                                                            [ rdf:type owl:Restriction ;
@@ -782,7 +782,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                 rdfs:subClassOf :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#Stopped_Hadith
+###  http://www.semantichadith.com/ontology#Stopped_Hadith
 :Stopped_Hadith rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( :Hadith
                                                            [ rdf:type owl:Restriction ;
@@ -795,7 +795,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                 rdfs:subClassOf :Hadith .
 
 
-###  http://www.i-knex.com/ontology/hadith#Verse
+###  http://www.semantichadith.com/ontology#Verse
 :Verse rdf:type owl:Class .
 
 
@@ -803,62 +803,62 @@ rdfs:label rdf:type owl:DatatypeProperty .
 #    Individuals
 #################################################################
 
-###  http://www.i-knex.com/ontology/hadith#Believer
+###  http://www.semantichadith.com/ontology#Believer
 :Believer rdf:type owl:NamedIndividual ;
           rdfs:label "Believer"@en ,
                      "مومن"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#Companion
+###  http://www.semantichadith.com/ontology#Companion
 :Companion rdf:type owl:NamedIndividual ;
            rdfs:label "Companion"@en ,
                       "Companion of a prophet"@en ,
                       "صحابي"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#Hadith
+###  http://www.semantichadith.com/ontology#Hadith
 :Hadith rdf:type owl:NamedIndividual ;
         rdfs:label "Hadith"@en ,
                    "حديث"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithBook
+###  http://www.semantichadith.com/ontology#HadithBook
 :HadithBook rdf:type owl:NamedIndividual ;
             rdfs:label "Hadith Book"@en ,
                        "كتاب الحديث"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithChapter
+###  http://www.semantichadith.com/ontology#HadithChapter
 :HadithChapter rdf:type owl:NamedIndividual ;
                rdfs:label "Hadith Chapter"@en ,
                           "باب"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithCollection
+###  http://www.semantichadith.com/ontology#HadithCollection
 :HadithCollection rdf:type owl:NamedIndividual ;
                   rdfs:label "Hadith Collection"@en ,
                              "مجموعة الحديث"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithCollectionAuthor
+###  http://www.semantichadith.com/ontology#HadithCollectionAuthor
 :HadithCollectionAuthor rdf:type owl:NamedIndividual ;
                         rdfs:label "Hadith Collection Author"@en ,
                                    "محدث"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithNarrator
+###  http://www.semantichadith.com/ontology#HadithNarrator
 :HadithNarrator rdf:type owl:NamedIndividual ;
                 rdfs:label "Hadith Narrator"@en ,
                            "راوى"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#HadithText
+###  http://www.semantichadith.com/ontology#HadithText
 :HadithText rdf:type owl:NamedIndividual ;
             rdfs:label "Hadith Text"@en ,
                        "متن"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#NarratorChain
+###  http://www.semantichadith.com/ontology#NarratorChain
 :NarratorChain rdf:type owl:NamedIndividual ;
                rdfs:label "Chain of Narrators"@en ,
                           "Hadith Chain of Narrtors"@en ,
@@ -866,31 +866,31 @@ rdfs:label rdf:type owl:DatatypeProperty .
                           "سند"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#NarratorOccurrence
+###  http://www.semantichadith.com/ontology#NarratorOccurrence
 :NarratorOccurrence rdf:type owl:NamedIndividual ;
                     rdfs:label "Narrator Occurance"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#RootNarrator
+###  http://www.semantichadith.com/ontology#RootNarrator
 :RootNarrator rdf:type owl:NamedIndividual ;
               rdfs:label "Root Narrator"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#Verse
+###  http://www.semantichadith.com/ontology#Verse
 :Verse rdf:type owl:NamedIndividual ;
        rdfs:label "Qur'anic Verse"@en ,
                   "Verse"@en ,
                   "Verse of the Quran"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#age
+###  http://www.semantichadith.com/ontology#age
 :age rdf:type owl:NamedIndividual ;
      rdfs:label "Age"@en ,
                 "Age of narrator"@en ,
                 "عمر الراوي"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#attribute
+###  http://www.semantichadith.com/ontology#attribute
 :attribute rdf:type owl:NamedIndividual ;
            rdfs:label "Attribute"@en ,
                       "Quality"@en ,
@@ -898,7 +898,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
                       "وصف"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#birthPlace
+###  http://www.semantichadith.com/ontology#birthPlace
 :birthPlace rdf:type owl:NamedIndividual ;
             rdfs:label "Birth Place"@en ,
                        "Country of Birth"@en ,
@@ -906,41 +906,41 @@ rdfs:label rdf:type owl:DatatypeProperty .
                        "بلدالميلاد"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#birthYear
+###  http://www.semantichadith.com/ontology#birthYear
 :birthYear rdf:type owl:NamedIndividual ;
            rdfs:label "Birth Year"@en ,
                       "Year of Birth"@en ,
                       "سنة الميلاد"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#chapterNo
+###  http://www.semantichadith.com/ontology#chapterNo
 :chapterNo rdf:type owl:NamedIndividual ;
            rdfs:label "Chapter Index"@en ,
                       "Chapter Index (Quran)"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#chapterPreface
+###  http://www.semantichadith.com/ontology#chapterPreface
 :chapterPreface rdf:type owl:NamedIndividual ;
                 rdfs:label "Chapter Preface"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#collectionName
+###  http://www.semantichadith.com/ontology#collectionName
 :collectionName rdf:type owl:NamedIndividual ;
                 rdfs:label "Collection Name"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#concealment
+###  http://www.semantichadith.com/ontology#concealment
 :concealment rdf:type owl:NamedIndividual ;
              rdfs:label "Concealment"@en ,
                         "اختلاط تدليس الأقرباء"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#containsMentionOf
+###  http://www.semantichadith.com/ontology#containsMentionOf
 :containsMentionOf rdf:type owl:NamedIndividual ;
                    rdfs:label "contains mention of"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#deathPlace
+###  http://www.semantichadith.com/ontology#deathPlace
 :deathPlace rdf:type owl:NamedIndividual ;
             rdfs:label "Country of Death"@en ,
                        "Death Place"@en ,
@@ -948,14 +948,14 @@ rdfs:label rdf:type owl:DatatypeProperty .
                        "بلد الوفاة"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#deathYear
+###  http://www.semantichadith.com/ontology#deathYear
 :deathYear rdf:type owl:NamedIndividual ;
            rdfs:label "Death Year"@en ,
                       "Year of Death"@en ,
                       "سنة الوفاة"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#elevated
+###  http://www.semantichadith.com/ontology#elevated
 :elevated rdf:type owl:NamedIndividual ,
                    :HadithType ;
           rdfs:label "Elevated_Hadith"@en ,
@@ -965,141 +965,141 @@ rdfs:label rdf:type owl:DatatypeProperty .
           <http://www.w3.org/2004/02/skos/core#altLabel> "Marfūʿ"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#engBookNo
+###  http://www.semantichadith.com/ontology#engBookNo
 :engBookNo rdf:type owl:NamedIndividual ;
            rdfs:label "Book Number (English)"@en ,
                       "Hadith Book Number (English)"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#engHadithNo
+###  http://www.semantichadith.com/ontology#engHadithNo
 :engHadithNo rdf:type owl:NamedIndividual ;
              rdfs:label "Hadith Number (English)"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#engVolNo
+###  http://www.semantichadith.com/ontology#engVolNo
 :engVolNo rdf:type owl:NamedIndividual ;
           rdfs:label "Hadith Collection Volume Number (English)"@en ,
                      "Volume Number (English)"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#englishReference
+###  http://www.semantichadith.com/ontology#englishReference
 :englishReference rdf:type owl:NamedIndividual ;
                   rdfs:label "English Reference"@en ,
                              "Reference of Hadith (English)"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#firstChar
+###  http://www.semantichadith.com/ontology#firstChar
 :firstChar rdf:type owl:NamedIndividual ;
            rdfs:label "First Character"@en ,
                       "First Character of Narrator's name"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#fullHadithText
+###  http://www.semantichadith.com/ontology#fullHadithText
 :fullHadithText rdf:type owl:NamedIndividual ;
                 rdfs:label "Full Hadith"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#generation
+###  http://www.semantichadith.com/ontology#generation
 :generation rdf:type owl:NamedIndividual ;
             rdfs:label "Generation"@en ,
                        "Generation of Narrator"@en ,
                        "الطبقة"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithBookIntro
+###  http://www.semantichadith.com/ontology#hadithBookIntro
 :hadithBookIntro rdf:type owl:NamedIndividual ;
                  rdfs:label "Hadith Book Introduction"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithBookNo
+###  http://www.semantichadith.com/ontology#hadithBookNo
 :hadithBookNo rdf:type owl:NamedIndividual ;
               rdfs:label "Hadith Book Number"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithChapterNo
+###  http://www.semantichadith.com/ontology#hadithChapterNo
 :hadithChapterNo rdf:type owl:NamedIndividual ;
                  rdfs:label "Hadith Chapter Number"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithReferenceNo
+###  http://www.semantichadith.com/ontology#hadithReferenceNo
 :hadithReferenceNo rdf:type owl:NamedIndividual ;
                    rdfs:label "Hadith Reference Number"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithType
+###  http://www.semantichadith.com/ontology#hadithType
 :hadithType rdf:type owl:NamedIndividual ;
             rdfs:label "Hadith Type"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hadithURL
+###  http://www.semantichadith.com/ontology#hadithURL
 :hadithURL rdf:type owl:NamedIndividual ;
            rdfs:label "Hadith URL"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasBook
+###  http://www.semantichadith.com/ontology#hasBook
 :hasBook rdf:type owl:NamedIndividual ;
          rdfs:label "has book"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasChapter
+###  http://www.semantichadith.com/ontology#hasChapter
 :hasChapter rdf:type owl:NamedIndividual ;
             rdfs:label "has chapter"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasHadith
+###  http://www.semantichadith.com/ontology#hasHadith
 :hasHadith rdf:type owl:NamedIndividual ;
            rdfs:label "has Hadith"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasHadithText
+###  http://www.semantichadith.com/ontology#hasHadithText
 :hasHadithText rdf:type owl:NamedIndividual ;
                rdfs:label "Has Hadith Text"@en ,
                           "has Hadith text"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasMaster
+###  http://www.semantichadith.com/ontology#hasMaster
 :hasMaster rdf:type owl:NamedIndividual ;
            rdfs:label "has Master"@en ,
                       "hasMawla"@en ,
                       "الموالي"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasNarrator
+###  http://www.semantichadith.com/ontology#hasNarrator
 :hasNarrator rdf:type owl:NamedIndividual ;
              rdfs:label "has Narrator"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#hasNarratorChain
+###  http://www.semantichadith.com/ontology#hasNarratorChain
 :hasNarratorChain rdf:type owl:NamedIndividual ;
                   rdfs:label "has Narrator Chain"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#heardFrom
+###  http://www.semantichadith.com/ontology#heardFrom
 :heardFrom rdf:type owl:NamedIndividual ;
            rdfs:label "Heard from"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfBook
+###  http://www.semantichadith.com/ontology#isPartOfBook
 :isPartOfBook rdf:type owl:NamedIndividual ;
               rdfs:label "is part of book"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfChapter
+###  http://www.semantichadith.com/ontology#isPartOfChapter
 :isPartOfChapter rdf:type owl:NamedIndividual ;
                  rdfs:label "is part of chapter"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfCollection
+###  http://www.semantichadith.com/ontology#isPartOfCollection
 :isPartOfCollection rdf:type owl:NamedIndividual ;
                     rdfs:label "is part of collection"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#isPartOfHadith
+###  http://www.semantichadith.com/ontology#isPartOfHadith
 :isPartOfHadith rdf:type owl:NamedIndividual ;
                 rdfs:label "is Part of Hadith"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#lineage
+###  http://www.semantichadith.com/ontology#lineage
 :lineage rdf:type owl:NamedIndividual ;
          rdfs:label "Descent"@en ,
                     "Lineage"@en ,
@@ -1107,66 +1107,66 @@ rdfs:label rdf:type owl:DatatypeProperty .
                     "Nasab" .
 
 
-###  http://www.i-knex.com/ontology/hadith#mentionedIn
+###  http://www.semantichadith.com/ontology#mentionedIn
 :mentionedIn rdf:type owl:NamedIndividual ;
              rdfs:label "Mentioned in"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#name
+###  http://www.semantichadith.com/ontology#name
 :name rdf:type owl:NamedIndividual ;
       rdfs:label "Name of Narrator"@en ,
                  "اسم الراوي"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#narrated
+###  http://www.semantichadith.com/ontology#narrated
 :narrated rdf:type owl:NamedIndividual ;
           rdfs:label "Narrated"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorChain
+###  http://www.semantichadith.com/ontology#narratorChain
 :narratorChain rdf:type owl:NamedIndividual ;
                rdfs:label "Narrator Chain"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorID
+###  http://www.semantichadith.com/ontology#narratorID
 :narratorID rdf:type owl:NamedIndividual ;
             rdfs:label "Narrator ID"@en ,
                        "Ravi Id"@en ,
                        "رقم الراوي"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#narratorURL
+###  http://www.semantichadith.com/ontology#narratorURL
 :narratorURL rdf:type owl:NamedIndividual ;
              rdfs:label "Narrator URL"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#office
+###  http://www.semantichadith.com/ontology#office
 :office rdf:type owl:NamedIndividual ;
         rdfs:label "Office"@en ,
                    "النشاط"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#popularName
+###  http://www.semantichadith.com/ontology#popularName
 :popularName rdf:type owl:NamedIndividual ;
              rdfs:label "Popular Name"@en ,
                         "اسم الشهرة"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#rank
+###  http://www.semantichadith.com/ontology#rank
 :rank rdf:type owl:NamedIndividual ;
       rdfs:label "Rank of Narrator"@en ,
                  "grade"@en ,
                  "الرتبة"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#residence
+###  http://www.semantichadith.com/ontology#residence
 :residence rdf:type owl:NamedIndividual ;
            rdfs:label "Residence"@en ,
                       "الإقامة"@ar ,
                       "alAqama" .
 
 
-###  http://www.i-knex.com/ontology/hadith#sacred
+###  http://www.semantichadith.com/ontology#sacred
 :sacred rdf:type owl:NamedIndividual ,
                  :HadithType ;
         rdfs:label "Sacred_Hadith"@en ,
@@ -1177,18 +1177,18 @@ rdfs:label rdf:type owl:DatatypeProperty .
         <http://www.w3.org/2004/02/skos/core#altLabel> "Qudsi" .
 
 
-###  http://www.i-knex.com/ontology/hadith#schoolOfThought
+###  http://www.semantichadith.com/ontology#schoolOfThought
 :schoolOfThought rdf:type owl:NamedIndividual ;
                  rdfs:label "School of Thought"@en ,
                             "mazhab"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#sequenceNo
+###  http://www.semantichadith.com/ontology#sequenceNo
 :sequenceNo rdf:type owl:NamedIndividual ;
             rdfs:label "Sequence Number"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#severed
+###  http://www.semantichadith.com/ontology#severed
 :severed rdf:type owl:NamedIndividual ,
                   :HadithType ;
          rdfs:label "Severed_Hadith"@en ,
@@ -1198,7 +1198,7 @@ rdfs:label rdf:type owl:DatatypeProperty .
          <http://www.w3.org/2004/02/skos/core#altLabel> "Mawquf"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#stopped
+###  http://www.semantichadith.com/ontology#stopped
 :stopped rdf:type owl:NamedIndividual ,
                   :HadithType ;
          rdfs:label "Stopped_Hadith"@en ,
@@ -1208,25 +1208,25 @@ rdfs:label rdf:type owl:DatatypeProperty .
          <http://www.w3.org/2004/02/skos/core#altLabel> "Maqtu‘"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#teknonym
+###  http://www.semantichadith.com/ontology#teknonym
 :teknonym rdf:type owl:NamedIndividual ;
           rdfs:label "Teknonym"@ar ,
                      "النوع رجل الكنية"@ar ,
                      "كنية"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#title
+###  http://www.semantichadith.com/ontology#title
 :title rdf:type owl:NamedIndividual ;
        rdfs:label "Title"@en ,
                   "اللقب"@ar .
 
 
-###  http://www.i-knex.com/ontology/hadith#transferredTo
+###  http://www.semantichadith.com/ontology#transferredTo
 :transferredTo rdf:type owl:NamedIndividual ;
                rdfs:label "Transfer To"@en .
 
 
-###  http://www.i-knex.com/ontology/hadith#verseNo
+###  http://www.semantichadith.com/ontology#verseNo
 :verseNo rdf:type owl:NamedIndividual ;
          rdfs:label "Verse Index"@en .
 
