@@ -1,5 +1,5 @@
 # The Semantic Hadith Knowlege Graph
-Semantichadith.com
+Web server available [here](http:Semantichadith.com):
 
 ## The Semantic Hadith Ontology
 Have a look at the [documentation](https://a-kamran.github.io/SemanticHadithKG/) .
