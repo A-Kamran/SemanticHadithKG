@@ -23,8 +23,7 @@ Faceted Search at: http://semantichadith.com:8890/fct/
 
 For faceted Query Results: 
 Select the option (HTML (Faceted Browsing Links)) from the drop-down menu for Results Format, before executing the query.
-<img width="970" alt="image" src="https://user-images.githubusercontent.com/97387765/211258515-bf743526-0f2e-464e-9caa-deb837dec46b.png">
-
+<img width="1037" alt="image" src="https://user-images.githubusercontent.com/97387765/228161504-a669824e-260d-4b75-a335-c9d3f308e774.png">
 
 
 
