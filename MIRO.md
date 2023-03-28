@@ -66,7 +66,7 @@ Number of data properties: 43;
 Individuals: 104.
 
 4. **Incorporation of other ontologies (MUST)**
-[DCTerms](<http://purl.org/dc/terms>), [schema](<http://schema.org>)
+[DCTerms](<http://purl.org/dc/terms>), [schema](<http://schema.org>), [dbpedia](<hhtp://dbpedia.org>)
 
 5. **Entity naming convention (MUST)** 
 Entities follows the CamelCase notation. Both datatype and object properties are named as verb senses with mixedCase notation.
