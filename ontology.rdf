@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semantichadith.com/ontology#"
+<rdf:RDF xmlns="http://www.semantichadith.com/ontology/"
      xml:base="http://www.semantichadith.com/ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -8,8 +8,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://www.semantichadith.com/ontology#">
-        <owl:versionIRI rdf:resource="http://www.semantichadith.com/ontology#/1.0.1"/>
+    <owl:Ontology rdf:about="http://www.semantichadith.com/ontology/">
+        <owl:versionIRI rdf:resource="http://www.semantichadith.com/ontology/1.0.1"/>
         <terms:contributor rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Bushra Abro</terms:contributor>
         <terms:creator rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Amna binte Kamran</terms:creator>
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology about Hadith (Recorded narrations of the sayings and deeds of Prophet Muhammad), its various parts and entities</terms:description>
@@ -117,8 +117,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://schema.org/author">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithCollection"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithCollectionAuthor"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithCollection"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithCollectionAuthor"/>
     </owl:ObjectProperty>
     
 
@@ -141,23 +141,23 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithBook"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithChapter"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithCollection"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithBook"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithChapter"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithCollection"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithBook"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithChapter"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithBook"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithChapter"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithText"/>
-                            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#NarratorChain"/>
+                            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithText"/>
+                            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/NarratorChain"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:unionOf>
@@ -171,246 +171,246 @@
 
 
     <owl:ObjectProperty rdf:about="http://schema.org/mentions">
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#containsMentionOf -->
+    <!-- http://www.semantichadith.com/ontology/containsMentionOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#containsMentionOf">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/containsMentionOf">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/mentions"/>
-        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology#mentionedIn"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#Verse"/>
+        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology/mentionedIn"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/Verse"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#follows -->
+    <!-- http://www.semantichadith.com/ontology/follows -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#follows">
-        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology#precedes"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/follows">
+        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology/precedes"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasBook -->
+    <!-- http://www.semantichadith.com/ontology/hasBook -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasBook">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasBook">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithCollection"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithCollection"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasChapter -->
+    <!-- http://www.semantichadith.com/ontology/hasChapter -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasChapter">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasChapter">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasHadith -->
+    <!-- http://www.semantichadith.com/ontology/hasHadith -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasHadith">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasHadith">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasHadithText -->
+    <!-- http://www.semantichadith.com/ontology/hasHadithText -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasHadithText">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasHadithText">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithText"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithText"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasHadithType -->
+    <!-- http://www.semantichadith.com/ontology/hasHadithType -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasHadithType">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasHadithType">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithType"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasNarrator -->
+    <!-- http://www.semantichadith.com/ontology/hasNarrator -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasNarrator">
-        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology#narrated"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasNarrator">
+        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology/narrated"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasNarratorChain"/>
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasNarratorSegment"/>
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#refersToNarrator"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasNarratorChain"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasNarratorSegment"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/refersToNarrator"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasNarratorChain -->
+    <!-- http://www.semantichadith.com/ontology/hasNarratorChain -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasNarratorChain">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasNarratorChain">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#NarratorChain"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/NarratorChain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasNarratorSegment -->
+    <!-- http://www.semantichadith.com/ontology/hasNarratorSegment -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasNarratorSegment">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#NarratorChain"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasNarratorSegment">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/NarratorChain"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasRootNarrator -->
+    <!-- http://www.semantichadith.com/ontology/hasRootNarrator -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasRootNarrator">
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#RootNarrator"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasRootNarrator">
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/RootNarrator"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasNarratorChain"/>
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasRootNarratorSegment"/>
-            <rdf:Description rdf:about="http://www.semantichadith.com/ontology#refersToNarrator"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasNarratorChain"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasRootNarratorSegment"/>
+            <rdf:Description rdf:about="http://www.semantichadith.com/ontology/refersToNarrator"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasRootNarratorSegment -->
+    <!-- http://www.semantichadith.com/ontology/hasRootNarratorSegment -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#hasRootNarratorSegment">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#NarratorChain"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#RootNarratorChainSegment"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/hasRootNarratorSegment">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/NarratorChain"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/RootNarratorChainSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#heardFrom -->
+    <!-- http://www.semantichadith.com/ontology/heardFrom -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#heardFrom">
-        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology#transferredTo"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/heardFrom">
+        <owl:inverseOf rdf:resource="http://www.semantichadith.com/ontology/transferredTo"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfBook -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfBook -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#isPartOfBook">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/isPartOfBook">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfChapter -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfChapter -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#isPartOfChapter">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/isPartOfChapter">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfCollection -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfCollection -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#isPartOfCollection">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/isPartOfCollection">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithCollection"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithCollection"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfHadith -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfHadith -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#isPartOfHadith">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/isPartOfHadith">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/isPartOf"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#mentionedIn -->
+    <!-- http://www.semantichadith.com/ontology/mentionedIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#mentionedIn">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#Verse"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/mentionedIn">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/Verse"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narrated -->
+    <!-- http://www.semantichadith.com/ontology/narrated -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#narrated"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/narrated"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#precedes -->
+    <!-- http://www.semantichadith.com/ontology/precedes -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#precedes">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/precedes">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#refersToNarrator -->
+    <!-- http://www.semantichadith.com/ontology/refersToNarrator -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#refersToNarrator">
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/refersToNarrator">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#transferredTo -->
+    <!-- http://www.semantichadith.com/ontology/transferredTo -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology#transferredTo">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
-        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+    <owl:ObjectProperty rdf:about="http://www.semantichadith.com/ontology/transferredTo">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
+        <rdfs:range rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
     </owl:ObjectProperty>
     
 
@@ -427,160 +427,160 @@
     
 
 
-    <!-- http://www.semantichadith.com/ontology#age -->
+    <!-- http://www.semantichadith.com/ontology/age -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#age">
-        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/age">
+        <rdfs:domain rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#attribute -->
+    <!-- http://www.semantichadith.com/ontology/attribute -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#attribute"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/attribute"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#birthPlace -->
+    <!-- http://www.semantichadith.com/ontology/birthPlace -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#birthPlace"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/birthPlace"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#birthYear -->
+    <!-- http://www.semantichadith.com/ontology/birthYear -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#birthYear"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/birthYear"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#chapterNo -->
+    <!-- http://www.semantichadith.com/ontology/chapterNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#chapterNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/chapterNo"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#chapterPreface -->
+    <!-- http://www.semantichadith.com/ontology/chapterPreface -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#chapterPreface"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/chapterPreface"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#collectionName -->
+    <!-- http://www.semantichadith.com/ontology/collectionName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#collectionName">
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/collectionName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#concealment -->
+    <!-- http://www.semantichadith.com/ontology/concealment -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#concealment"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/concealment"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#deathPlace -->
+    <!-- http://www.semantichadith.com/ontology/deathPlace -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#deathPlace"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/deathPlace"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#deathYear -->
+    <!-- http://www.semantichadith.com/ontology/deathYear -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#deathYear"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/deathYear"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engBookNo -->
+    <!-- http://www.semantichadith.com/ontology/engBookNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#engBookNo">
-        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology#englishReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/engBookNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology/englishReference"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engHadithNo -->
+    <!-- http://www.semantichadith.com/ontology/engHadithNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#engHadithNo">
-        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology#englishReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/engHadithNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology/englishReference"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engVolNo -->
+    <!-- http://www.semantichadith.com/ontology/engVolNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#engVolNo">
-        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology#englishReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/engVolNo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semantichadith.com/ontology/englishReference"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#englishReference -->
+    <!-- http://www.semantichadith.com/ontology/englishReference -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#englishReference"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/englishReference"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#firstChar -->
+    <!-- http://www.semantichadith.com/ontology/firstChar -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#firstChar"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/firstChar"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#fullHadithText -->
+    <!-- http://www.semantichadith.com/ontology/fullHadithText -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#fullHadithText"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/fullHadithText"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#generation -->
+    <!-- http://www.semantichadith.com/ontology/generation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#generation"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/generation"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithBookIntro -->
+    <!-- http://www.semantichadith.com/ontology/hadithBookIntro -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithBookIntro"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithBookIntro"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithBookNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithBookNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithBookNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithBookNo"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithChapterNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithChapterNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithChapterNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithChapterNo"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithGrade -->
+    <!-- http://www.semantichadith.com/ontology/hadithGrade -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithGrade">
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithGrade">
         <terms:description>Ibn al-Salah said, &quot;Hadith, in the view of scholars of this discipline, fall into the divisions of &apos;sound&apos; (ṣaḥīḥ), &apos;fair&apos; (ḥasan), and &apos;weak&apos; (ḍaʻīf).&quot; While these divisions are further broken down into sub-categories each with their own terminology, the final outcome is essentially to determine whether a particular hadith is ṣaḥīḥ or ḍaʻīf.
 
 Ṣaḥīḥ
@@ -603,138 +603,138 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithReferenceNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithReferenceNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithReferenceNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithReferenceNo"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithText -->
+    <!-- http://www.semantichadith.com/ontology/hadithText -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithText"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithText"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithType -->
+    <!-- http://www.semantichadith.com/ontology/hadithType -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithType">
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithType">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithURL -->
+    <!-- http://www.semantichadith.com/ontology/hadithURL -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hadithURL"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hadithURL"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasMaster -->
+    <!-- http://www.semantichadith.com/ontology/hasMaster -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#hasMaster"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/hasMaster"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#lineage -->
+    <!-- http://www.semantichadith.com/ontology/lineage -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#lineage"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/lineage"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#name -->
+    <!-- http://www.semantichadith.com/ontology/name -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#name"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/name"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorChain -->
+    <!-- http://www.semantichadith.com/ontology/narratorChain -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#narratorChain"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/narratorChain"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorID -->
+    <!-- http://www.semantichadith.com/ontology/narratorID -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#narratorID"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/narratorID"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorURL -->
+    <!-- http://www.semantichadith.com/ontology/narratorURL -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#narratorURL"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/narratorURL"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#office -->
+    <!-- http://www.semantichadith.com/ontology/office -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#office"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/office"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#popularName -->
+    <!-- http://www.semantichadith.com/ontology/popularName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#popularName"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/popularName"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#rank -->
+    <!-- http://www.semantichadith.com/ontology/rank -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#rank"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/rank"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#residence -->
+    <!-- http://www.semantichadith.com/ontology/residence -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#residence"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/residence"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#schoolOfThought -->
+    <!-- http://www.semantichadith.com/ontology/schoolOfThought -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#schoolOfThought"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/schoolOfThought"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#sequenceNo -->
+    <!-- http://www.semantichadith.com/ontology/sequenceNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#sequenceNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/sequenceNo"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#teknonym -->
+    <!-- http://www.semantichadith.com/ontology/teknonym -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#teknonym"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/teknonym"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#title -->
+    <!-- http://www.semantichadith.com/ontology/title -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#title"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/title"/>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#verseNo -->
+    <!-- http://www.semantichadith.com/ontology/verseNo -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology#verseNo"/>
+    <owl:DatatypeProperty rdf:about="http://www.semantichadith.com/ontology/verseNo"/>
     
 
 
@@ -764,14 +764,14 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Believer -->
+    <!-- http://www.semantichadith.com/ontology/Believer -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Believer">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Believer">
         <rdfs:subClassOf rdf:resource="http://schema.org/Person"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#name"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -779,96 +779,96 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Companion -->
+    <!-- http://www.semantichadith.com/ontology/Companion -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Companion">
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Believer"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Companion">
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Believer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Elevated_Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Elevated_Hadith -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Elevated_Hadith">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Elevated_Hadith">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadithType"/>
-                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology#elevated"/>
+                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology/elevated"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Hadith -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Hadith">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Hadith">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#containsMentionOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#Verse"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/containsMentionOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/Verse"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadithText"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithText"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadithText"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithText"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasNarratorChain"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#NarratorChain"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasNarratorChain"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/NarratorChain"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasRootNarrator"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#RootNarrator"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasRootNarrator"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/RootNarrator"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#isPartOfChapter"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/isPartOfChapter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#engHadithNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/engHadithNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#fullHadithText"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/fullHadithText"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithReferenceNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithReferenceNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithType"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithType"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithURL"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithURL"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -876,43 +876,43 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithBook -->
+    <!-- http://www.semantichadith.com/ontology/HadithBook -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithBook">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithBook">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasChapter"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithChapter"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasChapter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithChapter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#isPartOfCollection"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithCollection"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/isPartOfCollection"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithCollection"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#engBookNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/engBookNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithBookIntro"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithBookIntro"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithBookNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithBookNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#sequenceNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/sequenceNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -920,31 +920,31 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithChapter -->
+    <!-- http://www.semantichadith.com/ontology/HadithChapter -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithChapter">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithChapter">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#isPartOfBook"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/isPartOfBook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithChapterNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithChapterNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#sequenceNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/sequenceNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -952,31 +952,31 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithCollection -->
+    <!-- http://www.semantichadith.com/ontology/HadithCollection -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithCollection">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithCollection">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://schema.org/author"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithCollectionAuthor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithCollectionAuthor"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://schema.org/hasPart"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithBook"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithBook"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#collectionName"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/collectionName"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#engVolNo"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/engVolNo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -984,157 +984,137 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithCollectionAuthor -->
+    <!-- http://www.semantichadith.com/ontology/HadithCollectionAuthor -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithCollectionAuthor">
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Believer"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithCollectionAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Believer"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithNarrator -->
+    <!-- http://www.semantichadith.com/ontology/HadithNarrator -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithNarrator">
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Believer"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithNarrator">
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Believer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#age"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/age"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#attribute"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/attribute"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#birthYear"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/birthYear"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#concealment"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/concealment"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#deathPlace"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/deathPlace"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#deathYear"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/deathYear"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#firstChar"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/firstChar"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#generation"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/generation"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasMaster"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasMaster"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#lineage"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/lineage"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#name"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#narratorID"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/narratorID"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#narratorURL"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/narratorURL"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#office"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/office"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#popularName"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/popularName"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#rank"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/rank"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#residence"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/residence"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#schoolOfThought"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/schoolOfThought"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#teknonym"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/teknonym"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#title"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semantichadith.com/ontology#HadithText -->
-
-
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithText">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#isPartOfHadith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hadithText"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/title"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1142,17 +1122,37 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithType -->
+    <!-- http://www.semantichadith.com/ontology/HadithText -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#HadithType">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithText">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/isPartOfHadith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hadithText"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semantichadith.com/ontology/HadithType -->
+
+
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/HadithType">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:oneOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#elevated"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#sacred"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#severed"/>
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#stopped"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/elevated"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/sacred"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/severed"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/stopped"/>
                 </owl:oneOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -1161,37 +1161,37 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#NarratorChain -->
+    <!-- http://www.semantichadith.com/ontology/NarratorChain -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#NarratorChain">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/NarratorChain">
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://schema.org/isPartOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasNarratorSegment"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasNarratorSegment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasRootNarratorSegment"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#RootNarratorChainSegment"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasRootNarratorSegment"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/RootNarratorChainSegment"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#isPartOfHadith"/>
-                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/isPartOfHadith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#narratorChain"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/narratorChain"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1199,20 +1199,20 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#NarratorChainSegment -->
+    <!-- http://www.semantichadith.com/ontology/NarratorChainSegment -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#NarratorChainSegment">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/NarratorChainSegment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#refersToNarrator"/>
-                <owl:allValuesFrom rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/refersToNarrator"/>
+                <owl:allValuesFrom rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#refersToNarrator"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/refersToNarrator"/>
                 <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1220,23 +1220,23 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#RootNarrator -->
+    <!-- http://www.semantichadith.com/ontology/RootNarrator -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#RootNarrator">
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#HadithNarrator"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/RootNarrator">
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/HadithNarrator"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#RootNarratorChainSegment -->
+    <!-- http://www.semantichadith.com/ontology/RootNarratorChainSegment -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#RootNarratorChainSegment">
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#NarratorChainSegment"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/RootNarratorChainSegment">
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/NarratorChainSegment"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#heardFrom"/>
+                <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/heardFrom"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1245,17 +1245,17 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Sacred_Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Sacred_Hadith -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Sacred_Hadith">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Sacred_Hadith">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadithType"/>
-                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology#sacred"/>
+                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology/sacred"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1264,50 +1264,50 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Severed_Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Severed_Hadith -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Severed_Hadith">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Severed_Hadith">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadithType"/>
-                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology#severed"/>
+                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology/severed"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Stopped_Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Stopped_Hadith -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Stopped_Hadith">
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Stopped_Hadith">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith"/>
+                    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology#hasHadithType"/>
-                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology#stopped"/>
+                        <owl:onProperty rdf:resource="http://www.semantichadith.com/ontology/hasHadithType"/>
+                        <owl:hasValue rdf:resource="http://www.semantichadith.com/ontology/stopped"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology#Hadith"/>
+        <rdfs:subClassOf rdf:resource="http://www.semantichadith.com/ontology/Hadith"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Verse -->
+    <!-- http://www.semantichadith.com/ontology/Verse -->
 
 
-    <owl:Class rdf:about="http://www.semantichadith.com/ontology#Verse"/>
+    <owl:Class rdf:about="http://www.semantichadith.com/ontology/Verse"/>
     
 
 
@@ -1323,20 +1323,20 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Believer -->
+    <!-- http://www.semantichadith.com/ontology/Believer -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#Believer">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/Believer">
         <rdfs:label xml:lang="en">Believer</rdfs:label>
         <rdfs:label xml:lang="ar">مومن</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Companion -->
+    <!-- http://www.semantichadith.com/ontology/Companion -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#Companion">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/Companion">
         <rdfs:label xml:lang="en">Companion</rdfs:label>
         <rdfs:label xml:lang="en">Companion of a prophet</rdfs:label>
         <rdfs:label xml:lang="ar">صحابي</rdfs:label>
@@ -1344,80 +1344,80 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Hadith -->
+    <!-- http://www.semantichadith.com/ontology/Hadith -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#Hadith">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/Hadith">
         <rdfs:label xml:lang="en">Hadith</rdfs:label>
         <rdfs:label xml:lang="ar">حديث</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithBook -->
+    <!-- http://www.semantichadith.com/ontology/HadithBook -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithBook">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithBook">
         <rdfs:label xml:lang="en">Hadith Book</rdfs:label>
         <rdfs:label xml:lang="ar">كتاب الحديث</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithChapter -->
+    <!-- http://www.semantichadith.com/ontology/HadithChapter -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithChapter">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithChapter">
         <rdfs:label xml:lang="en">Hadith Chapter</rdfs:label>
         <rdfs:label xml:lang="ar">باب</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithCollection -->
+    <!-- http://www.semantichadith.com/ontology/HadithCollection -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithCollection">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithCollection">
         <rdfs:label xml:lang="en">Hadith Collection</rdfs:label>
         <rdfs:label xml:lang="ar">مجموعة الحديث</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithCollectionAuthor -->
+    <!-- http://www.semantichadith.com/ontology/HadithCollectionAuthor -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithCollectionAuthor">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithCollectionAuthor">
         <rdfs:label xml:lang="en">Hadith Collection Author</rdfs:label>
         <rdfs:label xml:lang="ar">محدث</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithNarrator -->
+    <!-- http://www.semantichadith.com/ontology/HadithNarrator -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithNarrator">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithNarrator">
         <rdfs:label xml:lang="en">Hadith Narrator</rdfs:label>
         <rdfs:label xml:lang="ar">راوى</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#HadithText -->
+    <!-- http://www.semantichadith.com/ontology/HadithText -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#HadithText">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/HadithText">
         <rdfs:label xml:lang="en">Hadith Text</rdfs:label>
         <rdfs:label xml:lang="ar">متن</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#NarratorChain -->
+    <!-- http://www.semantichadith.com/ontology/NarratorChain -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#NarratorChain">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/NarratorChain">
         <rdfs:label xml:lang="en">Chain of Narrators</rdfs:label>
         <rdfs:label xml:lang="en">Hadith Chain of Narrtors</rdfs:label>
         <rdfs:label xml:lang="en">Narrator Chain</rdfs:label>
@@ -1426,28 +1426,28 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#NarratorOccurrence -->
+    <!-- http://www.semantichadith.com/ontology/NarratorOccurrence -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#NarratorOccurrence">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/NarratorOccurrence">
         <rdfs:label xml:lang="en">Narrator Occurance</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#RootNarrator -->
+    <!-- http://www.semantichadith.com/ontology/RootNarrator -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#RootNarrator">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/RootNarrator">
         <rdfs:label xml:lang="en">Root Narrator</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#Verse -->
+    <!-- http://www.semantichadith.com/ontology/Verse -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#Verse">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/Verse">
         <rdfs:label xml:lang="en">Qur&apos;anic Verse</rdfs:label>
         <rdfs:label xml:lang="en">Verse</rdfs:label>
         <rdfs:label xml:lang="en">Verse of the Quran</rdfs:label>
@@ -1455,10 +1455,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#age -->
+    <!-- http://www.semantichadith.com/ontology/age -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#age">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/age">
         <rdfs:label xml:lang="en">Age</rdfs:label>
         <rdfs:label xml:lang="en">Age of narrator</rdfs:label>
         <rdfs:label xml:lang="ar">عمر الراوي</rdfs:label>
@@ -1466,10 +1466,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#attribute -->
+    <!-- http://www.semantichadith.com/ontology/attribute -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#attribute">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/attribute">
         <rdfs:label xml:lang="en">Attribute</rdfs:label>
         <rdfs:label xml:lang="en">Quality</rdfs:label>
         <rdfs:label xml:lang="ar">الوصف</rdfs:label>
@@ -1478,10 +1478,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#birthPlace -->
+    <!-- http://www.semantichadith.com/ontology/birthPlace -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#birthPlace">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/birthPlace">
         <rdfs:label xml:lang="en">Birth Place</rdfs:label>
         <rdfs:label xml:lang="en">Country of Birth</rdfs:label>
         <rdfs:label xml:lang="en">Place of Birth</rdfs:label>
@@ -1490,10 +1490,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#birthYear -->
+    <!-- http://www.semantichadith.com/ontology/birthYear -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#birthYear">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/birthYear">
         <rdfs:label xml:lang="en">Birth Year</rdfs:label>
         <rdfs:label xml:lang="en">Year of Birth</rdfs:label>
         <rdfs:label xml:lang="ar">سنة الميلاد</rdfs:label>
@@ -1501,57 +1501,57 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#chapterNo -->
+    <!-- http://www.semantichadith.com/ontology/chapterNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#chapterNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/chapterNo">
         <rdfs:label xml:lang="en">Chapter Index</rdfs:label>
         <rdfs:label xml:lang="en">Chapter Index (Quran)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#chapterPreface -->
+    <!-- http://www.semantichadith.com/ontology/chapterPreface -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#chapterPreface">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/chapterPreface">
         <rdfs:label xml:lang="en">Chapter Preface</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#collectionName -->
+    <!-- http://www.semantichadith.com/ontology/collectionName -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#collectionName">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/collectionName">
         <rdfs:label xml:lang="en">Collection Name</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#concealment -->
+    <!-- http://www.semantichadith.com/ontology/concealment -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#concealment">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/concealment">
         <rdfs:label xml:lang="en">Concealment</rdfs:label>
         <rdfs:label xml:lang="ar">اختلاط تدليس الأقرباء</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#containsMentionOf -->
+    <!-- http://www.semantichadith.com/ontology/containsMentionOf -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#containsMentionOf">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/containsMentionOf">
         <rdfs:label xml:lang="en">contains mention of</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#deathPlace -->
+    <!-- http://www.semantichadith.com/ontology/deathPlace -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#deathPlace">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/deathPlace">
         <rdfs:label xml:lang="en">Country of Death</rdfs:label>
         <rdfs:label xml:lang="en">Death Place</rdfs:label>
         <rdfs:label xml:lang="en">Place of Death</rdfs:label>
@@ -1560,10 +1560,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#deathYear -->
+    <!-- http://www.semantichadith.com/ontology/deathYear -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#deathYear">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/deathYear">
         <rdfs:label xml:lang="en">Death Year</rdfs:label>
         <rdfs:label xml:lang="en">Year of Death</rdfs:label>
         <rdfs:label xml:lang="ar">سنة الوفاة</rdfs:label>
@@ -1571,11 +1571,11 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#elevated -->
+    <!-- http://www.semantichadith.com/ontology/elevated -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#elevated">
-        <rdf:type rdf:resource="http://www.semantichadith.com/ontology#HadithType"/>
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/elevated">
+        <rdf:type rdf:resource="http://www.semantichadith.com/ontology/HadithType"/>
         <rdfs:label xml:lang="en">Elevated_Hadith</rdfs:label>
         <rdfs:label xml:lang="ar">مرفوع</rdfs:label>
         <terms:description xml:lang="en">refers to a narration attributed specifically to the Prophet [Muhammad]. This term does not refer to other than him unless otherwise specified. The category of marfuʻ is inclusive of narrations attributed to the Prophet regardless of their being muttasil, munqatiʻ or mursal among other categories.</terms:description>
@@ -1585,68 +1585,68 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engBookNo -->
+    <!-- http://www.semantichadith.com/ontology/engBookNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#engBookNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/engBookNo">
         <rdfs:label xml:lang="en">Book Number (English)</rdfs:label>
         <rdfs:label xml:lang="en">Hadith Book Number (English)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engHadithNo -->
+    <!-- http://www.semantichadith.com/ontology/engHadithNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#engHadithNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/engHadithNo">
         <rdfs:label xml:lang="en">Hadith Number (English)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#engVolNo -->
+    <!-- http://www.semantichadith.com/ontology/engVolNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#engVolNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/engVolNo">
         <rdfs:label xml:lang="en">Hadith Collection Volume Number (English)</rdfs:label>
         <rdfs:label xml:lang="en">Volume Number (English)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#englishReference -->
+    <!-- http://www.semantichadith.com/ontology/englishReference -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#englishReference">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/englishReference">
         <rdfs:label xml:lang="en">English Reference</rdfs:label>
         <rdfs:label xml:lang="en">Reference of Hadith (English)</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#firstChar -->
+    <!-- http://www.semantichadith.com/ontology/firstChar -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#firstChar">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/firstChar">
         <rdfs:label xml:lang="en">First Character</rdfs:label>
         <rdfs:label xml:lang="en">First Character of Narrator&apos;s name</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#fullHadithText -->
+    <!-- http://www.semantichadith.com/ontology/fullHadithText -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#fullHadithText">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/fullHadithText">
         <rdfs:label xml:lang="en">Full Hadith</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#generation -->
+    <!-- http://www.semantichadith.com/ontology/generation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#generation">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/generation">
         <rdfs:label xml:lang="en">Generation</rdfs:label>
         <rdfs:label xml:lang="en">Generation of Narrator</rdfs:label>
         <rdfs:label xml:lang="ar">الطبقة</rdfs:label>
@@ -1654,101 +1654,101 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithBookIntro -->
+    <!-- http://www.semantichadith.com/ontology/hadithBookIntro -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithBookIntro">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithBookIntro">
         <rdfs:label xml:lang="en">Hadith Book Introduction</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithBookNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithBookNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithBookNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithBookNo">
         <rdfs:label xml:lang="en">Hadith Book Number</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithChapterNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithChapterNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithChapterNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithChapterNo">
         <rdfs:label xml:lang="en">Hadith Chapter Number</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithReferenceNo -->
+    <!-- http://www.semantichadith.com/ontology/hadithReferenceNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithReferenceNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithReferenceNo">
         <rdfs:label xml:lang="en">Hadith Reference Number</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithType -->
+    <!-- http://www.semantichadith.com/ontology/hadithType -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithType">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithType">
         <rdfs:label xml:lang="en">Hadith Type</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hadithURL -->
+    <!-- http://www.semantichadith.com/ontology/hadithURL -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hadithURL">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hadithURL">
         <rdfs:label xml:lang="en">Hadith URL</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasBook -->
+    <!-- http://www.semantichadith.com/ontology/hasBook -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasBook">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasBook">
         <rdfs:label xml:lang="en">has book</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasChapter -->
+    <!-- http://www.semantichadith.com/ontology/hasChapter -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasChapter">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasChapter">
         <rdfs:label xml:lang="en">has chapter</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasHadith -->
+    <!-- http://www.semantichadith.com/ontology/hasHadith -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasHadith">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasHadith">
         <rdfs:label xml:lang="en">has Hadith</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasHadithText -->
+    <!-- http://www.semantichadith.com/ontology/hasHadithText -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasHadithText">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasHadithText">
         <rdfs:label xml:lang="en">Has Hadith Text</rdfs:label>
         <rdfs:label xml:lang="en">has Hadith text</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasMaster -->
+    <!-- http://www.semantichadith.com/ontology/hasMaster -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasMaster">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasMaster">
         <rdfs:label xml:lang="en">has Master</rdfs:label>
         <rdfs:label xml:lang="en">hasMawla</rdfs:label>
         <rdfs:label xml:lang="ar">الموالي</rdfs:label>
@@ -1756,73 +1756,73 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasNarrator -->
+    <!-- http://www.semantichadith.com/ontology/hasNarrator -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasNarrator">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasNarrator">
         <rdfs:label xml:lang="en">has Narrator</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#hasNarratorChain -->
+    <!-- http://www.semantichadith.com/ontology/hasNarratorChain -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#hasNarratorChain">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/hasNarratorChain">
         <rdfs:label xml:lang="en">has Narrator Chain</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#heardFrom -->
+    <!-- http://www.semantichadith.com/ontology/heardFrom -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#heardFrom">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/heardFrom">
         <rdfs:label xml:lang="en">Heard from</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfBook -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfBook -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#isPartOfBook">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/isPartOfBook">
         <rdfs:label xml:lang="en">is part of book</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfChapter -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfChapter -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#isPartOfChapter">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/isPartOfChapter">
         <rdfs:label xml:lang="en">is part of chapter</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfCollection -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfCollection -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#isPartOfCollection">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/isPartOfCollection">
         <rdfs:label xml:lang="en">is part of collection</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#isPartOfHadith -->
+    <!-- http://www.semantichadith.com/ontology/isPartOfHadith -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#isPartOfHadith">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/isPartOfHadith">
         <rdfs:label xml:lang="en">is Part of Hadith</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#lineage -->
+    <!-- http://www.semantichadith.com/ontology/lineage -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#lineage">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/lineage">
         <rdfs:label xml:lang="en">Descent</rdfs:label>
         <rdfs:label xml:lang="en">Lineage</rdfs:label>
         <rdfs:label xml:lang="ar">النسب</rdfs:label>
@@ -1831,47 +1831,47 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#mentionedIn -->
+    <!-- http://www.semantichadith.com/ontology/mentionedIn -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#mentionedIn">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/mentionedIn">
         <rdfs:label xml:lang="en">Mentioned in</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#name -->
+    <!-- http://www.semantichadith.com/ontology/name -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#name">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/name">
         <rdfs:label xml:lang="en">Name of Narrator</rdfs:label>
         <rdfs:label xml:lang="ar">اسم الراوي</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narrated -->
+    <!-- http://www.semantichadith.com/ontology/narrated -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#narrated">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/narrated">
         <rdfs:label xml:lang="en">Narrated</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorChain -->
+    <!-- http://www.semantichadith.com/ontology/narratorChain -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#narratorChain">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/narratorChain">
         <rdfs:label xml:lang="en">Narrator Chain</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorID -->
+    <!-- http://www.semantichadith.com/ontology/narratorID -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#narratorID">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/narratorID">
         <rdfs:label xml:lang="en">Narrator ID</rdfs:label>
         <rdfs:label xml:lang="en">Ravi Id</rdfs:label>
         <rdfs:label xml:lang="ar">رقم الراوي</rdfs:label>
@@ -1879,39 +1879,39 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#narratorURL -->
+    <!-- http://www.semantichadith.com/ontology/narratorURL -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#narratorURL">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/narratorURL">
         <rdfs:label xml:lang="en">Narrator URL</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#office -->
+    <!-- http://www.semantichadith.com/ontology/office -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#office">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/office">
         <rdfs:label xml:lang="en">Office</rdfs:label>
         <rdfs:label xml:lang="ar">النشاط</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#popularName -->
+    <!-- http://www.semantichadith.com/ontology/popularName -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#popularName">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/popularName">
         <rdfs:label xml:lang="en">Popular Name</rdfs:label>
         <rdfs:label xml:lang="ar">اسم الشهرة</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#rank -->
+    <!-- http://www.semantichadith.com/ontology/rank -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#rank">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/rank">
         <rdfs:label xml:lang="en">Rank of Narrator</rdfs:label>
         <rdfs:label xml:lang="en">grade</rdfs:label>
         <rdfs:label xml:lang="ar">الرتبة</rdfs:label>
@@ -1919,10 +1919,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#residence -->
+    <!-- http://www.semantichadith.com/ontology/residence -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#residence">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/residence">
         <rdfs:label xml:lang="en">Residence</rdfs:label>
         <rdfs:label xml:lang="ar">الإقامة</rdfs:label>
         <rdfs:label>alAqama</rdfs:label>
@@ -1930,11 +1930,11 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#sacred -->
+    <!-- http://www.semantichadith.com/ontology/sacred -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#sacred">
-        <rdf:type rdf:resource="http://www.semantichadith.com/ontology#HadithType"/>
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/sacred">
+        <rdf:type rdf:resource="http://www.semantichadith.com/ontology/HadithType"/>
         <rdfs:label xml:lang="en">Sacred_Hadith</rdfs:label>
         <rdfs:label xml:lang="ar">قدسی</rdfs:label>
         <terms:description xml:lang="ur">اللہ تعالیٰ کا وہ فرمان جسے نبی اکرم صلی اللہ علیہ وسلم نے اللہ تعالیٰ سے روایت کیا ہو، راویوں کے ذریعے سے ہم تک پہنچا ہو اور قرآن مجید میں موجود نہ ہو۔
@@ -1945,30 +1945,30 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#schoolOfThought -->
+    <!-- http://www.semantichadith.com/ontology/schoolOfThought -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#schoolOfThought">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/schoolOfThought">
         <rdfs:label xml:lang="en">School of Thought</rdfs:label>
         <rdfs:label xml:lang="en">mazhab</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#sequenceNo -->
+    <!-- http://www.semantichadith.com/ontology/sequenceNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#sequenceNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/sequenceNo">
         <rdfs:label xml:lang="en">Sequence Number</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#severed -->
+    <!-- http://www.semantichadith.com/ontology/severed -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#severed">
-        <rdf:type rdf:resource="http://www.semantichadith.com/ontology#HadithType"/>
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/severed">
+        <rdf:type rdf:resource="http://www.semantichadith.com/ontology/HadithType"/>
         <rdfs:label xml:lang="en">Severed_Hadith</rdfs:label>
         <rdfs:label xml:lang="ar">موقوف</rdfs:label>
         <terms:description xml:lang="en">refers to a narration attributed to a companion, whether a statement of that companion, an action or otherwise.</terms:description>
@@ -1978,11 +1978,11 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#stopped -->
+    <!-- http://www.semantichadith.com/ontology/stopped -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#stopped">
-        <rdf:type rdf:resource="http://www.semantichadith.com/ontology#HadithType"/>
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/stopped">
+        <rdf:type rdf:resource="http://www.semantichadith.com/ontology/HadithType"/>
         <rdfs:label xml:lang="en">Stopped_Hadith</rdfs:label>
         <rdfs:label xml:lang="ar">مقطوع</rdfs:label>
         <terms:description xml:lang="en">a narration attributed to a Tabi‘i (a successor of one of Muhammad&apos;s companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ</terms:description>
@@ -1992,10 +1992,10 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#teknonym -->
+    <!-- http://www.semantichadith.com/ontology/teknonym -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#teknonym">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/teknonym">
         <rdfs:label xml:lang="ar">Teknonym</rdfs:label>
         <rdfs:label xml:lang="ar">النوع رجل الكنية</rdfs:label>
         <rdfs:label xml:lang="ar">كنية</rdfs:label>
@@ -2003,29 +2003,29 @@ A number of books were authored in which the author stipulated the inclusion of 
     
 
 
-    <!-- http://www.semantichadith.com/ontology#title -->
+    <!-- http://www.semantichadith.com/ontology/title -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#title">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/title">
         <rdfs:label xml:lang="en">Title</rdfs:label>
         <rdfs:label xml:lang="ar">اللقب</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#transferredTo -->
+    <!-- http://www.semantichadith.com/ontology/transferredTo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#transferredTo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/transferredTo">
         <rdfs:label xml:lang="en">Transfer To</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semantichadith.com/ontology#verseNo -->
+    <!-- http://www.semantichadith.com/ontology/verseNo -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology#verseNo">
+    <owl:NamedIndividual rdf:about="http://www.semantichadith.com/ontology/verseNo">
         <rdfs:label xml:lang="en">Verse Index</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2040,113 +2040,113 @@ A number of books were authored in which the author stipulated the inclusion of 
      -->
 
 
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Believer">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Believer">
         <terms:description xml:lang="en">A Believer (Muslim) who may or may not be a companion (مومن).</terms:description>
         <rdfs:seeAlso xml:lang="en">https://dbpedia.org/page/Muslims</rdfs:seeAlso>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Companion">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Companion">
         <terms:description xml:lang="en">Companion to Prophet Muhammad (peace be upon him)</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Hadith">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Hadith">
         <terms:description xml:lang="en">Hadith is the Arabic word for speech, account, report and narrative. In the Islamic context, they are the collection of sayings, actions and silent approval of the Prophet Muhammad (peace be upon him). The Hadith can include the illustration of historical events during his lifetime, the interpretation of Qur’anic verses, the reasons for revelations and contextual background, and the elaboration of essential Islamic concepts.</terms:description>
         <rdfs:seeAlso>https://islamicurdubooks.com/info/info-detail.php?bookid=1</rdfs:seeAlso>
         <owl:equivalentClass xml:lang="en">https://dbpedia.org/page/Hadith</owl:equivalentClass>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithBook">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithBook">
         <terms:description xml:lang="en">A book of Hadith. Each Hadith Book consists of several Hadith chapters.</terms:description>
         <owl:equivalentClass xml:lang="en">http://purl.org/ontology/bibo/Book</owl:equivalentClass>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithChapter">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithChapter">
         <terms:description xml:lang="en">Chapters in the Hadith Book</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithCollection">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithCollection">
         <terms:description xml:lang="en">Collection of Hadith (مجموعة الحديث) e.g. Sahih Bukhari.</terms:description>
         <owl:equivalentClass xml:lang="en">http://purl.org/ontology/bibo/Collection</owl:equivalentClass>
         <owl:equivalentClass xml:lang="en">https://dbpedia.org/page/Category:Hadith_collections</owl:equivalentClass>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithCollectionAuthor">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithCollectionAuthor">
         <terms:description xml:lang="en">Author of a Hadith Collection</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithNarrator">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithNarrator">
         <terms:description xml:lang="en">Represents a person who is a narrator of a Hadith (راوى).</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#HadithText">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/HadithText">
         <terms:description xml:lang="en">This is primarily a textual entity, which contains the main narration or content of the Hadith, without the chain of narrators or the Sanad.</terms:description>
         <skos:altLabel xml:lang="en">Matan (Matn)</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#NarratorChain">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/NarratorChain">
         <terms:description xml:lang="en">Chain of Narrators who narrated the Hadith</terms:description>
         <skos:altLabel xml:lang="en">Sanad</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#RootNarrator">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/RootNarrator">
         <terms:description xml:lang="en">The first person to directly hear or witness the contents of a Hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#Verse">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/Verse">
         <terms:description xml:lang="en">Verse from the Holy Qur&apos;an.</terms:description>
         <owl:equivalentClass xml:lang="en">http://mlode.nlp2rdf.org/quranvocab#Verse</owl:equivalentClass>
         <owl:equivalentClass xml:lang="en">http://quranontology.com/Resource/Verse</owl:equivalentClass>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#age">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/age">
         <terms:description xml:lang="en">Age of the Narrator</terms:description>
         <skos:altLabel xml:lang="en">ummarArRavi</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#attribute">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/attribute">
         <terms:description xml:lang="en">a quality or feature regarded as a characteristic of a narrator</terms:description>
         <skos:altLabel xml:lang="en">wasaf</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#birthPlace">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/birthPlace">
         <terms:description xml:lang="en">Country or place of narrator’s birth</terms:description>
         <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/birthPlace</owl:equivalentProperty>
         <owl:equivalentProperty xml:lang="en">http://dbpedia.org/property/birthPlace</owl:equivalentProperty>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#birthYear">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/birthYear">
         <terms:description xml:lang="en">Year of birth of narrator</terms:description>
         <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/birthYear</owl:equivalentProperty>
         <owl:equivalentProperty xml:lang="en">https://schema.org/birthDate</owl:equivalentProperty>
         <skos:altLabel xml:lang="en">sunalMilad</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#chapterNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/chapterNo">
         <terms:description xml:lang="en">Chapter Number from Qu&apos;ran</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#chapterPreface">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/chapterPreface">
         <terms:description xml:lang="en">Preface of a Hadith Chapter</terms:description>
         <skos:altLabel xml:lang="en">chapterTarjama</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#concealment">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/concealment">
         <terms:description xml:lang="en">Concealment of relatives</terms:description>
         <skos:altLabel>Akhtalat Tadlees</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#containsMentionOf">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/containsMentionOf">
         <terms:description xml:lang="en">A hadith mentions a verse of Quran.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#deathPlace">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/deathPlace">
         <terms:description xml:lang="en">Country or place of narrator’s death</terms:description>
         <owl:equivalentProperty xml:lang="en">http://dbpedia.org/property/deathPlace</owl:equivalentProperty>
         <owl:equivalentProperty xml:lang="en">https://schema.org/deathPlace</owl:equivalentProperty>
         <skos:altLabel xml:lang="en">baladAlWafat</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#deathYear">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/deathYear">
         <terms:description xml:lang="en">Year of death of narrator</terms:description>
         <owl:equivalentProperty xml:lang="en">http://dbpedia.org/ontology/deathYear</owl:equivalentProperty>
         <owl:equivalentProperty xml:lang="en">https://schema.org/deathDate</owl:equivalentProperty>
         <skos:altLabel xml:lang="en">sunAlWafat</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#engBookNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/engBookNo">
         <terms:description xml:lang="en">english Refence Number for Book</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#engHadithNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/engHadithNo">
         <terms:description xml:lang="en">english Refence Number for Hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#engVolNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/engVolNo">
         <terms:description xml:lang="en">english Refence Number for Volume</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#firstChar">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/firstChar">
         <terms:description xml:lang="en">First character of the narrator&apos;s name (arabic).</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#fullHadithText">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/fullHadithText">
         <terms:description xml:lang="en">Complete Hadith Contents (Chain of Narrators (Sanad) + Hadith Text (Matan) )</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#generation">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/generation">
         <terms:description xml:lang="en">The generations (Tabqat) is defined by the hadith scholars as a group of people who were similar in age and generally met the same narrators of hadith before them. In Taqrib al-Tahzeeb and his other works on hadith narrators, Ibn Hajar has altogether identified twelve classes of narrators from the time of the Companions down to the time when the six major collections were written. These may be summarized as follows. It should be noted that first 9 categories actually fall under the basic three, namely, the Companions, the Followers (tabi&apos;un) and the Successors (tabi&apos; tabi&apos;un).
 
 
@@ -2167,19 +2167,19 @@ A number of books were authored in which the author stipulated the inclusion of 
         <rdfs:seeAlso xml:lang="en">https://muslimscholars.info</rdfs:seeAlso>
         <skos:altLabel xml:lang="en">Tabqa (Tabaqa)</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithBookIntro">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithBookIntro">
         <terms:description xml:lang="en">Introduction of the Hadith Book</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithBookNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithBookNo">
         <terms:description xml:lang="en">Hadith Book number</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithChapterNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithChapterNo">
         <terms:description xml:lang="en">Hadith Chapter number</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithReferenceNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithReferenceNo">
         <terms:description xml:lang="en">Reference Number for Hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithType">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithType">
         <terms:description xml:lang="en">Different terms are used for the origin of a narration. These terms specify whether a narration is attributed to Muhammad, a companion, a successor or a latter historical figure.
 (Qudsi (Sacred), Marfūʿ(elevated), Mawquf (stopped) and maqtu&apos; (severed))
 
@@ -2193,67 +2193,67 @@ Maqtu‘
 Ibn al-Salah defined maqtu‘ (مقطوع, Maqṭūʿ) as a narration attributed to a Tabi‘i (a successor of one of Muhammad&apos;s companions), whether it is a statement of that successor, an action or otherwise. In spite of the linguistic similarity, it is distinct from munqatiʻ</terms:description>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Hadith_terminology</rdfs:seeAlso>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hadithURL">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hadithURL">
         <terms:description xml:lang="en">link to the hadith on the Islamic Urdu Website</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasBook">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasBook">
         <terms:description xml:lang="en">A collection of hadith has book of hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasChapter">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasChapter">
         <terms:description xml:lang="en">A hadith book has a chapter.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasHadith">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasHadith">
         <terms:description xml:lang="en">A hadith chapter has a hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasHadithText">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasHadithText">
         <terms:description xml:lang="en">Hadith has a textual entity of the content of the hadith</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasMaster">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasMaster">
         <terms:description xml:lang="en">The master or Mawla of the narrator (الموالي).</terms:description>
         <skos:altLabel>alMawali</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasNarrator">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasNarrator">
         <terms:description xml:lang="en">a hadith has been narrated by a narrator.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#hasNarratorChain">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/hasNarratorChain">
         <terms:description xml:lang="en">Chain of Narrators of Hadith.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#heardFrom">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/heardFrom">
         <terms:description xml:lang="en">Hadith is heard from another narrator, (inverse of transferTo).</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#isPartOfBook">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/isPartOfBook">
         <terms:description xml:lang="en">Hadith chapter is a part of a hadith book</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#isPartOfChapter">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/isPartOfChapter">
         <terms:description xml:lang="en">a hadith is a part of hadith chapter</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#isPartOfCollection">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/isPartOfCollection">
         <terms:description xml:lang="en">A hadith book is part of a hadith collection.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#isPartOfHadith">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/isPartOfHadith">
         <terms:description xml:lang="en">HadithText and NarratorChain are parts of Hadith.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#lineage">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/lineage">
         <terms:description xml:lang="en">Lineage or descent of the narrator (النسب).</terms:description>
         <skos:altLabel>Nasab</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#mentionedIn">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/mentionedIn">
         <terms:description xml:lang="en">A qur’anic verse or any other entity is mentioned in the text of the hadith.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#narrated">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/narrated">
         <terms:description xml:lang="en">A narrator narrates a Hadith.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#narratorChain">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/narratorChain">
         <terms:description xml:lang="en">content of the Hadith Narrator Chain</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#narratorID">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/narratorID">
         <terms:description xml:lang="en">Unique ID for narrator (رقم الراوي).</terms:description>
         <skos:altLabel xml:lang="en">raqamArRavi</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#narratorURL">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/narratorURL">
         <terms:description xml:lang="en">link to the narrator details on the Islamic Urdu Website</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#office">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/office">
         <terms:description xml:lang="en">a position of authority or service, typically one of a public nature.</terms:description>
         <rdfs:comment xml:lang="en">post
 position
@@ -2264,10 +2264,10 @@ role
 office</rdfs:comment>
         <skos:altLabel xml:lang="en">anNishat</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#popularName">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/popularName">
         <terms:description xml:lang="en">Name with which the narrator was known by.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#rank">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/rank">
         <terms:description xml:lang="en">The narrators of ahadith were broken up into different grades, ranks or levels based on whether or not ahadith could be accepted from them. Ibn Hajar al-&apos;Asqalani placed the narrators into twelve ranks. The ranks as named and categorized by Ibn Hajar are widely accepted but not universal.
 
 1.          Companions: The first generation of Muslims did not need testimony to their knowledge or character as Allah the Most High has already done so in the Qur&apos;an.
@@ -2285,28 +2285,28 @@ office</rdfs:comment>
         <rdfs:seeAlso xml:lang="en">https://muslimscholars.info</rdfs:seeAlso>
         <skos:altLabel xml:lang="en">Rutba (Rotba)</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#residence">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/residence">
         <terms:description rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">A place for a person&apos;s residence</terms:description>
         <owl:equivalentProperty>http://schema.org/homeLocation</owl:equivalentProperty>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#schoolOfThought">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/schoolOfThought">
         <terms:description xml:lang="en">A madhhab is a school of thought within fiqh (Islamic jurisprudence)</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#sequenceNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/sequenceNo">
         <terms:description xml:lang="en">Sequence number of Hadith book, hadith chapter, hadith.</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#teknonym">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/teknonym">
         <terms:description xml:lang="en">the name of an adult derived from their oldest child.</terms:description>
         <rdfs:seeAlso xml:lang="ar">https://en.wikipedia.org/wiki/Kunya_(Arabic)</rdfs:seeAlso>
         <skos:altLabel xml:lang="en">Kunyah</skos:altLabel>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#title">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/title">
         <terms:description xml:lang="en">honorific title</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#transferredTo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/transferredTo">
         <terms:description xml:lang="en">A narrator tells the hadith to another narrator</terms:description>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semantichadith.com/ontology#verseNo">
+    <rdf:Description rdf:about="http://www.semantichadith.com/ontology/verseNo">
         <terms:description xml:lang="en">Verse Number from the Qur&apos;an</terms:description>
     </rdf:Description>
 </rdf:RDF>
