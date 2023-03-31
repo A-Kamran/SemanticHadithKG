@@ -2,8 +2,8 @@
 
 The given SPARQL are _examples_ that may be reinterpreted and reused for applications.
 
-1. Which Hadith 'containsMentionOf' Verse 11 of Surah 11?
-[Run Query]([http://44.213.163.148:7200/sparql?name=Which%20Hadith%20'containsMentionOf'%20Verse%201%20of%20Surah%20111%3F&infer=true&sameAs=true&query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20%3A%20%3Chttp%3A%2F%2Fwww.semantichadith.com%2Fontology%2F%3E%0APREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0Aselect%20%09%3Fhadith%20%3Fverse%0Awhere%20%7B%20%0A%09%3Fhadith%20rdf%3Atype%20%3AHadith%20.%0A%20%20%20%20%3Fhadith%20%3AcontainsMentionOf%20%3Fverse%0A%7D%20%0AVALUES%20(%3Fverse)%0A%7B%0A%20%20%20%20(%3ACH111_V001)%0A%7D](http://44.213.163.148:7200/sparql?savedQueryName=1.%20Which%20Hadith%20'containsMentionOf'%20Verse%201%20of%20Surah%20111%3F&owner=admin))
+1. Which Hadith 'containsMentionOf' Verse 1 of Surah 111?
+[Run Query](http://44.213.163.148:7200/sparql?savedQueryName=1.%20Which%20Hadith%20'containsMentionOf'%20Verse%201%20of%20Surah%20111%3F&owner=admin)
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://www.semantichadith.com/ontology/>
@@ -15,7 +15,7 @@ where {
 } 
 VALUES (?verse)
 {
-    (:CH11V11)
+    (:CH111V1)
 }
 ```
 2. How many hadith were narrated by RAWI_A? [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=2.%20How%20many%20hadith%20were%20narrated%20by%20RAWI_A%3F&owner=admin)
@@ -50,7 +50,7 @@ where
 }
 ```
 
-4. Show if any 2 Narrators share same deathPlace "المدينة"  [Run Query](http://44.213.163.148:7200/sparql?name=&infer=true&sameAs=true&query=PREFIX%20%3A%20%3Chttp%3A%2F%2Fwww.semantichadith.com%2Fontology%2F%3E%0A%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aselect%20%20%3Fnarrators%0Awhere%20%0A%7B%20%0A%20%20%20%20%3Fnarrators%20rdf%3Atype%20%3AHadithNarrator%20.%0A%20%20%20%20%3Fnarrators%20%3AdeathPlace%20%22%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%22.%0A%7D)
+4. Show if any 2 Narrators share same deathPlace "المدينة"  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=4.%20Show%20if%20any%202%20Narrators%20share%20same%20deathPlace%20%22%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%22&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 
@@ -63,7 +63,7 @@ where
 ```
 
 
-5. Who is the Root Narrator of a given Hadith?   [Run Query]()
+5. Who is the Root Narrator of a given Hadith?   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=5.%20Who%20is%20the%20Root%20Narrator%20of%20a%20given%20Hadith%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -78,7 +78,7 @@ where
 }  
 ```
 
-6. How many Hadith 'containsMentionOf' Verse X?   [Run Query]()
+6. How many Hadith 'containsMentionOf' Verse X?   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=6.%20How%20many%20Hadith%20'containsMentionOf'%20Verse%20X%3F&owner=admin)
 ```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://www.semantichadith.com/ontology/>
@@ -91,11 +91,11 @@ where {
 } 
 VALUES (?verse)
 {
-    (:V-1111)
+    (:CH111_V001)
 }
 ```
 
-7. Find all Hadith related to Hadith_X?  [Run Query]()
+7. Find all Hadith related to Hadith_X?  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=7.%20Find%20all%20Hadith%20related%20to%20Hadith_X%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -106,7 +106,7 @@ where
 }  
 ```
 
-8. What is the Hadith Type of Hadith_X.   [Run Query]()
+8. What is the Hadith Type of Hadith_X.   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=8.%20What%20is%20the%20Hadith%20Type%20of%20Hadith_X.&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -117,7 +117,7 @@ where
 }  
 ```
 
-9. Mention all Narrators and the RootNarrator for a given Hadith   [Run Query]()
+9. Mention all Narrators and the RootNarrator for a given Hadith   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=9.%20Mention%20all%20Narrators%20and%20the%20RootNarrator%20for%20a%20given%20Hadith%20&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -132,7 +132,7 @@ where
 }  
 ```
 
-10. What are the types of Hadith?  [Run Query]()
+10. What are the types of Hadith?  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=10.%20What%20are%20the%20types%20of%20Hadith%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -147,7 +147,7 @@ where
 ```
 
 
-11. What is the frequency of a specific chain or part of chain i.e. How many times A>B>C>D is repeated.  
+11. What is the frequency of a specific chain or part of chain i.e. How many times A->B->C->D is repeated.  
 <!-- [Run Query]() -->
 ```
 
@@ -172,7 +172,7 @@ where
 ```
 
 ```
-16. Search a hadith of type 'mauquf' from Narrator_A.  [Run Query]()
+16. Search a hadith of type 'mauquf' from Narrator_A.  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=16.%20Search%20a%20hadith%20of%20type%20'mauquf'%20from%20Narrator_A.&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -188,7 +188,7 @@ where
 }  
 ```
 
-17. Search for a hadith narrated by someone who lived/died in Medina.  [Run Query]()
+17. Search for a hadith narrated by someone who lived/died in Medina.  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=17.%20Search%20for%20a%20hadith%20narrated%20by%20someone%20who%20lived%2Fdied%20in%20Medina.&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -210,7 +210,7 @@ where
 ```
 
 ```
-19. Find Hadith narrated by Narrator_A    [Run Query]()
+19. Find Hadith narrated by Narrator_A    [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=19.%20Find%20Hadith%20narrated%20by%20Narrator_A&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -229,7 +229,7 @@ VALUES (?name)
 }
 ```
 
-20. How many Hadith are narrated by Narrator_A who heardFrom Narrator_B?   [Run Query]()
+20. How many Hadith are narrated by Narrator_A who heardFrom Narrator_B?   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=20.%20How%20many%20Hadith%20are%20narrated%20by%20Narrator_A%20who%20heardFrom%20Narrator_B%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 select (COUNT (?hadith) AS ?numHadith)
@@ -243,7 +243,7 @@ where
 }
 ```
 
-21. Who narrated Hadith_X?   [Run Query]()
+21. Who narrated Hadith_X?   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=21.%20Who%20narrated%20Hadith_X%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -257,7 +257,7 @@ where
     
 }  
 ```
-22. Are there any narrators residing in Location_X?   [Run Query]()
+22. Are there any narrators residing in Location_X?   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=22.%20Are%20there%20any%20narrators%20residing%20in%20Location_X%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 
@@ -270,12 +270,12 @@ where
 
 ```
 23. Which Hadith has no 'containsMentionOf' of verse?  
- <!-- [Run Query]() -->
+ <!-- [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=23.%20Which%20Hadith%20has%20no%20'containsMentionOf'%20of%20verse%3F&owner=admin) -->
 
 ```
 
 ```
-24. What is the generation of Narrator_A?  [Run Query]()
+24. What is the generation of Narrator_A?  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=24.%20What%20is%20the%20generation%20of%20Narrator_A%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 
@@ -290,7 +290,7 @@ where
 
 ```
 
-25. Which Narrators belongs to the first generation of Narrators?  [Run Query]()
+25. Which Narrators belongs to the first generation of Narrators?  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=25.%20Which%20Narrators%20belongs%20to%20the%20first%20generation%20of%20Narrators%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 
@@ -310,7 +310,7 @@ where
 ```
 
 ```
-27. When was Narrator_A born? (Lunar calender)  [Run Query]()
+27. When was Narrator_A born? (Lunar calender)  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=27.%20When%20was%20Narrator_A%20born%3F%20(Lunar%20calender)&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -329,7 +329,7 @@ where
 
 ```
 
-29. Two separate Narrator Chains with two same narrators but in different order.  [Run Query]()
+29. Two separate Narrator Chains with two same narrators but in different order.  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=29.%20Two%20separate%20Narrator%20Chains%20with%20two%20same%20narrators%20but%20in%20different%20order.&owner=admin)
 
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
@@ -345,7 +345,7 @@ select * where {
 }
 
 ```
-30. Visualising Two separate Narrator Chains with two same narrators but in different order.  [Run Query]()
+30. Visualising Two separate Narrator Chains with two same narrators but in different order.  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=30.%20Visualising%20Two%20separate%20Narrator%20Chains%20with%20two%20same%20narrators%20but%20in%20different%20order.&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
 construct {?c1 :relatedToChain ?c2} where { 
