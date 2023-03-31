@@ -1,1 +1,1 @@
-## Java Code for Knowledge Graph Generation of The Hadith Collection Sahih Al-Bukhari
+## Java Code for Knowledge Graph Generation of the Hadith Collection Sahih Al-Bukhari
