@@ -1,4 +1,8 @@
 # The Semantic Hadith Knowlege Graph
+
+The knowledge graph and ontology are hosted on [figshare](https://doi.org/10.6084/m9.figshare.7964558.v4).
+
+
 Web server available [here](http:Semantichadith.com). 
 
 ## The Semantic Hadith Ontology
