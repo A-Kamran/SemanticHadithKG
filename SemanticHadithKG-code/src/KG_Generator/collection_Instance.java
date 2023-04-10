@@ -58,7 +58,7 @@ public class collection_Instance {
 		break;
 		case 3:  prefix = "SD"; // Sunan Abi Dauood
 		break;
-		case 4:  prefix = "SM"; // Sunan Ibn Maja 
+		case 4:  prefix = "IM"; // Sunan Ibn Maja 
 		break;
 		case 5:  prefix = "SN"; // Sunan Nasai
 		break;
