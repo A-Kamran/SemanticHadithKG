@@ -19,11 +19,11 @@ public class BookDataAccess {
 //		String hadithRange="";
 		try {
 			ResultSet s = st.executeQuery("SELECT `booksnames_id`, `c_sequence`,`c_number`, `c_arabic_t`,`c_urdu`,`c_english`,`c_arabic_detail_t`,`c_urdu_detail`,`c_english_detail`,`bookschapters_id` "
-					+ "FROM " + bookTable + " where `c_number` NOT LIKE '%م' AND `bookschapters_id`="+Index);
+					+ "FROM " + bookTable + " where `bookschapters_id`="+Index);
 				while(s.next()){
 					book.setCollectionID(Integer.parseInt(s.getString(1)));
 					book.setSequenceNo(Integer.parseInt(s.getString(2)));
-					book.setHadithBookNo(Integer.parseInt(s.getString(3)));
+					book.setHadithBookNo(s.getString(3));
 					book.setHadithBookIntroA(s.getString(7));
 					book.setHadithBookIntroU(s.getString(8));
 					book.setHadithBookIntroE(s.getString(9));

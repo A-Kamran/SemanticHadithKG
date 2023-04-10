@@ -18,14 +18,14 @@ import java.util.regex.Pattern;
  */
 public class HadithDataAccess {
 
-	public static HadithData setHadithAtt(int Index,Connection conn, Statement st){
+	public static HadithData setHadithAtt(int Index, String hadithTable,Connection conn, Statement st){
 		HadithData hadith = new HadithData();
 		
 		try {
 			ResultSet s = st.executeQuery("SELECT `bookschapters_id`,`bookssubchapters_id`,`sequence`,`hadith_number`,`hadith_type2`, `arabic_t`, "
-					+ "`urdu`,`english`,`mukarraat`,`hadith_id`, `english_reference`"
-					+ "FROM csb_hadith  "
-					+ "WHERE `hadith_number` NOT LIKE 'Q%' AND `hadith_number` NOT LIKE '%M'  AND hadith_id="+Index);
+					+ "`urdu`,`english`,`mukarraat`,`hadith_id`, `english_reference`, `albani_hukam`"
+					+ "FROM " + hadithTable
+					+ " WHERE `hadith_number` NOT LIKE 'Q%' AND `hadith_number` NOT LIKE '%M' AND `hadith_number` NOT LIKE '%92b' AND `hadith_number` NOT LIKE 'm%' AND hadith_id="+Index);
 			while(s.next()){
 				
 				hadith.setBookId(Integer.parseInt(s.getString(1)));
@@ -38,6 +38,8 @@ public class HadithDataAccess {
 				hadith.setFullHadithE(s.getString(8));
 				hadith.setMukarrarat(s.getString(9));
 				hadith.setHadithKey(Integer.parseInt(s.getString(10)));
+				hadith.setHadithGrade(s.getString(11));
+
 		
 				// English References are in one column
 				// We need to split them to get volID, BookID and Number 

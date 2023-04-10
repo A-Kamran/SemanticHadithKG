@@ -20,7 +20,7 @@ public class MainGlue {
 		String SOURCE_FILE = "SemanticHadithOntology.owl";
 		String workingDir = System.getProperty("user.dir");
 		// *****************Path and file to save resulting Graph.*****************
-		String OutputFile = workingDir+"/SemanticHadithKG.rdf";
+		String OutputFile = workingDir+"/SemanticHadithKG_SM_SAD_SN_IM_JT.rdf";
 //		System.out.println(OutputFile);
 		
 		KG_Generation ic = new KG_Generation(SOURCE_FILE, OutputFile);
@@ -35,48 +35,50 @@ public class MainGlue {
 
 		
 		//*****************Creating Instances for Sahih Bukhari *****************
-		ic.BookInstance("csb_bookschapters");
-		ic.ChapterInstance("csb_bookssubchapters");
-		ic.HNarrator("narratorsdetail");
-		ic.HadithInstance("csb_hadith");
-		ic.HadithToHadith("csb_hadith");
-	
-		ic.saveOnt();	
-		
+//		ic.BookInstance("csb_bookschapters");
+//		ic.ChapterInstance("csb_bookssubchapters");
+//		ic.HNarrator("narratorsdetail");
+//		ic.HadithInstance("csb_hadith");
+//		ic.HadithToHadith("csb_hadith");
+//	
+//		
+//		
 		
 		
 		//***************** Creating Instances for Sahih Muslim *****************
-	//	ic.BookInstance("csm_bookschapters");
-	//	ic.ChapterInstance("csm_bookssubchapters");
-	//	ic.HadithInstance("csm_hadith");
-	//	ic.HadithToHadith("csm_hadith");
+		ic.BookInstance("csm_bookschapters");
+		ic.ChapterInstance("csm_bookssubchapters");
+		ic.HNarrator("narratorsdetail");
+		ic.HadithInstance("csm_hadith");
+		ic.HadithToHadith("csm_hadith");
 		
 	
 		// *****************Creating Instances for Sunan Abi Daud *****************
-		//	ic.BookInstance("sad_bookschapters");
-		//	ic.ChapterInstance("sad_bookssubchapters");
-		//	ic.HadithInstance("sad_hadith");
-		//	ic.HadithToHadith("sad_hadith");
-		
+		ic.BookInstance("sad_bookschapters");
+		ic.ChapterInstance("sad_bookssubchapters");
+		//ic.HNarrator("narratorsdetail");
+		ic.HadithInstance("sad_hadith");
+		ic.HadithToHadith("sad_hadith");
 		
 		//*****************Creating Instances for Sunan Ibn Maja	*****************
-		//	ic.BookInstance("maj_bookschapters");
-		//	ic.ChapterInstance("maj_bookssubchapters");
-		//	ic.HadithInstance("maj_hadith");
-		//	ic.HadithToHadith("maj_hadith");
+			ic.BookInstance("maj_bookschapters");
+			ic.ChapterInstance("maj_bookssubchapters");
+			ic.HadithInstance("maj_hadith");
+			ic.HadithToHadith("maj_hadith");
 		
 		//***************** Creating Instances for Sunan Nisai *****************
-	//	ic.BookInstance("nis_bookschapters");
-		//	ic.ChapterInstance("nis_bookssubchapters");
-		//	ic.HadithInstance("nis_hadith");
-		//	ic.HadithToHadith("nis_hadith");
+			ic.BookInstance("nis_bookschapters");
+			ic.ChapterInstance("nis_bookssubchapters");
+			ic.HadithInstance("nis_hadith");
+			ic.HadithToHadith("nis_hadith");
 		
 		// *****************Creating Instances for Tirmidhi*****************
-	//	ic.BookInstance("tir_bookschapters");
-		//	ic.ChapterInstance("tir_bookssubchapters");
-		//	ic.HadithInstance("tir_hadith");
-		//	ic.HadithToHadith("tir_hadith");
+			ic.BookInstance("tir_bookschapters");
+			ic.ChapterInstance("tir_bookssubchapters");
+			ic.HadithInstance("tir_hadith");
+			ic.HadithToHadith("tir_hadith");
 		
+			ic.saveOnt();	
 	
 	}
 

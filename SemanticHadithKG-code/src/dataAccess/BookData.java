@@ -9,7 +9,7 @@ package dataAccess;
  */
 public class BookData {
 
-	 private Integer hadithBookNo;
+	 private String hadithBookNo;
 	 private Integer sequenceNo;
 	 private String hadithBookIntroA;
 	 private String hadithBookIntroE;
@@ -22,11 +22,11 @@ public class BookData {
 	 private Integer collectionID;
 	 private Integer bookTableKey;
 	 
-	public Integer getHadithBookNo() {
+	public String getHadithBookNo() {
 		return hadithBookNo;
 	}
-	public void setHadithBookNo(Integer hadithBookNo) {
-		this.hadithBookNo = hadithBookNo;
+	public void setHadithBookNo(String string) {
+		this.hadithBookNo = string;
 	}
 	public Integer getSequenceNo() {
 		return sequenceNo;

@@ -173,7 +173,7 @@ public class KG_Generation
 		break;
 		case 3:  prefix = "SD"; // Sunan Abi Dauood
 		break;
-		case 4:  prefix = "SM"; // Sunan Ibn Maja 
+		case 4:  prefix = "IM"; // Sunan Ibn Maja 
 		break;
 		case 5:  prefix = "SN"; // Sunan Nasai
 		break;
@@ -348,7 +348,7 @@ public class KG_Generation
 				String bookName =collectionPrefix +"-BK"+bookPadded;
 				bookInstance = hadithFactory.getHadithBook(bookName);
 				chapterInstance.addIsPartOfBook(bookInstance);
-				System.out.println(chapterInstance);
+				System.out.println(instanceName);
 
 
 			}
@@ -606,7 +606,7 @@ public class KG_Generation
 			for(int i=1; i<=row; i++){
 				
 				HadithDataAccess hda = new HadithDataAccess();
-				HadithData hd = hda.setHadithAtt(i, conn, st);
+				HadithData hd = hda.setHadithAtt(i, hadithTable, conn, st);
 				if(hd.getBookId()!=null && hd.getMukarrarat()!="0"){
 
 					//Instance Name functionality
@@ -616,19 +616,27 @@ public class KG_Generation
 					hadithInstance = hadithFactory.getHadith(instanceName);
 					String repetitionString = hd.getMukarrarat();
 					List<String> list = Arrays.asList(repetitionString.trim().split(","));
-					for(int j =0; j<list.size(); j++) {
-						Integer hadithRaqm = Integer.parseInt(list.get(j).trim());
-						String hadithInstanceName =  padding(hadithRaqm, 4);
-						hadithInstanceName = collectionPrefix+"-"+"HD"+hadithInstanceName;
-						System.out.println(hadithInstanceName);
-						if(!(hadithInstanceName.equals(instanceName)))
+					for(int j=0; j<list.size(); j++) {
+						if(!(list.get(j).equals("0")))
 						{
-							Hadith hadithInstance2 = hadithFactory.getHadith(hadithInstanceName);
-							if(hadithInstance2!=null) {
-								hadithInstance.addRdf_seeAlso(hadithInstance2);
-								}
+							if (!(list.get(j).trim().equals("")) & !(list.get(j).trim().equals("//")) & !(list.get(j).trim().equals("---")))
+							{
+								Integer hadithRaqm = Integer.parseInt(list.get(j).trim());
+								String hadithInstanceName =  padding(hadithRaqm, 4);
+								hadithInstanceName = collectionPrefix+"-"+"HD"+hadithInstanceName;
+								System.out.println(hadithInstanceName);
+								if(!(hadithInstanceName.equals(instanceName)))
+								{
+									Hadith hadithInstance2 = hadithFactory.getHadith(hadithInstanceName);
+									if(hadithInstance2!=null) {
+										hadithInstance.addRdf_seeAlso(hadithInstance2);
+										}
 
+								}
+							}
+							
 						}
+						
 					}
 				}
 			}
@@ -682,8 +690,7 @@ public class KG_Generation
 			createConnection("hadithFH");
 			int row = rowCount(hadithTable);
 			//int row = 5;
-			Hadith hadithInstance;
-			
+			Hadith hadithInstance;		
 			HadithType elevatedHadithInstance = hadithFactory.createHadithType("elevated");
 			HadithType severedHadithInstance  = hadithFactory.createHadithType("severed");
 			HadithType stoppedHadithInstance  = hadithFactory.createHadithType("stopped");
@@ -712,14 +719,14 @@ public class KG_Generation
 			
 			String collectionPrefix = CollectionName(collection_id);
 			HadithDataAccess hda = new HadithDataAccess();
-			closeConnection();
+			//closeConnection();
 
-			for(int i=1; i<=row; i++){
-				createConnection("hadithFH");
-				HadithData hd = hda.setHadithAtt(i, conn, st);
+			for(int i=1; i<=row; i++)
+			{
+				//createConnection("hadithFH");
+				HadithData hd = hda.setHadithAtt(i, hadithTable, conn, st);
 				if(hd.getBookId()!=null)
 				{
-
 					//Instance Name functionality
 					int hadithKey = Integer.parseInt(hd.getHadithRefNo());
 					String hadithKeyPadded = padding(hadithKey, 4);
@@ -728,9 +735,7 @@ public class KG_Generation
 					hadithInstance = hadithFactory.createHadith(instanceName);
 					System.out.println(instanceName);
 					String chainInstanceName = instanceName+"-"+"Chain";
-
-					String type;
-					
+					String type, grade;	
 					hadithInstance.addHadithReferenceNo(hd.getHadithRefNo());
 					hadithInstance.addSequenceNo(hd.getSequenceNo());
 					//clean Arabic text from html tags
@@ -738,6 +743,11 @@ public class KG_Generation
 					hadithInstance.addFullHadithText(fullHadith+"@ar");
 					hadithInstance.addFullHadithText(hd.getFullHadithU().replaceAll("\\+", " ")+"@ur");
 					hadithInstance.addFullHadithText(hd.getFullHadithE()+"@en");
+					grade = hd.getHadithGrade();
+					if(!(grade.equals("0")))
+					{
+						hadithInstance.addHadithGrade(grade);
+					}
 					type = hd.getHadithType();
 					if(!(type.equals("0")))
 					{
@@ -745,39 +755,56 @@ public class KG_Generation
 
 						if(type.equals("مرفوع"))
 						{	
-//							hadithTypeInstance  =  hadithFactory.getHadithType("elevated"); 
-							//System.out.println(elevatedHadithInstance);
 							hadithInstance.addHasHadithType(elevatedHadithInstance);
 						}
 						else if (type.equals("موقوف"))
 						{
-//							hadithTypeInstance  =  hadithFactory.getHadithType("stopped"); 
 							hadithInstance.addHasHadithType(stoppedHadithInstance);
 						}
 						else if (type.equals("مقطوع"))
 						{
-//							hadithTypeInstance  =  hadithFactory.getHadithType("severed"); 
 							hadithInstance.addHasHadithType(severedHadithInstance);
 						}
 						else if (type.equals("قدسي"))
 						{
-//							hadithTypeInstance  =  hadithFactory.getHadithType("sacred"); 
 							hadithInstance.addHasHadithType(sacredHadithInstance);
 						}
 					}
-					//hadithInstance.addHadithURL("http://islamicurdubooks.com/Sahih-Bukhari/Sahih-Bukhari-.php?hadith_number="+hd.getHadithRefNo());
-					hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=1&hadith_number="+hd.getHadithRefNo());
-
+					if (collectionPrefix.equals("SB"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=1&hadith_number="+hd.getHadithRefNo());
+					}
+					else if (collectionPrefix.equals("SM"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=2&hadith_number="+hd.getHadithRefNo());
+					}
+					else if (collectionPrefix.equals("SD"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=3&hadith_number="+hd.getHadithRefNo());
+					}
+					else if (collectionPrefix.equals("IM"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=4&hadith_number="+hd.getHadithRefNo());
+					}
+					else if (collectionPrefix.equals("SN"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=5&hadith_number="+hd.getHadithRefNo());
+					}
+					else if (collectionPrefix.equals("JT"))
+					{
+						hadithInstance.addHadithURL("https://islamicurdubooks.com/hadith/hadith-.php?tarqeem=1&bookid=6&hadith_number="+hd.getHadithRefNo());
+					}
+					
 					// Object Type Properties
 					String ChapterName = collectionPrefix+"-CH"+padding(hd.getChapterId(),4);
 					chapterInstance = hadithFactory.getHadithChapter(ChapterName);
 					hadithInstance.addIsPartOfChapter(chapterInstance);
-					closeConnection();
+					//closeConnection();
 					//System.out.println("refNo:"+hd.getHadithRefNo()+" vol: "+hd.getEngVol()+" book: "+hd.getEngBook()+" hadith: "+hd.getEngNumber());
-					if(hd.getEngBook()!=null)
-					{
-						String narratorEng = getSunnahLinks(hd.getEngVol(),hd.getEngBook(), hd.getEngNumber(), instanceName, hadithInstance);
-					}
+//					if(hd.getEngBook()!=null)
+//					{
+//						String narratorEng = getSunnahLinks(hd.getEngVol(),hd.getEngBook(), hd.getEngNumber(), instanceName, hadithInstance);
+//					}
 					narratorChainInstance = hadithFactory.createNarratorChain(chainInstanceName);
 					hadithInstance.addHasNarratorChain(narratorChainInstance);
 					narratorChainInstance.addIsPartOfHadith(hadithInstance);
@@ -785,7 +812,6 @@ public class KG_Generation
 					String chainSegmentInstanceName, chainSegmentInstanceName2;
 
 					ArrayList<String> raqmList = ExtractRaqm(hd.getFullHadithA());
-				//	NDetailDataAccess nda = new NDetailDataAccess();
 					int raqmSize = raqmList.size();
 					if(raqmSize!=0)
 					{
@@ -794,16 +820,10 @@ public class KG_Generation
 							chainSegmentInstanceName = instanceName+"-"+"ChainSeg"+"-"+(j);
 							narratorChainSegmentInstance = hadithFactory.createNarratorChainSegment(chainSegmentInstanceName);
 							narratorChainInstance.addHasNarratorChainSegment(narratorChainSegmentInstance);
-							//System.out.println(chainSegmentInstanceName);
-
-							//narratorChainSegmentInstance2.addPrecedes(narratorChainSegmentInstance);
-							//NarratorsDetail nd = nda.setNarratorAtt(Integer.parseInt(raqmList.get(j)), conn, st);
-	
 						}
 						chainSegmentInstanceName = instanceName+"-"+"ChainSeg"+"-"+raqmSize;
 						rootNarratorSegmentInstance = hadithFactory.createRootNarratorChainSegment(chainSegmentInstanceName);
 						narratorChainInstance.addHasRootNarratorSegment(rootNarratorSegmentInstance);
-						//System.out.println(chainSegmentInstanceName);
 
 						
 						int k = 0;
@@ -821,14 +841,12 @@ public class KG_Generation
 								
 								chainSegmentInstanceName2 = instanceName+"-"+"ChainSeg"+"-"+j ;
 								narratorChainSegmentInstance2 = hadithFactory.getNarratorChainSegment(chainSegmentInstanceName2);
-								//System.out.println(narratorChainSegmentInstance2);
 
 								narratorChainSegmentInstance.addPrecedes(narratorChainSegmentInstance2);
 								narratorChainSegmentInstance2.addFollows(narratorChainSegmentInstance);
 	
 							
 							
-							//System.out.println(raqmList.get(k));
 							 
 							String narratorInstanceName = "HN"+ padding(Integer.parseInt(raqmList.get(k)), 5);
 							narratorInstance = hadithFactory.getHadithNarrator(narratorInstanceName);
@@ -853,29 +871,13 @@ public class KG_Generation
 							numberOfMissingRaqm++;
 						}
 						rootNarratorSegmentInstance.addRefersToNarrator(narratorInstance);
-						
-							
-//						int a = 0;
-//						for(int j=0; j<raqmSize-1;j++)
-//						{
-//							a = j+1;
-//							String narratorInstanceName1 = "HN"+ padding(Integer.parseInt(raqmList.get(j)), 5);
-//							narratorInstance = hadithFactory.getHadithNarrator(narratorInstanceName1);
-//							String n2InstanceName = "HN"+ padding(Integer.parseInt(raqmList.get(a)), 5);
-//							n2 = hadithFactory.getHadithNarrator(n2InstanceName);
-//							narratorInstance.addHeardFrom(n2);
-//							n2.addTransferredTo(narratorInstance);
-//						}
-						
-		
 					}
 
 					
 
 				}
 			}
-			//System.out.println("missing narrators Record = "+ numberOfMissingRaqm);
-			//System.out.println("shown null in mapping = "+ nullInMapping);
+			
 			closeConnection();
 		}
 		

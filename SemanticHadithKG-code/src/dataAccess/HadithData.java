@@ -29,6 +29,7 @@ public class HadithData {
 	private Integer engVol;
 	private Integer engBook;
 	private Integer engNumber;
+	private String hadithGrade;
 	
 	
 	public Integer getEngVol() {
@@ -135,5 +136,12 @@ public class HadithData {
 	public void setHadithKey(Integer hadithKey) {
 		this.hadithKey = hadithKey;
 	}
-
+	public void setHadithGrade(String hadithGrade)
+	{
+		this.hadithGrade = hadithGrade;
+	}
+	public String getHadithGrade()
+	{
+		return hadithGrade;
+	}
 }
