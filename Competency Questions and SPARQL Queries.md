@@ -18,6 +18,33 @@ VALUES (?verse)
     (:CH111V1)
 }
 ```
+
+1.1 Hadith Contains Mention of Quranic Verse
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semantichadith.com/ontology/>
+select * where { 
+	?s rdf:type :Hadith.
+    ?s :containsMentionOf ?v.
+} limit 100 
+```
+ <!-- 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semantichadith.com/ontology/>
+construct 
+{ 
+    ?s rdf:type :Hadith.
+    ?s :containsMentionOf ?v.
+    ?v rdf:type :Verse.
+}
+where { 
+	?s rdf:type :Hadith.
+    ?s :containsMentionOf ?v.
+} limit 100 
+--> 
+<img width="1107" alt="image" src="https://github.com/A-Kamran/SemanticHadithKG/assets/97387765/9c63ac0b-5e74-40e8-9c8e-ff07eb2b895a">
+
+
 2. How many hadith were narrated by RAWI_A? [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=2.%20How%20many%20hadith%20were%20narrated%20by%20RAWI_A%3F&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
@@ -117,6 +144,8 @@ where
 }  
 ```
 
+
+
 9. Mention all Narrators and the RootNarrator for a given Hadith   [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=9.%20Mention%20all%20Narrators%20and%20the%20RootNarrator%20for%20a%20given%20Hadith%20&owner=admin)
 ```
 PREFIX : <http://www.semantichadith.com/ontology/>
@@ -147,9 +176,26 @@ where
 ```
 
 
-11. What is the frequency of a specific chain or part of chain i.e. How many times A->B->C->D is repeated.  
+11. What is the frequency of a specific chain or part of chain i.e. How many times A->B->C is repeated.  
 <!-- [Run Query]() -->
 ```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semantichadith.com/ontology/>
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?n1 ?n2 ?n3 (count(distinct ?h) as ?noofhadith) 
+where {
+    ?h :hasNarratorChain/:hasNarratorSegment ?ns1.
+    ?ns1 :refersToNarrator ?n1.
+    ?ns1 :precedes/:refersToNarrator ?n2.
+    ?ns1 :precedes/:precedes/:refersToNarrator ?n3.
+    #?n1 :narratorID "4396"^^xsd:integer.
+    #?n2 :narratorID "4903"^^xsd:integer.
+    #?n3 :narratorID "7272"^^xsd:integer.
+    ?n1 :popularName ?pname1.
+    ?n2 :popularName ?pname2.
+    ?n3 :popularName ?pname3.
+} group by ?n1 ?n2 ?n3
 
 ```
 
@@ -160,17 +206,49 @@ where
 
 ```
 
-13. Search a hadith where the chain has Narrator_A and Narrator_B but not Narrator_C and matn includes TOPIC_A and LOCATION_B.
+13. Find the number of hadith where the chain has Narrator A and Narrator B but not Narrator C and matn includes TOPIC A.
 <!-- [Run Query]() -->
 
 ```
+PREFIX : <http://www.semantichadith.com/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?noofhadith {  
+?b :name "The Book of Commentary@en".
+{select  ?b (count(?h) as ?noofhadith) where { 
+    ?h :isPartOfChapter/:isPartOfBook ?b.
+	?h :hasNarratorChain/:hasNarratorSegment/:refersToNarrator ?n1.
+    ?h :hasNarratorChain/:hasNarratorSegment/:refersToNarrator ?n2.
+    ?n1 rdf:type :HadithNarrator.
+    ?n1 :narratorID "4698"^^xsd:integer.
+    ?n2 rdf:type :HadithNarrator.
+    ?n2 :narratorID "3443"^^xsd:integer.
+    ?n1 :name ?name1.
+    ?n2 :name ?name2.
+    
+    FILTER NOT EXISTS {?h :hasNarratorChain/:hasNarratorSegment/:refersToNarrator ?n3.}
+    ?n3 rdf:type :HadithNarrator.
+    ?n3 :narratorID "989"^^xsd:integer.
+    ?n3 :name ?name3.
+        } Group by ?b}
+    
+}
+
 
 ```
 14. What is the number of hadith by TOPIC narrated by Narrator_A?
  <!-- [Run Query]() -->
 
 ```
-
+PREFIX : <http://www.semantichadith.com/ontology/>
+select ?topic (count(?h) as ?noofhadith)
+where { 
+	?h :hasNarratorChain ?nc.
+    ?h :isPartOfChapter/:isPartOfBook ?b.
+    ?b :hadithBookIntro ?topic.
+    ?nc :hasRootNarratorSegment ?ns.
+    ?ns :refersToNarrator :HN04049.
+   } group by ?b ?topic
 ```
 16. Search a hadith of type 'mauquf' from Narrator_A.  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=16.%20Search%20a%20hadith%20of%20type%20'mauquf'%20from%20Narrator_A.&owner=admin)
 ```
@@ -204,10 +282,21 @@ where
     Filter (?r = 'المدينة' || ?d = 'المدينة').
 }  
 ```
-18. Find all the hadith narrated from ابن عباس about the topic 'fiqh' (Jurispudence)?   
+18. Find all the hadith narrated from ابن عباس about the topic 'Hajj' (Pilgrimmage)?   
  <!-- [Run Query]() -->
 
 ```
+PREFIX : <http://www.semantichadith.com/ontology/>
+
+select ?h 
+where {
+	?h :hasNarratorChain ?nc.
+    ?h :isPartOfChapter/:isPartOfBook ?b.
+    ?b :name ?bname.
+    ?nc :hasRootNarratorSegment ?ns.
+    ?ns :refersToNarrator :HN04883.
+    FILTER REGEX (?bname, "The Book of Hajj@en").
+   }
 
 ```
 19. Find Hadith narrated by Narrator_A    [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=19.%20Find%20Hadith%20narrated%20by%20Narrator_A&owner=admin)
@@ -308,7 +397,21 @@ where
  <!-- [Run Query]() -->
 
 ```
+PREFIX : <http://www.semantichadith.com/ontology/>
 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?bname (count(?h) as ?noofhadith)
+where { 
+	?h :hasNarratorChain ?nc.
+    ?h :isPartOfChapter/:isPartOfBook ?b.
+    ?b :name ?bname.
+    ?nc :hasRootNarratorSegment ?ns.
+    ?ns :refersToNarrator :HN04049.
+    ?n :name ?name.
+    ?n :popularName ?pname.
+}	group by ?bname
+ORDER BY DESC(?noofhadith)
+limit 1
 ```
 27. When was Narrator_A born? (Lunar calender)  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=27.%20When%20was%20Narrator_A%20born%3F%20(Lunar%20calender)&owner=admin)
 ```
@@ -326,6 +429,18 @@ where
  <!-- [Run Query]() -->
 
 ```
+PREFIX : <http://www.semantichadith.com/ontology/>
+
+select ?pname ?n (count(distinct ?h) as ?noofhadith)  
+where { 
+	?h :hasNarratorChain ?nc.
+    ?nc :hasRootNarratorSegment ?ns.
+    ?ns :refersToNarrator ?n.
+    ?n :name ?name.
+    ?n :popularName ?pname.
+} group by ?pname ?n
+ORDER BY DESC(?noofhadith)
+limit 1
 
 ```
 
@@ -353,9 +468,5 @@ construct {?c1 :relatedToChain ?c2} where {
 	:SB-HD2661 :hasNarratorChain ?c2.
 }
 ```
-<!-- 31. What are the different values of rank of Narrators?
- <!-- [Run Query]() -->
+![image](https://github.com/A-Kamran/SemanticHadithKG/assets/97387765/77dd8d2c-d91f-4cfe-af86-9278cde01b21)
 
-```
-
-``` -->
