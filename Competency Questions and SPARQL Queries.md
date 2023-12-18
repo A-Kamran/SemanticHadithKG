@@ -395,9 +395,7 @@ where
 ```
 26. What is the most narrated TOPIC by Narrator_A?
  <!-- [Run Query]() -->
-
-```
-PREFIX : <http://www.semantichadith.com/ontology/>
+<!--PREFIX : <http://www.semantichadith.com/ontology/>
 
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 select ?bname (count(?h) as ?noofhadith)
@@ -411,7 +409,20 @@ where {
     ?n :popularName ?pname.
 }	group by ?bname
 ORDER BY DESC(?noofhadith)
-limit 1
+limit 1-->
+```
+PREFIX : <http://www.semantichadith.com/ontology/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+select ?bname (count(?h) as ?noofhadith)
+where { 
+    ?h :isPartOfChapter/:isPartOfBook ?b.
+    ?b :name ?bname.
+    FILTER REGEX (?bname, "@ar").
+    ?h :hasNarratorChain/:hasRootNarratorSegment/:refersToNarrator :HN04049.    
+}	group by ?bname
+ORDER BY DESC(?noofhadith)
+Limit 1
+
 ```
 27. When was Narrator_A born? (Lunar calender)  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=27.%20When%20was%20Narrator_A%20born%3F%20(Lunar%20calender)&owner=admin)
 ```
