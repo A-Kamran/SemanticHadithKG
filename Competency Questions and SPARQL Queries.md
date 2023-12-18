@@ -362,6 +362,13 @@ where
  <!-- [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=23.%20Which%20Hadith%20has%20no%20'containsMentionOf'%20of%20verse%3F&owner=admin) -->
 
 ```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://www.semantichadith.com/ontology/>
+
+SELECT ?s WHERE { 
+    ?s rdf:type :Hadith.
+    MINUS { ?s :containsMentionOf ?v. }
+}
 
 ```
 24. What is the generation of Narrator_A?  [Run Query](http://44.213.163.148:7200/sparql?savedQueryName=24.%20What%20is%20the%20generation%20of%20Narrator_A%3F&owner=admin)
