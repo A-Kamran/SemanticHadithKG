@@ -1,4 +1,4 @@
-# Competencey questions for the Semantic Hadith ontology
+# Competency questions for the Semantic Hadith ontology
 
 The given SPARQL are _examples_ that may be reinterpreted and reused for applications.
 
@@ -15,7 +15,7 @@ where {
 } 
 VALUES (?verse)
 {
-    (:CH111V1)
+    (:CH111_V001)
 }
 ```
 
