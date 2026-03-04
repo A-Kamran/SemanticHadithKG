@@ -3,7 +3,7 @@
 The knowledge graph and ontology are hosted on [figshare](https://doi.org/10.6084/m9.figshare.7964558.v4).
 
 
-Web server available [here]((http://semantichadith.iknex.com/). 
+Web server available [here](http://semantichadith.iknex.com/). 
 
 ## The Semantic Hadith Ontology
 Have a look at the [documentation](https://a-kamran.github.io/SemanticHadithKG/) .
